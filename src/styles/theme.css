@@ -1,0 +1,24 @@
+/* Cores próximas às do app: destaque azul do macOS (o app usa a cor de destaque do sistema) */
+:root {
+  --sl-color-accent-low: #0b2a52;
+  --sl-color-accent: #0a84ff;
+  --sl-color-accent-high: #b8dbff;
+  --sl-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+}
+
+:root[data-theme="light"] {
+  --sl-color-accent-low: #d6e9ff;
+  --sl-color-accent: #0066cc;
+  --sl-color-accent-high: #00315f;
+}
+
+/* Atalhos de teclado com cara de tecla */
+kbd {
+  padding: 0.05em 0.4em;
+  border: 1px solid var(--sl-color-gray-5);
+  border-bottom-width: 2px;
+  border-radius: 0.3em;
+  font-family: inherit;
+  font-size: 0.9em;
+  white-space: nowrap;
+}

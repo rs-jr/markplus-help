@@ -5,7 +5,7 @@ description: Web links, cross-references between documents, and link views.
 
 ## Add a link
 
-- Select text and click **Link** in the formatting menu, then paste the address.
+- Select text and press <kbd>⌘K</kbd> (or click **Link** in the formatting menu), then paste the address. With the cursor inside a link, <kbd>⌘K</kbd> edits its address.
 - Or paste a URL directly.
 
 Click a web link to open it in your browser.

@@ -22,7 +22,7 @@ Markdown shortcuts work as you type:
 
 ## Formatting menu
 
-Select text to show the formatting menu: block type (paragraph, headings, lists…), **Bold**, *Italic*, Underline, Strikethrough, Highlight, text color and **Link**.
+Select text to show the formatting menu: block type (paragraph, headings, lists…), **Bold** (<kbd>⌘B</kbd>), *Italic* (<kbd>⌘I</kbd>), Underline (<kbd>⌘U</kbd>), Strikethrough (<kbd>⇧⌘S</kbd>), Highlight (<kbd>⇧⌘H</kbd>), text color and **Link** (<kbd>⌘K</kbd>).
 
 Underline, highlight and text color are `.mdoc` only.
 

@@ -106,6 +106,7 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Strikethrough | <kbd>⇧⌘S</kbd> |
 | Highlight (`.mdoc`) | <kbd>⇧⌘H</kbd> |
 | Inline code | <kbd>⌘E</kbd> |
+| Add or edit a link (with text selected) | <kbd>⌘K</kbd> |
 | Heading 1–4 | <kbd>⌥⌘1</kbd> – <kbd>⌥⌘4</kbd> |
 | Numbered list | <kbd>⇧⌘7</kbd> |
 | Bullet list | <kbd>⇧⌘8</kbd> |

@@ -37,6 +37,19 @@ Each workspace can have a picture at the top, like the cover of a notebook. Poin
 - **Hide cover**: makes more room for your documents. **Show cover** brings it back.
 - **Remove**: goes back to the default color gradient.
 
+## Add an icon
+
+Give each workspace its own picture, like a logo. It sits at the top of the document list, next to the cover, and shows up wherever the workspace is listed.
+
+1. Point at the cover and click **Add icon**. If the cover is hidden, the button is at the top right.
+2. Choose a picture. A square one works best: MarkPlus crops it to a square.
+
+To change or remove it, click the icon.
+
+:::tip
+When you [export the workspace](../export/#share-a-whole-workspace), the exported file uses this icon in Finder, so it's easy to recognize.
+:::
+
 ## "Folder not found"
 
 If you move, rename or delete a workspace folder in Finder, or unplug the drive it's on, MarkPlus marks the workspace as **folder not found**. Your files aren't lost. You have two buttons:

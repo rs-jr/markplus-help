@@ -97,6 +97,10 @@ Claude creates the same kind of links you make by hand. Links also keep working 
 - **Moved or deleted?** If a link points to something that no longer exists, clicking it shows a message telling you so. Copy a fresh link and paste it over the old one.
 - **One-page-at-a-time reading.** In [Single Page view](../appearance/#pages-continuous-or-one-at-a-time), a link takes you to the right page automatically.
 
+## Sharing the whole set
+
+To send all the documents at once, with every link still working, use **Export Workspace…**. The other person opens the file in MarkPlus and can jump between documents just like you. See [Share a whole workspace](../export/#share-a-whole-workspace).
+
 ## Sharing it as a PDF
 
 When you export a document to PDF (<kbd>⌥⌘E</kbd>):

@@ -34,6 +34,10 @@ The folder was moved, renamed or deleted in Finder, or it's on a drive that isn'
 
 See [Export and share](../export/).
 
+## What is a .mplus file?
+
+It's a whole MarkPlus workspace in one file: every document, with its pictures and attachments. Someone made it with **Export Workspace…** to share a project with you. Double-click it to read it in MarkPlus. It opens read only, so you can't change it by accident. See [Share a whole workspace](../export/#share-a-whole-workspace).
+
 ## A link says the section was not found
 
 The paragraph or section it pointed to was deleted, or rewritten beyond recognition. Copy a new link to the right place and paste it over the old one. See [Keeping links healthy](../cross-references/#keeping-links-healthy).

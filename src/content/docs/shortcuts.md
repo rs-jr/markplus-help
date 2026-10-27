@@ -74,6 +74,9 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Narrow Width | <kbd>⌘1</kbd> |
 | Wide Width | <kbd>⌘2</kbd> |
 | Full Width | <kbd>⌘3</kbd> |
+| Toggle Page View | <kbd>⌥⌘P</kbd> |
+| Next Page | <kbd>⌥⌘→</kbd> |
+| Previous Page | <kbd>⌥⌘←</kbd> |
 | Show Next Tab | <kbd>⇧⌘]</kbd> |
 | Show Previous Tab | <kbd>⇧⌘[</kbd> |
 | Actual Size | <kbd>⌘0</kbd> |
@@ -114,6 +117,7 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Quote | <kbd>⇧⌘B</kbd> |
 | Indent / outdent a list item | <kbd>⇥</kbd> / <kbd>⇧⇥</kbd> |
 | Copy link to the current block | <kbd>⌃⌘L</kbd> |
+| Ask Claude about the selection | <kbd>⌘J</kbd> |
 | Insert menu | <kbd>/</kbd> at the start of a line |
 
 ## Mouse
@@ -125,3 +129,5 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Move a block | Drag the **⋮** handle |
 | Close a tab | Middle-click the tab |
 | Rename a document | Double-click its tab |
+| Open a tab in a new window | Drag the tab out of the window |
+| Sort the document list | Click a column title (click again to reverse) |

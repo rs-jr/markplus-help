@@ -1,41 +1,68 @@
 ---
-title: Getting started
-description: Your first workspace and document in five steps.
+title: Start here
+description: Your first project and your first document in five minutes.
 ---
 
-MarkPlus keeps your documents in **workspaces** — ordinary folders on your Mac. These five steps take you from an empty app to a shareable document.
+Let's create a small travel plan together. By the end, you'll know the five things you use every day in MarkPlus.
 
 ## 1. Create a workspace
 
-The first time you open MarkPlus, choose **Create workspace**, give it a name and pick where to save it (by default, `~/Documents`). MarkPlus creates a folder with that name. Already have a folder of notes? Choose **Open folder…** to use it as a workspace.
+A **workspace** is a project: a folder on your Mac where your documents live.
+
+1. Open MarkPlus. The first time, it asks you to create a workspace.
+2. Type a name, for example **Trips**.
+3. Click **Create**. MarkPlus creates a *Trips* folder in your Documents folder.
 
 :::tip
-The workspace name is always the folder name. Rename it in MarkPlus and the folder is renamed in Finder too.
+Already have a folder full of notes? Choose **Open folder…** and MarkPlus uses it as it is.
 :::
 
 ## 2. Create a document
 
-Press <kbd>⌘N</kbd> (or click the **+** card in the grid) and choose a format:
+1. Press <kbd>⌘N</kbd>, or click the **+** card.
+2. Choose **.mdoc** (the recommended format) and press <kbd>↩</kbd>.
 
-- **.mdoc** (recommended) — keeps everything: image sizes, colors, columns, attachments, link previews.
-- **.md** — plain Markdown, readable by any other app.
+A new document opens, ready for you to type. Not sure about the format? [This page explains the difference](../documents/#mdoc-or-md) in one table.
 
-Not sure? Pick `.mdoc`. You can read more in [Documents and tabs](../documents/#mdoc-or-md).
+## 3. Write
 
-## 3. Write and format
+Type a title and a few lines. To make the title big, type `# ` (a hash and a space) before it:
 
-Just type. Select text to see the formatting menu, or type <kbd>/</kbd> at the start of a line to insert a heading, list, table, columns and more. Each **Heading 1** becomes a page in the sidebar. Changes are saved automatically.
+```text
+# Lisbon
+Flight on May 3. Hotel near the river.
+```
 
-See [Writing and formatting](../writing/).
+Every **big title** like this becomes a page in the sidebar. Add `# Porto` further down and you now have two pages.
 
-## 4. Link things together
+- Select a word to make it **bold**, *italic* or colored.
+- Type <kbd>/</kbd> on an empty line to add a list, a table, an image and more.
 
-Click the **⋮** handle next to a block and choose **Copy link** (or press <kbd>⌃⌘L</kbd>), then paste it anywhere. Clicking the link jumps straight to that paragraph or heading — even in another document.
+You never need to save: MarkPlus saves as you type.
 
-See [Links](../links/).
+:::tip
+Learn more in [Writing and formatting](../writing/).
+:::
+
+## 4. Link one place to another
+
+Want a link from your packing list to the hotel details?
+
+1. Point at the hotel paragraph. A **⋮** appears on its left.
+2. Click it and choose **Copy link**.
+3. Paste it anywhere, even in another document.
+
+Clicking the link takes you straight to that paragraph. See [Links](../links/).
 
 ## 5. Share
 
-Use **File › Export as PDF…** (<kbd>⌥⌘E</kbd>) for a PDF with working links and bookmarks, or **File › Export Markdown…** (<kbd>⇧⌘E</kbd>) for a `.md` file.
+- **File › Export as PDF…** creates a PDF ready to print or email.
+- Or send the `.mdoc` file itself. Images and attachments are inside it.
 
-See [Export](../export/).
+See [Export and share](../export/).
+
+## What next?
+
+- Organize several projects: [Workspaces](../workspaces/)
+- Work with several documents at once: [Documents and tabs](../documents/)
+- Let Claude help you write: [Writing with AI](../ai/)

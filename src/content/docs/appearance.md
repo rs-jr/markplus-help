@@ -1,35 +1,56 @@
 ---
 title: Appearance and layout
-description: Theme, accent color, document width, sidebar, toolbar and footer.
+description: Light or dark, text width, one page at a time, and what's on screen.
 ---
 
-## Theme
+## Light or dark
 
-Click the sun/moon button in the header to choose **Light**, **Dark** or **System** (follows macOS). Menus and dialogs follow the same theme.
+Click the sun/moon button at the top and choose **Light**, **Dark** or **System** (follows your Mac).
 
-## Accent color
-
-MarkPlus uses the accent color you picked in **System Settings › Appearance** for buttons, selections, links and labels. Change it there and MarkPlus updates immediately.
+MarkPlus also uses the **accent color** you chose in **System Settings › Appearance** for buttons and highlights. Change it there and MarkPlus follows.
 
 ## Width
 
-Choose how wide the text column is with the buttons in the header or the **View** menu:
+Choose how wide the text is with the buttons at the top or the **View** menu:
 
-| Width | Shortcut | What it matches |
+| Width | Shortcut | Good for |
 | --- | --- | --- |
-| **Narrow (A4)** | <kbd>⌘1</kbd> | The text area of an A4 page in portrait |
-| **Wide (A4 - landscape)** | <kbd>⌘2</kbd> | The text area of an A4 page in landscape |
-| **Full** | <kbd>⌘3</kbd> | The whole window |
+| **Narrow (A4)** | <kbd>⌘1</kbd> | Comfortable reading, and documents you'll print |
+| **Wide (A4 - landscape)** | <kbd>⌘2</kbd> | Wide tables and columns |
+| **Full** | <kbd>⌘3</kbd> | Using the whole screen |
 
-With Narrow or Wide, lines break in about the same places as in an exported PDF of that size.
+:::tip
+With **Narrow (A4)**, lines break in about the same places as in a printed A4 page or a PDF.
+:::
 
-## Sidebar, toolbar and panels
+## Pages: continuous or one at a time
 
-- **Sidebar** with the pages of the document: <kbd>⌘\</kbd> or the button in the header.
-- **Toolbar**: the switch in the header or <kbd>⇧⌘T</kbd>.
-- **Claude chat**: <kbd>⌃⌘I</kbd>. See [AI](../ai/#chat-with-claude).
-- **Path Bar** and **Status Bar**: **View › Path Bar** / **View › Status Bar**.
+Each big title starts a new page. You can read them in two ways. Switch with the button at the top or press <kbd>⌥⌘P</kbd>:
+
+- **Continuous**: all the pages one after another, like a long scroll.
+- **Single Page**: one page at a time, like a book. A small control at the bottom right shows **‹ 3 / 12 ›**:
+  - click the arrows (or press <kbd>⌥⌘←</kbd> and <kbd>⌥⌘→</kbd>) to turn the page;
+  - click the number to jump to any page by its title.
+
+**Example:** use **Single Page** to present a handbook in a meeting, one topic at a time.
+
+Clicking a title in the sidebar, a search result or a link takes you to the right page by itself.
+
+:::note
+This only changes how you read. A PDF always includes every page.
+:::
+
+## What's on screen
+
+Show or hide each part to keep only what you need:
+
+| Part | How |
+| --- | --- |
+| Sidebar with the pages | <kbd>⌘\</kbd> or the button at the top |
+| Toolbar | <kbd>⇧⌘T</kbd> or the switch at the top |
+| Claude chat | <kbd>⌃⌘I</kbd> |
+| Bar at the bottom | **View › Path Bar** and **View › Status Bar** |
 
 ## Zoom
 
-**View › Actual Size** (<kbd>⌘0</kbd>), **Zoom In** (<kbd>⌘+</kbd>) and **Zoom Out** (<kbd>⌘−</kbd>) scale the whole window.
+Make everything bigger or smaller with <kbd>⌘+</kbd> and <kbd>⌘−</kbd>. <kbd>⌘0</kbd> goes back to normal.

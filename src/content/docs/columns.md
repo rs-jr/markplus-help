@@ -1,27 +1,38 @@
 ---
 title: Columns
-description: Lay out content side by side, resize, reorder and add dividers.
+description: Put text and images side by side.
 ---
 
-Put text, images, lists or tables side by side. Insert columns with the toolbar or **/Columns** (2 columns). A block can have up to 4 columns. `.mdoc` only.
+Columns place content side by side: text next to a picture, two lists to compare, or a small newsletter layout.
 
-## Columns toolbar
+**Example:** a product page with a photo on the left and its description on the right.
 
-Click inside a column to show the toolbar above it:
+## Add columns
 
-- **Add column before** / **Add column after**
-- **Toggle dividers** — thin lines between the columns.
-- **Auto width** — on: all columns share the space equally. Resizing by hand turns it off; turn it on again to make them equal.
-- **Delete column** — removes the current column. With two columns left, the block dissolves and the remaining column's content becomes normal text.
+Type `/columns` or use the toolbar. You get two columns. Write or drop anything into each one: text, images, lists, tables.
 
-## Select and reorder
+A block can have up to 4 columns.
 
-Hover over the columns to show a **grip** at the top of each one:
+## Change the columns
 
-- **Click** the grip to select the whole column (it gets an outline). Press <kbd>⌫</kbd> to delete it.
-- **Drag** the grip to move the column. A line shows where it will land.
-- <kbd>⌘</kbd>-click inside a column also selects it.
+Click inside a column. A small menu appears above it:
+
+- **Add column** before or after this one
+- **Dividers**: show thin lines between the columns
+- **Auto width**: make all columns the same width
+- **Delete column**: remove this column. With only two, the other column's content stays as normal text.
 
 ## Resize
 
-Hover over the gap between two columns and drag the divider. A label shows both widths in percent. Each column keeps at least 10%.
+Point at the gap between two columns and drag. While you drag, you see each column's width.
+
+## Move a column
+
+Point at the columns. A small grip appears at the top of each one:
+
+- **Drag** it to move the column left or right.
+- **Click** it to select the whole column, then press <kbd>⌫</kbd> to delete it.
+
+:::note
+Columns need a `.mdoc` document.
+:::

@@ -1,50 +1,63 @@
 ---
 title: Links
-description: Web links, cross-references between documents, and link views.
+description: Links to websites, links to any paragraph, and how links look.
 ---
 
-## Add a link
+MarkPlus has two kinds of links:
 
-- Select text and press <kbd>⌘K</kbd> (or click **Link** in the formatting menu), then paste the address. With the cursor inside a link, <kbd>⌘K</kbd> edits its address.
-- Or paste a URL directly.
+- **Web links** open a website in your browser.
+- **Cross-references** take you to a place in your documents: a page, a section or a single paragraph.
 
-Click a web link to open it in your browser.
+## Add a web link
 
-## Link to a paragraph or heading
+1. Select the text that should become the link.
+2. Press <kbd>⌘K</kbd> and paste the address.
 
-Cross-references take you to an exact place, in the same document or another one:
+Or just paste an address into the text.
 
-1. Click the **⋮** handle next to the block and choose **Copy link** — or put the cursor in it and press <kbd>⌃⌘L</kbd>.
-2. Paste where you want the link.
+## Link to a paragraph or a title
 
-Clicking the link opens the document (if needed), scrolls to the block and briefly highlights it. To link to a whole document, right-click its tab and choose **Copy Link**.
+1. Point at the paragraph or title you want to link to. A **⋮** appears on its left.
+2. Click **⋮** and choose **Copy link**. Or put the cursor in it and press <kbd>⌃⌘L</kbd>.
+3. Go where you want the link, in the same document or another one, and paste (<kbd>⌘V</kbd>).
 
-:::note
-In `.md` documents, links can point to headings only (Markdown can't store an ID for a paragraph). MarkPlus tells you when it links to the nearest heading instead.
+The link already shows the paragraph's text. Click it and MarkPlus opens the document, scrolls to that spot and highlights it for a moment.
+
+**To link to a whole document**, right-click its tab and choose **Copy Link**.
+
+:::tip
+Want to build a whole set of documents that point to each other? Follow the guide [Documentation with cross-references](../cross-references/).
 :::
 
-## Edit a link
+## Change a link
 
-Right-click a link (or a link card) and choose **Edit Link…**:
+A link works as one piece: you can't type inside it by accident. To change it, right-click the link and choose **Edit Link…**, or put the cursor next to it and press <kbd>⌘K</kbd>.
 
-- **Text** — what the link shows.
-- **Link** — the address.
-- **View** — how the link looks (see below).
-- **Remove** — keeps the text, removes the link.
+- **Text**: what the reader sees
+- **Link**: where it goes
+- **View**: how it looks (see below)
+- **Remove**: keep the text, remove the link
 
-Press <kbd>↩</kbd> to save, <kbd>⎋</kbd> to cancel.
+Press <kbd>↩</kbd> to save or <kbd>⎋</kbd> to cancel.
 
 ## Link views
 
-| View | Looks like | Default for |
-| --- | --- | --- |
-| **Title** | The link text | Web links and links within the same document |
-| **Label** | A small badge with an icon — a page icon for MarkPlus documents, the site's favicon for web links | Links to other documents |
-| **URL** | The full address | — |
-| **Card** | A preview card with the page's image, title, description and site | — |
-| **Small** | A compact card with the site's favicon, like a file attachment | — |
+The same link can look different depending on what it's for:
 
-- **Card** and **Small** work with web links (`http`/`https`). They become their own block below the paragraph (or replace the paragraph if it only had the link).
-- The preview image and favicon are **saved in the document**, so cards work offline and don't change if the site does. If the site doesn't respond, the card shows just the address.
-- Click a card to select it; use its **↗** button or double-click to open the link. Right-click it for **Edit Link…**, **Open Link** and **Copy Link**.
-- Link views are `.mdoc` only.
+| View | What it looks like | Good for |
+| --- | --- | --- |
+| **Title** | Just the text, underlined | Links in the middle of a sentence |
+| **Label** | A small badge with an icon | Pointing to another document, or a well-known site |
+| **URL** | The full web address | When the address itself matters |
+| **Card** | A preview with picture, title and description | Recommending an article or a video |
+| **Small** | A compact card with the site's icon | A list of useful links |
+
+**Example:** in a reading list, use **Card** for each article. Readers see the cover picture and a short description before clicking.
+
+- Cards are saved inside the document, so they still look right without internet and don't change if the site changes.
+- **Card** and **Small** are for web links.
+- Click a card to select it. Double-click it, or use its **↗** button, to open the page.
+
+:::note
+Link views, and links to a single paragraph, need a `.mdoc` document. In a `.md` document, links point to the nearest title.
+:::

@@ -1,42 +1,44 @@
 ---
-title: Export
-description: Export to PDF and Markdown, and copy in other formats.
+title: Export and share
+description: Save as PDF, send the document itself or copy it to another app.
 ---
+
+## Send the document itself
+
+A `.mdoc` document is a single file with everything inside: text, images and attachments. Attach it to an email or put it in a shared folder. Nothing gets left behind.
+
+The other person needs MarkPlus to open it. For everyone else, use a PDF.
 
 ## PDF
 
-**File › Export as PDF…** (<kbd>⌥⌘E</kbd>) lets you choose:
+Choose **File › Export as PDF…** (<kbd>⌥⌘E</kbd>) and pick:
 
-- **Paper** — A4 or Letter.
-- **Orientation** — Portrait or Landscape.
-- **Page numbers** — "page / total" in the footer.
-- **Bookmarks** — a table of contents in the PDF's sidebar, built from your headings.
+- **Paper**: A4 or Letter
+- **Orientation**: portrait (standing) or landscape (lying down)
+- **Page numbers** at the bottom of each page
+- **Bookmarks**: a table of contents in the PDF's sidebar, made from your titles
 
-Then pick where to save. Your choices are remembered.
+Then choose where to save it. MarkPlus remembers your choices for next time.
 
-### What changes on paper
+### What you get
 
-| In the document | In the PDF |
-| --- | --- |
-| Links to a section of the same document | Still clickable: they jump to that page of the PDF |
-| Links to another document | Text with the name: "(See: Notes › Introduction)" |
-| Web links | Clickable, open in the browser |
-| Embeds (iframes) | "▶ YouTube video: https://…", with a working link |
-| Attachments | "📎 file.pdf (2 KB)" |
-| Link cards | "🔗 Title — Site", with a working link |
-| Code blocks | Long lines wrap so nothing is cut off |
-
-The PDF always uses a light theme, includes edits you haven't saved yet, and avoids breaking headings, images and tables across pages.
+- Links to other parts of the same document **still work**: click and the PDF jumps to that page.
+- Links to **other documents** turn into a note, for example "(See: Recipes › Espresso)".
+- Web links open in the browser.
+- Videos become a link to the video, and attached files show their name.
+- Titles, images and tables aren't split across two pages.
+- The PDF is always light, even if you write in dark mode.
 
 :::tip
-For lines that break in the same places as the PDF, write with the **Narrow (A4)** or **Wide (A4 - landscape)** width. See [Appearance](../appearance/#width).
+Want the lines on screen to match the PDF? Choose the **Narrow (A4)** width while you write. See [Width](../appearance/#width).
 :::
 
 ## Markdown
 
-**File › Export Markdown…** (<kbd>⇧⌘E</kbd>) saves a `.md` copy. Elements Markdown can't express (columns, colors, embeds, attachments) are written as HTML so they aren't lost; attachments themselves aren't included.
+**File › Export Markdown…** (<kbd>⇧⌘E</kbd>) saves a plain-text copy that almost any app can open. Simple formatting is kept. Attached files are not included.
 
-## Copy and paste
+## Copy into another app
 
-- **File › Copy as Markdown** (<kbd>⌥⌘C</kbd>) copies the whole document as Markdown. **File › Paste Markdown** (<kbd>⌥⌘V</kbd>) replaces it with Markdown from the clipboard.
-- To copy just the selection, right-click and choose **Copy as Markdown**, **Copy as Rich Text** or **Copy as HTML**.
+- To paste into **Mail, Pages or Word** with the formatting, select the text, right-click and choose **Copy as Rich Text**.
+- To paste into an app that uses Markdown, choose **Copy as Markdown**.
+- To copy the **whole document**, choose **File › Copy as Markdown** (<kbd>⌥⌘C</kbd>).

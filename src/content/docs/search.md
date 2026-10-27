@@ -1,54 +1,58 @@
 ---
 title: Search
-description: Find and replace in a document, search the whole workspace, and use ready-made patterns.
+description: Find and replace in a document, or search all your documents at once.
 ---
 
-## Find in the document
+## Find in a document
 
-Press <kbd>⌘F</kbd> (or click the magnifying glass in the header). Matches are highlighted and the counter shows where you are.
+Press <kbd>⌘F</kbd>, or click the magnifying glass at the top. Every match is highlighted, and a counter shows how many there are.
 
-- <kbd>↩</kbd> or <kbd>⌘G</kbd> — next match. <kbd>⇧↩</kbd> or <kbd>⇧⌘G</kbd> — previous.
-- <kbd>⎋</kbd> closes the find bar and clears the highlights.
-- **Edit › Find › Use Selection for Find** searches for the selected text.
+- Press <kbd>↩</kbd> to go to the next match and <kbd>⇧↩</kbd> to go back.
+- Press <kbd>⎋</kbd> to close.
+
+:::tip
+You don't need to type accents. Searching **acao** also finds **ação**.
+:::
 
 ## Replace
 
-Press <kbd>⌥⌘F</kbd> or click the arrow on the left of the find bar.
+Press <kbd>⌥⌘F</kbd>, or click the arrow on the left of the search field.
 
-- **Replace** changes the current match and moves to the next.
-- **Replace All** (or <kbd>⌘↩</kbd>) changes every match. One <kbd>⌘Z</kbd> undoes it all.
+- **Replace** changes the current match.
+- **Replace All** changes every match at once.
 
-Bold, links and other formatting are kept.
+Bold, links and other formatting are kept. Changed your mind? One <kbd>⌘Z</kbd> undoes it all.
 
-## Options
+**Example:** the shop changed its name from *Bean There* to *Bean Here*. Search for *Bean There*, type *Bean Here* as the replacement and click **Replace All**.
 
-| Button | What it does |
-| --- | --- |
-| **Aa** | Match case |
-| **Whole word** | Only whole words: `cat` won't match `category` |
-| **á** | Ignore accents — on by default. `acao` finds `ação`, and `ação` finds `acao` |
-| **.\*** | Regular expression |
+## Search options
 
-Your choices are remembered.
+The buttons in the search field:
 
-## Patterns
+| Button | What it does | Example |
+| --- | --- | --- |
+| **Aa** | Match upper and lower case | **Apple** doesn't find *apple* |
+| **Whole word** | Only whole words | **cat** doesn't find *category* |
+| **á** | Ignore accents (on by default) | **cafe** finds *café* |
 
-Don't know regular expressions? Click the **wand** button and pick a pattern. It shows as a label in the search field; hover over it to see the expression.
+## Ready-made searches
 
-Any number · Percentage · Money · Date · Time · Email · Link · Phone · Hashtag · Text in quotes · Text in parentheses · Repeated word · Double spaces
+Click the **wand** button to find things by their kind, without knowing exactly what they say:
 
-Some patterns ask for a word: **Word starting with…**, **Word ending with…**, **Start of paragraph…**, **End of paragraph…**.
+- **Numbers**, **percentages**, **money**, **dates** and **times**
+- **Emails**, **links**, **phone numbers** and **hashtags**
+- **Text in quotes** or **in parentheses**
+- **Repeated words** ("the the") and **double spaces**
+- **Words starting with…** or **ending with…**: you type the beginning or the end
 
-:::tip
-With regular expressions, use `$1`, `$2`… in the replacement to reuse the parts matched by each `( )` group, and `$&` for the whole match. Accents from the original text are kept.
+**Example:** before sending a report, pick **Repeated word** and **Double spaces** to catch small typos.
+
+## Search all documents
+
+Press <kbd>⇧⌘F</kbd> to search every document in the workspace at once. Results are grouped by document, with a short preview of each match.
+
+Click a result and the document opens right on that spot, with the search already filled in.
+
+:::note
+To replace text, open the document and use <kbd>⌥⌘F</kbd>. Replacing in all documents at once isn't available.
 :::
-
-Searches run within each paragraph, table cell or code line, so `^` and `$` mean the start and end of a paragraph.
-
-## Search the workspace
-
-Press <kbd>⇧⌘F</kbd> (or the magnifying glass while the grid is showing) to search every document in the active workspace. The same options and patterns are available.
-
-Results are grouped by document with a snippet of each match. Use the arrow keys and <kbd>↩</kbd>, or click, to open the document at that exact match — with the search already in the find bar.
-
-Workspace search only finds; to replace, open the document and use <kbd>⌥⌘F</kbd>.

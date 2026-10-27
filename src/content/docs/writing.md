@@ -1,67 +1,81 @@
 ---
 title: Writing and formatting
-description: Format text, insert blocks and use the context menu.
+description: Format text, add lists, tables and images, and fix mistakes.
 ---
 
-MarkPlus is a WYSIWYG editor: what you see is what you get. There are several ways to format — use whichever feels natural.
+In MarkPlus, what you see is what you get: bold looks bold and titles look like titles. There are a few ways to format text. Use whichever feels most natural.
 
-## Type Markdown
+## Select and format
 
-Markdown shortcuts work as you type:
+Select a word or a sentence and a small menu appears above it:
 
-| Type | To get |
+- **Bold** (<kbd>⌘B</kbd>), *Italic* (<kbd>⌘I</kbd>), Underline (<kbd>⌘U</kbd>), Strikethrough (<kbd>⇧⌘S</kbd>)
+- **Highlight** (<kbd>⇧⌘H</kbd>): a soft background color, like a highlighter pen
+- **Text color**
+- **Link** (<kbd>⌘K</kbd>)
+- **The first button**: turn a paragraph into a title, a list or a quote
+- **Ask Claude** (<kbd>⌘J</kbd>): have Claude rewrite the selection. See [Writing with AI](../ai/#ask-claude-about-a-selection).
+
+:::tip
+Highlight colors are soft on purpose: the text stays easy to read in light and dark mode.
+:::
+
+## Type shortcuts
+
+If you like using the keyboard, these shortcuts work while you type. Type the characters at the start of a line:
+
+| Type this | To get |
 | --- | --- |
-| `# ` `## ` `### ` `#### ` | Heading 1 to 4 |
-| `- ` or `* ` | Bullet list |
-| `1. ` | Numbered list |
-| `[ ] ` | To-do item |
-| `> ` | Quote |
-| ```` ``` ```` | Code block |
-| `---` | Divider |
-| `**bold**`, `*italic*`, `` `code` `` | Inline formatting |
+| `# ` | A big title (a new page) |
+| `## ` `### ` `#### ` | Smaller titles |
+| `- ` | A bullet list |
+| `1. ` | A numbered list |
+| `[ ] ` | A to-do with a checkbox |
+| `> ` | A quote |
+| `---` | A dividing line |
 
-## Formatting menu
+And around words: `**bold**`, `*italic*`, `` `code` ``.
 
-Select text to show the formatting menu: block type (paragraph, headings, lists…), **Bold** (<kbd>⌘B</kbd>), *Italic* (<kbd>⌘I</kbd>), Underline (<kbd>⌘U</kbd>), Strikethrough (<kbd>⇧⌘S</kbd>), Highlight (<kbd>⇧⌘H</kbd>), text color and **Link** (<kbd>⌘K</kbd>).
+**Example:** typing `[ ] Buy tickets` creates a checkbox you can tick.
 
-Underline, highlight and text color are `.mdoc` only.
+## Add anything with /
 
-## Insert blocks with `/`
+On an empty line, type <kbd>/</kbd>. A menu opens with everything you can add:
 
-Type <kbd>/</kbd> at the start of a line (or click the **+** that appears to the left of the line) to open the insert menu. Keep typing to filter:
+Titles · Lists · To-dos · Quote · Code · Table · Columns · Video or website · File · Divider
 
-Heading 1–4 · Bullet List · Numbered List · Todo List · Quote · Code Block · Table · Columns · Iframe · Attach File · Divider
+Keep typing to narrow the list. For example, `/tab` jumps straight to **Table**.
 
-Columns, Iframe and Attach File are `.mdoc` only.
+:::tip
+You can also click the **+** that appears to the left of an empty line.
+:::
 
-## Toolbar
+## Move things around
 
-The toolbar at the top of the editor inserts a divider, table, image, embed (iframe), file attachment or columns. Show or hide it with the switch in the header or **View › Toggle Toolbar** (<kbd>⇧⌘T</kbd>).
+Point at any paragraph, title, image or list item. A **⋮** handle appears on its left.
 
-## Block handle (⋮)
+- **Drag** the handle to move the block somewhere else.
+- **Click** it to copy a link to that exact spot. See [Links](../links/).
 
-Hover over a line to see the **⋮** handle on its left:
+## The toolbar
 
-- **Drag** it to move the block (paragraph, heading, list item, image…) somewhere else.
-- **Click** it for the block menu: **Copy link** (<kbd>⌃⌘L</kbd>) copies a link to that block — see [Links](../links/#link-to-a-paragraph-or-heading).
+The bar at the top of the editor adds a divider, table, image, video, file or columns in one click. If you don't use it, hide it with the switch in the header (<kbd>⇧⌘T</kbd>).
 
 ## Right-click menu
 
-Right-click text in the editor for:
+Right-click any text for more options:
 
-- **Look Up** — the macOS dictionary for the selected word.
-- **Edit Link…** — on a link, change its text, address or view. See [Links](../links/#edit-a-link).
-- **Cut**, **Copy**, **Paste**.
-- **Copy as Markdown**, **Copy as Rich Text**, **Copy as HTML** — copy the selection in the format you need. Rich text keeps formatting when you paste into Pages, Mail or Word.
-- **Paste as Plain Text** — paste without formatting.
-- **Spelling and Grammar** — suggestions for a misspelled word, **Learn Spelling**, and **Check Spelling While Typing**.
-- **Transformations** — **Make Upper Case**, **Make Lower Case**, **Capitalize**. Bold, links and other formatting are kept, and one <kbd>⌘Z</kbd> undoes it.
-- **Speech** — read the selection aloud.
+- **Look Up**: see the word in the dictionary.
+- **Copy as Markdown**, **Copy as Rich Text**: paste into Mail, Pages or Word with the formatting.
+- **Paste as Plain Text**: paste without the formatting it came with.
+- **Spelling and Grammar**: fix a misspelled word.
+- **Transformations**: change the selection to UPPER CASE, lower case or Title Case.
+- **Speech**: hear the text read aloud.
 
 :::note
-The spell-checking language follows macOS: **System Settings › Keyboard › Text Input › Edit… › Spelling**. "Automatic by Language" checks each paragraph in its own language.
+The spelling language follows your Mac. To change it, go to **System Settings › Keyboard › Text Input › Edit… › Spelling**. **Automatic by Language** checks each paragraph in its own language.
 :::
 
 ## Undo
 
-<kbd>⌘Z</kbd> and <kbd>⇧⌘Z</kbd> undo and redo. Larger actions — Replace All, a transformation, an AI edit, moving a table row — undo in a single step.
+Made a mistake? <kbd>⌘Z</kbd> undoes it and <kbd>⇧⌘Z</kbd> redoes it. Even big changes, like replacing a word everywhere or an edit made by Claude, are undone in one go.

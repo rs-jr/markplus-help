@@ -1,46 +1,57 @@
 ---
-title: FAQ and troubleshooting
-description: Answers to common questions.
+title: Questions and answers
+description: Quick answers to common questions.
 ---
 
-## Why are some options disabled or missing?
+## Some buttons are grayed out or missing
 
-You're probably in a `.md` document. Markdown can't store things like image sizes, colors, columns, embeds, attachments or link views, so MarkPlus hides or disables them and their tooltip says **Only available in .mdoc documents**. Use **File › Convert to .mdoc** to get every feature. See [.mdoc or .md?](../documents/#mdoc-or-md).
+You're probably in a `.md` document. That format can't keep things like colors, image sizes, columns or attached files, so those options are turned off. Point at one and it says **Only available in .mdoc documents**.
 
-## A file doesn't show up in the grid
+To get every option, choose **File › Convert to .mdoc**. See [.mdoc or .md?](../documents/#mdoc-or-md)
 
-The grid lists only documents at the **top level** of the active workspace's folder. Files in subfolders aren't listed, and documents opened from elsewhere (<kbd>⌘O</kbd>, Finder) open in a tab but don't join the grid. Check that the file is a `.md` or `.mdoc`.
+## Do I need to save?
+
+No. MarkPlus saves a couple of seconds after you stop typing, and again when you switch documents or quit. Even if you press <kbd>⌘Q</kbd> right after typing, nothing is lost.
+
+## I deleted a document by mistake
+
+It's in the **Trash**. Open the Trash in the Dock, right-click the document and choose **Put Back**.
+
+## A document doesn't show up in the list
+
+- The list only shows documents directly inside the workspace folder, not in subfolders.
+- Documents opened from somewhere else (**File › Open…**) open in a tab, but they don't join the list.
+- Only `.mdoc` and `.md` files are shown.
 
 ## My workspace says "folder not found"
 
-The folder was moved, renamed in Finder, deleted, or is on a drive that isn't connected. Use **Locate…** to point to it again, or reconnect the drive. See [Workspaces](../workspaces/#folder-not-found).
+The folder was moved, renamed or deleted in Finder, or it's on a drive that isn't plugged in. Click **Locate…** to show MarkPlus where it is, or plug the drive back in. See [Workspaces](../workspaces/#folder-not-found).
 
-## How do I send a .mdoc to someone?
+## How do I send a document to someone?
 
-A `.mdoc` is a package (a folder Finder shows as one file). Email and websites see it as a folder, so **zip it first** (right-click › Compress). Or export to [PDF](../export/#pdf) or [Markdown](../export/#markdown).
+- Have MarkPlus? Send the `.mdoc` file. Pictures and attachments are inside it.
+- Don't have MarkPlus? Send a PDF: **File › Export as PDF…**.
 
-## The AI app can't find my documents
+See [Export and share](../export/).
 
-- Open **MarkPlus › Connect to AI…** and check that the app shows as connected, then restart the AI app.
-- Choose **Read & write** if you want it to edit, not just read.
-- Without a workspace parameter, the AI uses the workspace active in MarkPlus.
+## A link says the section was not found
 
-## The Claude chat says to connect or sign in
+The paragraph or section it pointed to was deleted, or rewritten beyond recognition. Copy a new link to the right place and paste it over the old one. See [Keeping links healthy](../cross-references/#keeping-links-healthy).
 
-The chat runs on **Claude Code**. Connect Claude Code in **Connect to AI…** and sign in with your Claude account (the panel's **Sign in…** button opens the Terminal for you). Other apps don't enable the chat.
+## The Claude chat asks me to connect or sign in
 
-## Will I lose changes if the app quits?
+The chat needs **Claude Code** connected in **MarkPlus › Connect to AI…** and signed in with your Claude account. Click **Sign in…** in the chat and follow the steps. See [Writing with AI](../ai/#before-you-start-connect-claude).
 
-No. Changes are saved two seconds after you stop typing, and again before you switch documents, close the window or quit (<kbd>⌘Q</kbd>).
+## My AI app can't see my documents
 
-## Where did my deleted document go?
+- In **MarkPlus › Connect to AI…**, check that the app shows as connected, then quit and reopen the AI app.
+- To let it make changes, choose **Read & write**.
+- The AI works in the workspace that's open in MarkPlus, unless you name another one.
 
-To the **Trash**. Put it back from there. Removing an external document only removes it from MarkPlus; the file is not touched.
+## Spelling is checked in the wrong language
 
-## Spell checking is in the wrong language
+MarkPlus uses your Mac's spelling checker. Go to **System Settings › Keyboard › Text Input › Edit… › Spelling** and choose a language, or **Automatic by Language**.
 
-MarkPlus uses the macOS spell checker. Go to **System Settings › Keyboard › Text Input › Edit… › Spelling** and choose a language, or **Automatic by Language**.
+## macOS won't open MarkPlus the first time
 
-## The first time I open MarkPlus, macOS won't let me
-
-If your copy isn't signed, right-click the app and choose **Open**, then confirm.
+Right-click MarkPlus in the Applications folder, choose **Open**, then confirm.

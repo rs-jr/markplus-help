@@ -1,48 +1,79 @@
 ---
-title: Blocks
-description: Headings and pages, lists, code, images, embeds and attachments.
+title: Pages, images and more
+description: Titles and pages, lists, code, images, videos and attached files.
 ---
 
-## Headings and pages
+## Titles and pages
 
-Each **Heading 1** starts a page. Headings 2–4 are sections inside it. The sidebar (<kbd>⌘\</kbd>) shows them as a tree:
+Each **big title** (Heading 1) starts a new page. Smaller titles (Heading 2 to 4) are sections inside that page.
 
-- Click an item to scroll to it. The heading you're reading is highlighted.
-- Expand or collapse pages with the arrow, or all at once with the button at the top.
+**Example:** a recipe book where each recipe is a page:
+
+```text
+# Pancakes
+## Ingredients
+## Steps
+# Lemon cake
+## Ingredients
+## Steps
+```
+
+The sidebar (<kbd>⌘\</kbd>) shows these titles as a table of contents:
+
+- Click a title to jump to it. The one you're reading is highlighted.
+- Click the small arrow to open or close a page's sections.
+
+:::tip
+Prefer to see one page at a time, like a book? See [Pages: continuous or one at a time](../appearance/#pages-continuous-or-one-at-a-time).
+:::
 
 ## Lists and to-dos
 
-Bullet, numbered and to-do lists. <kbd>Tab</kbd> and <kbd>⇧Tab</kbd> indent and outdent. Click a to-do's checkbox to complete it.
+- **Bullet** and **numbered** lists
+- **To-dos** with checkboxes: click the box to tick it
 
-## Quotes and dividers
+Press <kbd>Tab</kbd> to indent an item and <kbd>⇧Tab</kbd> to move it back.
 
-Quotes (`> `) and dividers (`---`) work as in Markdown.
+## Code
 
-## Code blocks
+For snippets of code or commands, add a **Code Block** (type `/code`). Click inside it to:
 
-Create one with ```` ``` ```` or **/Code Block**. Click inside it to show its menu:
-
-- **Language** — sets syntax highlighting (JavaScript, TypeScript, Python, SQL, Shell and more).
-- **Copy code** — copies the whole block.
-- **Word wrap** — long lines continue on the next line. Turn it off to keep lines whole and scroll sideways. `.mdoc` only; on by default.
+- choose the **language**, which colors the code;
+- **copy** all of it in one click;
+- turn **word wrap** on or off for long lines.
 
 ## Images
 
-Drag an image into the editor or paste it. To insert one from the web, click the image button in the toolbar and paste its URL. Images are stored with the document, never as embedded data.
+- **Drag** a picture into the document, or **paste** it (<kbd>⌘V</kbd>). A screenshot works too.
+- To add a picture from the web, click the image button in the toolbar and paste its address.
 
-Click an image to select it:
+Click an image to:
 
-- Drag the handle in the corner to **resize** it (`.mdoc` only).
-- **Add Border** / **Remove Border** (`.mdoc` only).
-- **Download Image** saves a copy.
-- **View Fullscreen** opens it large.
+- **resize** it by dragging its corner;
+- **add or remove a border**;
+- **view it full screen** or **download** a copy.
 
-## Embeds (iframes)
+## Videos and websites
 
-Embed YouTube or Vimeo videos, Google Maps, Docs, CodePen or any page that allows it: use the toolbar or **/Iframe** and paste the embed URL. Hover over it and click **Resize** to change its width and height. `.mdoc` only.
+Show a YouTube video, a map or another website inside your document:
 
-## File attachments
+1. Type `/iframe` or use the toolbar button.
+2. Paste the address of the video or page.
 
-Drag or paste any file (PDF, ZIP, audio, video…) to attach it. `.mdoc` only. Click an attachment to choose its size — **Small**, **Regular** or **Square** (with a preview) — and hover for **Open**, **Download** and **Delete**. Audio and video files play right in the document.
+To change its size, point at it and click **Resize**.
 
-Attachments are stored inside the `.mdoc` package. Deleting an attachment moves only that copy to the Trash.
+**Example:** in a YouTube video, click **Share › Embed** and copy the address that appears there.
+
+## Attached files
+
+Drag any file into the document, such as a PDF, a spreadsheet, a song or a video. It shows up as a small card.
+
+- Click it to choose a size: **Small**, **Regular** or **Square** (with a preview).
+- Point at it for **Open**, **Download** and **Delete**.
+- Songs and videos play right in the document.
+
+The file is kept inside the document, so it goes along when you move or send it.
+
+:::note
+Resized images, borders, videos and attached files need a `.mdoc` document.
+:::

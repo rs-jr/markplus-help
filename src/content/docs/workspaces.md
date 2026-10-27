@@ -1,51 +1,56 @@
 ---
 title: Workspaces
-description: Organize documents in folders and switch between projects.
+description: Keep each project in its own place and switch between them.
 ---
 
-A **workspace** is a project area linked to a folder on your Mac, much like a project in VS Code. You can have several workspaces; one is active at a time, and the grid shows only its documents.
+A **workspace** is a project. Each one is a folder on your Mac, and MarkPlus shows the documents of one workspace at a time.
 
-## Create or open a workspace
+**Example:** a *Work* workspace for meeting notes and reports, and a *Personal* one for recipes and trips. When you're in *Work*, your recipes stay out of the way.
 
-- **Create a workspace**: name + location. MarkPlus creates `<location>/<name>`.
-- **Open folder…**: turn an existing folder into a workspace.
+## Create a workspace
 
-Both are available on the start screen, in the workspace menu (click the workspace name above the grid) and in the **Workspace** menu (when the grid is showing).
+1. Click the workspace name at the top of the document list.
+2. Choose **New Workspace…**.
+3. Give it a name and choose where to keep it (the Documents folder is suggested).
 
-## Switch, rename and reveal
+Want to use a folder you already have? Choose **Open Folder…** instead.
 
-Click the workspace name at the top of the grid to open the workspace menu:
-
-- Pick another workspace to switch to it. Pending changes are saved first, and you return to the grid.
-- **Rename…** renames the folder on disk. If it's the workspace you have open, your document stays open.
-- **Show in Finder** opens the folder.
-
-The same actions are in the **Workspace** menu, plus **Switch Workspace** and **New Workspace…**.
-
-:::note
-To delete a workspace and its files, delete the folder in Finder. MarkPlus never deletes a workspace folder for you.
+:::tip
+The workspace has the same name as its folder. Rename one and the other changes too.
 :::
 
-## Folder not found
+## Switch between workspaces
 
-If a workspace's folder was moved, deleted or is on a disconnected drive, it stays in the list marked **folder not found**:
+Click the workspace name at the top of the list and pick another one. MarkPlus saves everything first, so you never lose a change.
 
-- **Locate…** links it to a folder again (any folder — the workspace takes the new folder's name).
-- **Remove** takes it off the list. No files are touched.
+The same menu also has:
 
-If the folder comes back (for example, you reconnect the drive), the workspace returns to normal on its own.
+- **Rename…**: change the name. The folder in Finder is renamed too.
+- **Show in Finder**: open the folder.
 
-## Cover
+## Add a cover
 
-The grid shows a cover at the top of each workspace. Hover over it to **Add cover** / **Change cover** (pick any image) or **Remove cover**. The image is stored inside the workspace folder (`.markplus/cover`), so it travels with it.
+Each workspace can have a picture at the top, like the cover of a notebook. Point at the cover to see the buttons:
 
-## What's in a workspace folder
+- **Add cover** or **Change cover**: pick a picture on your Mac.
+- **Unsplash**: opens a free photo site in your browser. Download a photo you like, then use **Add cover**.
+- **Hide cover**: makes more room for your documents. **Show cover** brings it back.
+- **Remove**: goes back to the default color gradient.
 
-```text
-My workspace/
-├── Meeting notes.mdoc/   ← a MarkPlus document (a package: Finder shows it as one file)
-├── README.md             ← a plain Markdown file, edited in place
-└── assets/               ← images used by the .md files in this folder
-```
+## "Folder not found"
 
-Only files at the top level of the folder are listed — subfolders are not shown in the grid.
+If you move, rename or delete a workspace folder in Finder, or unplug the drive it's on, MarkPlus marks the workspace as **folder not found**. Your files aren't lost. You have two buttons:
+
+- **Locate…**: show MarkPlus where the folder is now.
+- **Remove** (trash icon): take the workspace off the list. Your files are not touched.
+
+If you plug the drive back in, the workspace comes back on its own.
+
+:::note
+MarkPlus never deletes a workspace folder. To delete one with its documents, delete the folder in Finder.
+:::
+
+## Good to know
+
+- Only documents directly inside the folder are listed. Subfolders aren't shown.
+- To use your documents on another Mac, keep the workspace folder in iCloud Drive or Dropbox.

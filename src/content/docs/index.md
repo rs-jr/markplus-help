@@ -3,11 +3,11 @@ title: MarkPlus Help
 description: Learn how to write, organize and share documents with MarkPlus.
 template: splash
 hero:
-  tagline: A Markdown editor for macOS where every heading becomes a page, your files stay on your Mac, and AI can work right inside your documents.
+  tagline: Write clearly, find anything and share easily. Everything stays on your Mac.
   image:
     file: ../../assets/markplus.png
   actions:
-    - text: Getting started
+    - text: Start here
       link: getting-started/
       icon: right-arrow
     - text: Keyboard shortcuts
@@ -15,16 +15,18 @@ hero:
       variant: minimal
 ---
 
-## What you can do
+## What you can do with MarkPlus
 
-- **Write without distractions.** Format as you type, use the toolbar or type `/` to insert any block.
-- **Navigate by pages.** Every top-level heading (H1) is a page in the sidebar; subheadings nest below it.
-- **Keep everything local.** Documents are plain files in a folder you choose — no account, no cloud required.
-- **Link your ideas.** Link to any paragraph or heading, in the same document or another one, and choose how each link looks.
-- **Find anything.** Search the open document or the whole workspace, with accent-insensitive search and ready-made patterns.
-- **Share it.** Export to Markdown or to a PDF where links between sections still work.
-- **Work with AI.** Connect Claude, Cursor or VS Code to your documents, or chat with Claude in the sidebar.
+- **Write comfortably.** Text looks the way it will look in the end. Select a word to format it, or type <kbd>/</kbd> to add a list, a table or an image.
+- **Turn long documents into pages.** Every big title becomes a page in the sidebar, so a 50-page manual is as easy to browse as a book.
+- **Keep projects tidy.** Group documents by project and switch between projects in one click.
+- **Connect your ideas.** Link to any paragraph, even in another document, and jump there with a click.
+- **Find anything.** Search one document or all of them at once, without worrying about accents.
+- **Share.** Save as PDF or send the document itself. Images and attachments go along.
+- **Get help from AI.** Ask Claude to rewrite a paragraph, translate it or turn notes into a table, right inside your document.
 
-## Where to start
+## Where to begin
 
-New to MarkPlus? Read [Getting started](getting-started/). Looking for a shortcut? See [Keyboard shortcuts](shortcuts/). Something not working? Try the [FAQ](faq/).
+- New here? Follow [Start here](getting-started/). It takes five minutes.
+- Looking for a shortcut? See [Keyboard shortcuts](shortcuts/).
+- Something isn't working? Check [Questions and answers](faq/).

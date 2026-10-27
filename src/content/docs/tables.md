@@ -1,33 +1,38 @@
 ---
 title: Tables
-description: Add rows and columns, select cells and reorder with drag and drop.
+description: Add rows and columns, move them around and select cells.
 ---
 
-Insert a table with the toolbar or **/Table**. It starts with 3 × 3 cells and a header row.
+Type `/table` or use the toolbar to add a table. It starts with 3 rows, 3 columns and a header row.
 
-## Table menu
+**Example:** a weekly plan with *Day*, *Task* and *Done?* columns.
 
-Click inside a table to show its menu above it:
+## Add and remove rows and columns
 
-- **Add column before** / **Add column after**, **Delete column**
-- **Add row before** / **Add row after**, **Delete row**
-- **Delete entire table**
+Click inside the table. A small menu appears above it:
 
-## Move rows and columns
+- **Add column** before or after the current one, or **delete** it
+- **Add row** before or after the current one, or **delete** it
+- **Delete table**
 
-Hover over a cell: a handle appears at the start of its row and at the top of its column.
+:::tip
+Press <kbd>Tab</kbd> in the last cell to add a new row and keep typing.
+:::
 
-- **Drag** a handle to move the row or column. A line shows where it will land.
-- **Click** a handle to select the whole row or column.
+## Move a row or column
 
-## Select cells
+Point at a cell. A small handle appears at the start of its row and at the top of its column.
 
-- Drag across cells to select several.
-- <kbd>⌘</kbd>-click a cell to select it without placing the cursor inside.
-- <kbd>⌘</kbd>-drag to select a range of cells.
+- **Drag** the handle to move the row or column. A line shows where it will go.
+- **Click** the handle to select the whole row or column.
 
-With cells selected you can delete, format or copy them together.
+## Select several cells
 
-## Resize columns
+- Drag across cells to select them.
+- Hold <kbd>⌘</kbd> and click a cell to select it.
 
-Drag the border between two columns.
+Then format, copy or delete them all at once.
+
+## Change a column's width
+
+Drag the line between two columns.

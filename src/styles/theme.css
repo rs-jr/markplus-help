@@ -22,3 +22,13 @@ kbd {
   font-size: 0.9em;
   white-space: nowrap;
 }
+
+/* Print da janela na página inicial: cantos e sombra de janela do macOS */
+img[alt^="MarkPlus window"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--sl-color-gray-5);
+  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.45);
+}

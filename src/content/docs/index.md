@@ -15,6 +15,8 @@ hero:
       variant: minimal
 ---
 
+![MarkPlus window: a document with its pages in the sidebar and the Claude chat on the right](../../assets/screenshot.jpg)
+
 ## What you can do with MarkPlus
 
 - **Write comfortably.** Text looks the way it will look in the end. Select a word to format it, or type <kbd>/</kbd> to add a list, a table or an image.

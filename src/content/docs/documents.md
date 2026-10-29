@@ -7,6 +7,9 @@ description: Create, open, rename and organize documents, and work with several 
 
 Press <kbd>⌘N</kbd>, or click **New document** above the document list. MarkPlus asks which format you want.
 
+<img class="shot shot-light" src="../screenshots/new-document-dialog-light.webp" width="672" alt="The New document window with the .mdoc and .md formats side by side" />
+<img class="shot shot-dark" src="../screenshots/new-document-dialog-dark.webp" width="672" alt="The New document window with the .mdoc and .md formats side by side" />
+
 ## .mdoc or .md?
 
 | | **.mdoc** (recommended) | **.md** |
@@ -34,6 +37,9 @@ Documents from older versions of MarkPlus open normally. The first time you edit
 
 The main screen lists every document in the workspace, most recently edited first. Dates read the way people talk: *Just now*, *Yesterday*, *Monday*. Click a document to open it.
 
+<img class="shot shot-light" src="../screenshots/document-list-light.webp" width="1280" alt="The workspace documents shown as a list, with name, date and kind" />
+<img class="shot shot-dark" src="../screenshots/document-list-dark.webp" width="1280" alt="The workspace documents shown as a list, with name, date and kind" />
+
 - **Grid or list**: use the two buttons next to the workspace name. In the list, click **Name**, **Date Modified** or **Kind** to sort. Click again to reverse.
 - **Documents from anywhere**: **File › Open…** (<kbd>⌘O</kbd>) opens a document from any folder, without moving it. You can also double-click it in Finder. A document from outside the workspace always opens in [a window of its own](#documents-outside-the-workspace).
 - **Open Recent**: the **File** menu remembers what you opened last.
@@ -41,6 +47,9 @@ The main screen lists every document in the workspace, most recently edited firs
 ## Tabs
 
 Each open document gets a tab, just like in a web browser.
+
+<img class="shot shot-light" src="../screenshots/tabs-light.webp" width="1024" alt="Three documents open in tabs" />
+<img class="shot shot-dark" src="../screenshots/tabs-dark.webp" width="1024" alt="Three documents open in tabs" />
 
 - **Switch**: click a tab, or press <kbd>⇧⌘]</kbd> and <kbd>⇧⌘[</kbd>.
 - **Close**: click the **×** or press <kbd>⌘W</kbd>. Closing the last tab takes you back to the list.
@@ -73,6 +82,12 @@ A document can only be open in one window at a time. If you try to open it again
 ## Document icon
 
 Give a document an icon to spot it at a glance. Point at the top of the document and click **Add icon**, then pick an emoji or an icon from a library, just as in a [text box](../text-boxes/#color-and-icon). The icon shows above the first line.
+
+<img class="shot shot-light" src="../screenshots/add-icon-light.webp" width="968" alt="Add icon above the first line of a document" />
+<img class="shot shot-dark" src="../screenshots/add-icon-dark.webp" width="968" alt="Add icon above the first line of a document" />
+
+<img class="shot shot-light" src="../screenshots/document-icon-light.webp" width="354" alt="A document icon with the icon picker open" />
+<img class="shot shot-dark" src="../screenshots/document-icon-dark.webp" width="354" alt="A document icon with the icon picker open" />
 
 To change it, click the icon. **Remove** puts back the file icon.
 

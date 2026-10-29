@@ -7,6 +7,9 @@ A **workspace** is a project. Each one is a folder on your Mac, and MarkPlus sho
 
 **Example:** a *Work* workspace for meeting notes and reports, and a *Personal* one for recipes and trips. When you're in *Work*, your recipes stay out of the way.
 
+<img class="shot shot-light" src="../screenshots/workspace-home-light.webp" width="1280" alt="A workspace home page: cover, icon, name, description and pinned documents" />
+<img class="shot shot-dark" src="../screenshots/workspace-home-dark.webp" width="1280" alt="A workspace home page: cover, icon, name, description and pinned documents" />
+
 ## Create a workspace
 
 1. Click the workspace name at the top of the document list.
@@ -70,6 +73,9 @@ The description is the project's context:
 ## Pin documents
 
 Keep the documents you open most at hand. Right-click a document in the list and choose **Pin**. It appears in a bar below the workspace description, highlighted, and stays in the list too (with a small pin next to its name).
+
+<img class="shot shot-light" src="../screenshots/workspace-pinned-light.webp" width="1256" alt="The workspace name and description with a pinned document below" />
+<img class="shot shot-dark" src="../screenshots/workspace-pinned-dark.webp" width="1256" alt="The workspace name and description with a pinned document below" />
 
 - Click a pinned document to open it.
 - To unpin, right-click it (in the bar or in the list) and choose **Unpin**.

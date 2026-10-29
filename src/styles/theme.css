@@ -32,3 +32,17 @@ img[alt^="MarkPlus window"] {
   border: 1px solid var(--sl-color-gray-5);
   box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.45);
 }
+
+/* Prints da ajuda (docs/scripts/screenshots.mjs): um para cada tema, conforme o tema de quem lê */
+.shot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.6rem;
+}
+:root[data-theme="light"] .shot-dark,
+:root[data-theme="dark"] .shot-light {
+  display: none;
+}

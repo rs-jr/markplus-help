@@ -15,6 +15,9 @@ The best part: you can **mention any row in your text with `@`**, and **show the
 - Or choose **File › New Database** (<kbd>⌥⌘N</kbd>).
 - While writing a document, click the **database** button at the end of the toolbar: the new database opens in a new tab, and your document stays as it was.
 
+<img class="shot shot-light" src="../screenshots/database-table-light.webp" width="1260" alt="A database open as a table" />
+<img class="shot shot-dark" src="../screenshots/database-table-dark.webp" width="1260" alt="A database open as a table" />
+
 The database starts with three columns: **Name**, **Email** and **Notes**. To rename it, double-click its title (or its tab).
 
 ## Columns
@@ -57,13 +60,16 @@ Photos and pictures can be dragged in, pasted or chosen from your Mac. They're s
 
 In any document, type **@**. A small menu walks you through three steps:
 
-1. **Database**: pick one, for example *Team*.
+<img class="shot shot-light" src="../screenshots/mention-menu-light.webp" width="932" alt="The @ menu listing the databases of the workspace" />
+<img class="shot shot-dark" src="../screenshots/mention-menu-dark.webp" width="932" alt="The @ menu listing the databases of the workspace" />
+
+1. **Database**: pick one, for example *People*.
 2. **Row**: pick the person or item. Type to filter the list.
 3. **What to show**: the name, the email, the phone… The mention shows the field you pick.
 
 Use <kbd>↑</kbd> <kbd>↓</kbd> and <kbd>Enter</kbd>, or click. <kbd>←</kbd> goes back a step.
 
-**Example:** `@` › *Team* › *Ana Ribeiro* › *ana@cafehandbook.example* writes **@ana@cafehandbook.example** in your text.
+**Example:** `@` › *People* › *Ana Ribeiro* › *ana@cafehandbook.example* writes **@ana@cafehandbook.example** in your text.
 
 - **Shortcut:** type a few letters right after `@` (like `@ana`). Matching rows from any database appear under **Rows**, and choosing one jumps straight to step 3.
 - Nobody with that name yet? In step 2, type the name and choose **Create "…"** to add the row on the spot.
@@ -71,7 +77,13 @@ Use <kbd>↑</kbd> <kbd>↓</kbd> and <kbd>Enter</kbd>, or click. <kbd>←</kbd>
 Then:
 
 - **Point at a mention** to see a card with the photo and a few fields.
+
+  <img class="shot shot-light" src="../screenshots/mention-hover-light.webp" width="336" alt="A mention with its card: photo and fields of the row" />
+  <img class="shot shot-dark" src="../screenshots/mention-hover-dark.webp" width="336" alt="A mention with its card: photo and fields of the row" />
 - **Click it** to see every field. **Open database** takes you to the row.
+
+  <img class="shot shot-light" src="../screenshots/row-detail-light.webp" width="576" alt="All the fields of a row, after clicking a mention" />
+  <img class="shot shot-dark" src="../screenshots/row-detail-dark.webp" width="576" alt="All the fields of a row, after clicking a mention" />
 - To change the field later, point at the mention and use **Show: Name ▾**.
 
 If someone's email changes in the database, every mention of it changes too. A mention to a deleted row is shown crossed out.
@@ -79,6 +91,12 @@ If someone's email changes in the database, every mention of it changes too. A m
 ## Show a database in a document
 
 Type **/** and choose **Data view**, then pick the database and a view. A view shows a database that already exists; to make a new one, use the toolbar button or **File › New Database** first.
+
+<img class="shot shot-light" src="../screenshots/database-views-cards-light.webp" width="896" alt="A database shown as cards in a document" />
+<img class="shot shot-dark" src="../screenshots/database-views-cards-dark.webp" width="896" alt="A database shown as cards in a document" />
+
+<img class="shot shot-light" src="../screenshots/database-views-detail-light.webp" width="896" alt="A database shown in the Detail view: list on the left, the selected row on the right" />
+<img class="shot shot-dark" src="../screenshots/database-views-detail-dark.webp" width="896" alt="A database shown in the Detail view: list on the left, the selected row on the right" />
 
 | View | What you see |
 | --- | --- |

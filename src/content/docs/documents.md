@@ -83,8 +83,8 @@ A document can only be open in one window at a time. If you try to open it again
 
 Give a document an icon to spot it at a glance. Point at the top of the document and click **Add icon**, then pick an emoji or an icon from a library, just as in a [text box](../text-boxes/#color-and-icon). The icon shows above the first line.
 
-<img class="shot shot-light" src="../screenshots/add-icon-light.webp" width="968" alt="Add icon above the first line of a document" />
-<img class="shot shot-dark" src="../screenshots/add-icon-dark.webp" width="968" alt="Add icon above the first line of a document" />
+<img class="shot shot-light" src="../screenshots/add-icon-light.webp" width="812" alt="Add icon above the first line of a document" />
+<img class="shot shot-dark" src="../screenshots/add-icon-dark.webp" width="812" alt="Add icon above the first line of a document" />
 
 <img class="shot shot-light" src="../screenshots/document-icon-light.webp" width="354" alt="A document icon with the icon picker open" />
 <img class="shot shot-dark" src="../screenshots/document-icon-dark.webp" width="354" alt="A document icon with the icon picker open" />

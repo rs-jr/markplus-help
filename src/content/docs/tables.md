@@ -15,6 +15,9 @@ Click inside the table. A small menu appears above it:
 - **Add row** before or after the current one, or **delete** it
 - **Delete table**
 
+<img class="shot shot-light" src="../screenshots/table-light.webp" width="788" alt="A table with two columns" />
+<img class="shot shot-dark" src="../screenshots/table-dark.webp" width="788" alt="A table with two columns" />
+
 :::tip
 Press <kbd>Tab</kbd> in the last cell to add a new row and keep typing.
 :::

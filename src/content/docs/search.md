@@ -7,6 +7,9 @@ description: Find and replace in a document, or search all your documents at onc
 
 Press <kbd>⌘F</kbd>, or click the magnifying glass at the top. Every match is highlighted, and a counter shows how many there are.
 
+<img class="shot shot-light" src="../screenshots/find-bar-light.webp" width="680" alt="The find bar with the replace field open" />
+<img class="shot shot-dark" src="../screenshots/find-bar-dark.webp" width="680" alt="The find bar with the replace field open" />
+
 - Press <kbd>↩</kbd> to go to the next match and <kbd>⇧↩</kbd> to go back.
 - Press <kbd>⎋</kbd> to close.
 
@@ -50,6 +53,9 @@ Click the **wand** button to find things by their kind, without knowing exactly 
 ## Search all documents
 
 Press <kbd>⇧⌘F</kbd> to search every document in the workspace at once. Results are grouped by document, with a short preview of each match.
+
+<img class="shot shot-light" src="../screenshots/search-workspace-light.webp" width="672" alt="Results of a search in every document of the workspace" />
+<img class="shot shot-dark" src="../screenshots/search-workspace-dark.webp" width="672" alt="Results of a search in every document of the workspace" />
 
 Click a result and the document opens right on that spot, with the search already filled in.
 

@@ -60,12 +60,12 @@ Photos and pictures can be dragged in, pasted or chosen from your Mac. They're s
 
 In any document, type **@**. A small menu walks you through three steps:
 
-<img class="shot shot-light" src="../screenshots/mention-menu-light.webp" width="932" alt="The @ menu listing the databases of the workspace" />
-<img class="shot shot-dark" src="../screenshots/mention-menu-dark.webp" width="932" alt="The @ menu listing the databases of the workspace" />
-
 1. **Database**: pick one, for example *People*.
 2. **Row**: pick the person or item. Type to filter the list.
 3. **What to show**: the name, the email, the phone… The mention shows the field you pick.
+
+<img class="shot shot-light" src="../screenshots/mention-menu-light.webp" width="776" alt="The @ menu listing the databases of the workspace" />
+<img class="shot shot-dark" src="../screenshots/mention-menu-dark.webp" width="776" alt="The @ menu listing the databases of the workspace" />
 
 Use <kbd>↑</kbd> <kbd>↓</kbd> and <kbd>Enter</kbd>, or click. <kbd>←</kbd> goes back a step.
 
@@ -92,11 +92,11 @@ If someone's email changes in the database, every mention of it changes too. A m
 
 Type **/** and choose **Data view**, then pick the database and a view. A view shows a database that already exists; to make a new one, use the toolbar button or **File › New Database** first.
 
-<img class="shot shot-light" src="../screenshots/database-views-cards-light.webp" width="896" alt="A database shown as cards in a document" />
-<img class="shot shot-dark" src="../screenshots/database-views-cards-dark.webp" width="896" alt="A database shown as cards in a document" />
+<img class="shot shot-light" src="../screenshots/database-views-cards-light.webp" width="742" alt="A database shown as cards in a document" />
+<img class="shot shot-dark" src="../screenshots/database-views-cards-dark.webp" width="742" alt="A database shown as cards in a document" />
 
-<img class="shot shot-light" src="../screenshots/database-views-detail-light.webp" width="896" alt="A database shown in the Detail view: list on the left, the selected row on the right" />
-<img class="shot shot-dark" src="../screenshots/database-views-detail-dark.webp" width="896" alt="A database shown in the Detail view: list on the left, the selected row on the right" />
+<img class="shot shot-light" src="../screenshots/database-views-detail-light.webp" width="742" alt="A database shown in the Detail view: list on the left, the selected row on the right" />
+<img class="shot shot-dark" src="../screenshots/database-views-detail-dark.webp" width="742" alt="A database shown in the Detail view: list on the left, the selected row on the right" />
 
 | View | What you see |
 | --- | --- |

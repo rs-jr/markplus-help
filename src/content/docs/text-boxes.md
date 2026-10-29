@@ -12,6 +12,9 @@ A text box puts a few lines in a colored box with an icon. Use it for what the r
 - **From selected text:** select the lines, open the first button of the formatting bar (text styles) and click **Text Box**. The selected paragraphs go into one box.
 - **From scratch:** type `/text box` and press <kbd>⏎</kbd>.
 
+<img class="shot shot-light" src="../screenshots/text-box-light.webp" width="788" alt="A blue text box with a light bulb icon, and its color menu above" />
+<img class="shot shot-dark" src="../screenshots/text-box-dark.webp" width="788" alt="A blue text box with a light bulb icon, and its color menu above" />
+
 A new box is gray with 💡. Inside it you can write anything: paragraphs, titles, lists, images.
 
 ## Color and icon

@@ -62,10 +62,13 @@ async function launch(userData, theme) {
     localStorage.setItem('markplus-documents-view', 'grid')
     // A barra flutuante de formatação cobriria o conteúdo nos recortes
     localStorage.setItem('markdown-editor-show-toolbar', 'false')
+    localStorage.setItem('markplus-page-view', 'false')
   }, theme)
   await page.reload()
   await page.waitForLoadState('domcontentloaded')
   await page.addStyleTag({ content: SHOT_CSS })
+  // Coluna estreita (A4): os recortes ficam menos largos e o texto legível na coluna da ajuda
+  await app.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].webContents.send('app:menu-action', 'width-narrow'))
   await page.waitForTimeout(1500)
   return { app, page }
 }

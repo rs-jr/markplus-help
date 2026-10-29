@@ -42,10 +42,16 @@ For snippets of code or commands, add a **Code Block** (type `/code`). Click ins
 - **copy** all of it in one click;
 - turn **word wrap** on or off for long lines.
 
+<img class="shot shot-light" src="../screenshots/code-block-light.webp" width="788" alt="A code block with colored syntax" />
+<img class="shot shot-dark" src="../screenshots/code-block-dark.webp" width="788" alt="A code block with colored syntax" />
+
 ## Images
 
 - **Drag** a picture into the document, or **paste** it (<kbd>⌘V</kbd>). A screenshot works too.
 - To add a picture from the web, click the image button in the toolbar and paste its address.
+
+<img class="shot shot-light" src="../screenshots/image-light.webp" width="788" alt="A selected image with the resize handles on the sides" />
+<img class="shot shot-dark" src="../screenshots/image-dark.webp" width="788" alt="A selected image with the resize handles on the sides" />
 
 Click an image to:
 
@@ -73,6 +79,9 @@ Drag the handles on the right and at the bottom to change its size. It never get
 ## Attached files
 
 Drag any file into the document, such as a PDF, a spreadsheet, a song or a video. It shows up as a small card.
+
+<img class="shot shot-light" src="../screenshots/file-attachments-light.webp" width="788" alt="An audio file with a player and a PDF attachment" />
+<img class="shot shot-dark" src="../screenshots/file-attachments-dark.webp" width="788" alt="An audio file with a player and a PDF attachment" />
 
 - Click it to choose a size: **Small**, **Regular** or **Square** (with a preview).
 - Point at it for **Open**, **Download** and **Delete**.

@@ -52,6 +52,12 @@ The same link can look different depending on what it's for:
 | **Card** | A preview with picture, title and description | Recommending an article or a video |
 | **Small** | A compact card with the site's icon | A list of useful links |
 
+<img class="shot shot-light" src="../screenshots/link-views-light.webp" width="770" alt="Links to other documents shown as labels, with the document icon" />
+<img class="shot shot-dark" src="../screenshots/link-views-dark.webp" width="770" alt="Links to other documents shown as labels, with the document icon" />
+
+<img class="shot shot-light" src="../screenshots/link-card-light.webp" width="788" alt="A web link shown as a card with picture, title and site" />
+<img class="shot shot-dark" src="../screenshots/link-card-dark.webp" width="788" alt="A web link shown as a card with picture, title and site" />
+
 **Example:** in a reading list, use **Card** for each article. Readers see the cover picture and a short description before clicking.
 
 - Cards are saved inside the document, so they still look right without internet and don't change if the site changes.

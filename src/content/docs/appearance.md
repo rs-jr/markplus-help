@@ -19,6 +19,9 @@ Choose how wide the text is with the buttons at the top or the **View** menu:
 | **Wide (A4 - landscape)** | <kbd>⌘2</kbd> | Wide tables and columns |
 | **Full** | <kbd>⌘3</kbd> | Using the whole screen |
 
+<img class="shot shot-light" src="../screenshots/header-controls-light.webp" width="520" alt="The buttons at the top: toolbar, widths, continuous or single page, theme, search and Claude" />
+<img class="shot shot-dark" src="../screenshots/header-controls-dark.webp" width="520" alt="The buttons at the top: toolbar, widths, continuous or single page, theme, search and Claude" />
+
 :::tip
 With **Narrow (A4)**, lines break in about the same places as in a printed A4 page or a PDF.
 :::
@@ -31,6 +34,9 @@ Each big title starts a new page. You can read them in two ways. Switch with the
 - **Single Page**: one page at a time, like a book. A small control at the bottom right shows **‹ 3 / 12 ›**:
   - click the arrows (or press <kbd>⌥⌘←</kbd> and <kbd>⌥⌘→</kbd>) to turn the page;
   - click the number to jump to any page by its title.
+
+<img class="shot shot-light" src="../screenshots/single-page-light.webp" width="1280" alt="A document in Single Page view, with the page control at the bottom right" />
+<img class="shot shot-dark" src="../screenshots/single-page-dark.webp" width="1280" alt="A document in Single Page view, with the page control at the bottom right" />
 
 **Example:** use **Single Page** to present a handbook in a meeting, one topic at a time.
 

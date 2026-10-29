@@ -16,6 +16,9 @@ Select a word or a sentence and a small menu appears above it:
 - **The first button**: turn a paragraph into a title, a list, a quote or a **Caption**: small text for notes, picture captions or fine print (only in `.mdoc` documents)
 - **Ask Claude** (<kbd>⌘J</kbd>): have Claude rewrite the selection. See [Writing with AI](../ai/#ask-claude-about-a-selection).
 
+<img class="shot shot-light" src="../screenshots/formatting-menu-light.webp" width="804" alt="Selected text with the formatting menu above it" />
+<img class="shot shot-dark" src="../screenshots/formatting-menu-dark.webp" width="804" alt="Selected text with the formatting menu above it" />
+
 :::tip
 Highlight colors are soft on purpose: the text stays easy to read in light and dark mode.
 :::
@@ -43,6 +46,9 @@ And around words: `**bold**`, `*italic*`, `` `code` ``.
 On an empty line, type <kbd>/</kbd>. A menu opens with everything you can add:
 
 Titles · Caption · Lists · To-dos · Quote · Code · Table · Database · Columns · Video or website · File · Divider
+
+<img class="shot shot-light" src="../screenshots/slash-menu-light.webp" width="420" alt="The menu that opens when you type /" />
+<img class="shot shot-dark" src="../screenshots/slash-menu-dark.webp" width="420" alt="The menu that opens when you type /" />
 
 Keep typing to narrow the list. For example, `/tab` jumps straight to **Table**.
 

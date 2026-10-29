@@ -48,6 +48,9 @@ Choose **File › Export as PDF…** (<kbd>⌥⌘E</kbd>) and pick:
 - **Page numbers** at the bottom of each page
 - **Bookmarks**: a table of contents in the PDF's sidebar, made from your titles
 
+<img class="shot shot-light" src="../screenshots/export-pdf-light.webp" width="384" alt="The Export as PDF window: paper, orientation, page numbers and bookmarks" />
+<img class="shot shot-dark" src="../screenshots/export-pdf-dark.webp" width="384" alt="The Export as PDF window: paper, orientation, page numbers and bookmarks" />
+
 Then choose where to save it. MarkPlus remembers your choices for next time.
 
 ### What you get

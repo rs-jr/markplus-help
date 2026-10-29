@@ -11,6 +11,9 @@ Columns place content side by side: text next to a picture, two lists to compare
 
 Type `/columns` or use the toolbar. You get two columns. Write or drop anything into each one: text, images, lists, tables.
 
+<img class="shot shot-light" src="../screenshots/columns-light.webp" width="788" alt="Three columns, each with a title and a short text" />
+<img class="shot shot-dark" src="../screenshots/columns-dark.webp" width="788" alt="Three columns, each with a title and a short text" />
+
 A block can have up to 4 columns.
 
 ## Change the columns

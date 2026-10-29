@@ -13,7 +13,7 @@ Select a word or a sentence and a small menu appears above it:
 - **Highlight** (<kbd>⇧⌘H</kbd>): a soft background color, like a highlighter pen
 - **Text color**
 - **Link** (<kbd>⌘K</kbd>)
-- **The first button**: turn a paragraph into a title, a list or a quote
+- **The first button**: turn a paragraph into a title, a list, a quote or a **Caption**: small text for notes, picture captions or fine print (only in `.mdoc` documents)
 - **Ask Claude** (<kbd>⌘J</kbd>): have Claude rewrite the selection. See [Writing with AI](../ai/#ask-claude-about-a-selection).
 
 :::tip
@@ -42,7 +42,7 @@ And around words: `**bold**`, `*italic*`, `` `code` ``.
 
 On an empty line, type <kbd>/</kbd>. A menu opens with everything you can add:
 
-Titles · Lists · To-dos · Quote · Code · Table · Columns · Video or website · File · Divider
+Titles · Caption · Lists · To-dos · Quote · Code · Table · Database · Columns · Video or website · File · Divider
 
 Keep typing to narrow the list. For example, `/tab` jumps straight to **Table**.
 

@@ -60,7 +60,13 @@ Show a YouTube video, a map or another website inside your document:
 1. Type `/iframe` or use the toolbar button.
 2. Paste the address of the video or page.
 
-To change its size, point at it and click **Resize**.
+To change it, point at it and click **Resize** (top right). A small toolbar appears above it:
+
+- **Change URL…** shows something else in the same place, keeping the size;
+- the arrow opens the page in your browser;
+- the trash can removes it.
+
+Drag the handles on the right and at the bottom to change its size. It never gets wider than the document.
 
 **Example:** in a YouTube video, click **Share › Embed** and copy the address that appears there.
 

@@ -45,11 +45,26 @@ The new text replaces the selection right away. Press <kbd>⎋</kbd> to stop whi
 Pasted a list of prices from an email? Select it and choose **Convert to Table**. Claude picks the columns for you.
 :::
 
+## Let Claude continue your sentence
+
+Stuck in the middle of a paragraph? Press <kbd>⇧Space</kbd> (or choose **Edit › Suggest Continuation**). A **✦** appears at the cursor while Claude thinks, then the suggestion shows up in gray, right after what you wrote.
+
+| To | Press |
+| --- | --- |
+| Accept the suggestion | <kbd>⇥</kbd> Tab |
+| Dismiss it | <kbd>⎋</kbd>, or click somewhere else |
+
+If you keep typing and your words match the start of the suggestion, it stays and gets shorter. Type something else and it goes away. Accepting works like any edit: one <kbd>⌘Z</kbd> undoes it.
+
+:::tip
+Pressed <kbd>⇧Space</kbd> by accident while typing a capital letter? Just keep typing: the space comes back and nothing is suggested.
+:::
+
 ## Chat with Claude
 
 For bigger jobs, open the chat: click the **Claude** button at the top (next to the magnifying glass) or press <kbd>⌃⌘I</kbd>.
 
-Claude already knows which document you have open and what text you selected, so you can just ask:
+Claude already knows which document you have open, what text you selected and the [workspace description](../workspaces/#add-a-description), so you can just ask:
 
 - *"Add a summary at the top of this document."*
 - *"Check the Prices section for mistakes."*
@@ -59,6 +74,18 @@ Claude already knows which document you have open and what text you selected, so
 **Send files too:** paste a screenshot (<kbd>⌘V</kbd>), drag files onto the chat, or click 📎. Claude reads pictures, PDFs and text files.
 
 **Example:** attach the PDF of a contract and ask *"Create a document with the main dates and obligations from this contract."*
+
+**Search the web:** Claude can look things up online and read web pages, then cite the sources as links. The chat shows what it is searching for.
+
+**Example:** *"Find the opening hours of the Louvre and add them to my Paris trip."*
+
+**Read from your other apps:** click the plug button at the top of the chat to open **Connectors**. It lists the apps connected to your Claude account (Figma, Google Drive, Atlassian and others). Turn on the ones Claude may read.
+
+- Claude only **reads** them: tools that change data in those apps are never available in MarkPlus.
+- An app that says **Sign in on claude.ai** needs to be connected there first. **Manage connectors on claude.ai** opens the page.
+- The number on the plug button shows how many apps are on.
+
+**Example:** turn on Figma and ask *"Describe the screens in this Figma file and write a summary here."*
 
 - Below the message box you can choose which Claude **model** to use.
 - Before deleting a document, Claude always asks you first.
@@ -84,7 +111,7 @@ You can also let other AI apps work with your documents: **Claude Desktop**, **C
 These apps can work even when MarkPlus is closed. When a document was changed that way, its card shows **Edited by…** until you open it.
 
 :::note
-The chat and **Ask Claude** need **Claude Code** to be connected. The other apps work from their own window.
+The chat, **Ask Claude** and the suggestions need **Claude Code** to be connected. The other apps work from their own window.
 :::
 
 ## Links made by Claude

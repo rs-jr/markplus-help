@@ -20,7 +20,7 @@ It's in the **Trash**. Open the Trash in the Dock, right-click the document and 
 ## A document doesn't show up in the list
 
 - The list only shows documents directly inside the workspace folder, not in subfolders.
-- Documents opened from somewhere else (**File › Open…**) open in a tab, but they don't join the list.
+- Documents opened from somewhere else (**File › Open…**) open in a window of their own, and they don't join the list.
 - Only `.mdoc` and `.md` files are shown.
 
 ## My workspace says "folder not found"
@@ -34,9 +34,9 @@ The folder was moved, renamed or deleted in Finder, or it's on a drive that isn'
 
 See [Export and share](../export/).
 
-## What is a .mplus file?
+## How do I share a workspace with someone who doesn't have MarkPlus?
 
-It's a whole MarkPlus workspace in one file: every document, with its pictures and attachments. Someone made it with **Export Workspace…** to share a project with you. Double-click it to read it in MarkPlus. It opens read only, so you can't change it by accident. See [Share a whole workspace](../export/#share-a-whole-workspace).
+Choose **Export as Web Page…**. You get one `.html` file with every document, picture and attachment. It opens in any web browser, read only. See [Share a whole workspace](../export/#share-a-whole-workspace).
 
 ## A link says the section was not found
 

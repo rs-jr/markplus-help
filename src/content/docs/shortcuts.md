@@ -14,6 +14,7 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Command | Shortcut |
 | --- | --- |
 | New Document… | <kbd>⌘N</kbd> |
+| New Database | <kbd>⌥⌘N</kbd> |
 | New Window | <kbd>⇧⌘N</kbd> |
 | Open… | <kbd>⌘O</kbd> |
 
@@ -28,7 +29,6 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Command | Shortcut |
 | --- | --- |
 | Save | <kbd>⌘S</kbd> |
-| Export Markdown… | <kbd>⇧⌘E</kbd> |
 | Export as PDF… | <kbd>⌥⌘E</kbd> |
 | Copy as Markdown | <kbd>⌥⌘C</kbd> |
 | Paste Markdown | <kbd>⌥⌘V</kbd> |
@@ -56,6 +56,7 @@ These tables are generated from MarkPlus's menus, so they always match the app. 
 | Find Next | <kbd>⌘G</kbd> |
 | Find Previous | <kbd>⇧⌘G</kbd> |
 | Search in Workspace… | <kbd>⇧⌘F</kbd> |
+| Suggest Continuation | <kbd>⇧Space</kbd> |
 
 ### MarkPlus
 

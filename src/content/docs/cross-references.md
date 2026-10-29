@@ -91,15 +91,20 @@ With [Claude connected](../ai/), ask in the chat:
 
 Claude creates the same kind of links you make by hand. Links also keep working when Claude rewrites a section, as long as the text is still recognizable.
 
+## Bonus: mention people with @
+
+Keep the team in a [database](../databases/) (name, photo, email, role). Then write "Ask @Rodrigo" anywhere in the handbook: pointing at the name shows his photo and email, and clicking shows everything. When his email changes, you update it once in the database.
+
 ## Keeping links healthy
 
 - **Rename freely.** Renaming a document, or changing the text of a title, doesn't break links to it.
+- **Same workspace only.** Links and @ mentions work between documents in the same workspace. If you paste a link to a document in another workspace, MarkPlus keeps the text and removes the link. A mention becomes plain text, like "@Name".
 - **Moved or deleted?** If a link points to something that no longer exists, clicking it shows a message telling you so. Copy a fresh link and paste it over the old one.
 - **One-page-at-a-time reading.** In [Single Page view](../appearance/#pages-continuous-or-one-at-a-time), a link takes you to the right page automatically.
 
 ## Sharing the whole set
 
-To send all the documents at once, with every link still working, use **Export Workspace…**. The other person opens the file in MarkPlus and can jump between documents just like you. See [Share a whole workspace](../export/#share-a-whole-workspace).
+To send all the documents at once, with every link still working, use **Export as Web Page…**. The other person opens the file in any web browser and can jump between documents just like you. See [Share a whole workspace](../export/#share-a-whole-workspace).
 
 ## Sharing it as a PDF
 

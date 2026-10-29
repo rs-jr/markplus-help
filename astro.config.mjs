@@ -39,7 +39,9 @@ export default defineConfig({
 						{ label: 'Pages, images and more', slug: 'blocks' },
 						{ label: 'Tables', slug: 'tables' },
 						{ label: 'Columns', slug: 'columns' },
+						{ label: 'Text boxes', slug: 'text-boxes' },
 						{ label: 'Links', slug: 'links' },
+						{ label: 'Databases', slug: 'databases' },
 					],
 				},
 				{

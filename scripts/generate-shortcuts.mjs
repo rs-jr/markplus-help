@@ -58,7 +58,7 @@ const MODIFIERS = [
   ['Cmd', '⌘'],
 ]
 
-const KEYS = { Plus: '+', '-': '−', '\\\\': '\\', '\\': '\\', Up: '↑', Down: '↓', Left: '←', Right: '→', Enter: '↩', Tab: '⇥', Escape: '⎋' }
+const KEYS = { Plus: '+', '-': '−', '\\\\': '\\', '\\': '\\', Up: '↑', Down: '↓', Left: '←', Right: '→', Enter: '↩', Tab: '⇥', Escape: '⎋', Space: 'Space' }
 
 /** 'Alt+CmdOrCtrl+F' → '⌥⌘F' (ordem do Mac: ⌃ ⌥ ⇧ ⌘ e a tecla) */
 export function formatAccelerator(accelerator) {

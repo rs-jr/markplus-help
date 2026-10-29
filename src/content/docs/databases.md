@@ -63,9 +63,9 @@ In any document, type **@**. A small menu walks you through three steps:
 
 Use <kbd>↑</kbd> <kbd>↓</kbd> and <kbd>Enter</kbd>, or click. <kbd>←</kbd> goes back a step.
 
-**Example:** `@` › *Team* › *Rubens* › *rsanti@gmail.com* writes **@rsanti@gmail.com** in your text.
+**Example:** `@` › *Team* › *Ana Ribeiro* › *ana@cafehandbook.example* writes **@ana@cafehandbook.example** in your text.
 
-- **Shortcut:** type a few letters right after `@` (like `@rsanti`). Matching rows from any database appear under **Rows**, and choosing one jumps straight to step 3.
+- **Shortcut:** type a few letters right after `@` (like `@ana`). Matching rows from any database appear under **Rows**, and choosing one jumps straight to step 3.
 - Nobody with that name yet? In step 2, type the name and choose **Create "…"** to add the row on the spot.
 
 Then:

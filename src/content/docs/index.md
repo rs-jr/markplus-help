@@ -15,7 +15,8 @@ hero:
       variant: minimal
 ---
 
-![MarkPlus window: a document with its pages in the sidebar and the Claude chat on the right](../../assets/screenshot.jpg)
+<img class="shot shot-hero shot-light" src="screenshots/hero-light.webp" width="1280" alt="MarkPlus window: a document with its pages in the sidebar and the Claude chat on the right" />
+<img class="shot shot-hero shot-dark" src="screenshots/hero-dark.webp" width="1280" alt="MarkPlus window: a document with its pages in the sidebar and the Claude chat on the right" />
 
 ## What you can do with MarkPlus
 

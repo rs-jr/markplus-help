@@ -363,4 +363,28 @@ export const scenes = [
       return { clip: { x: p.x - 40, y: p.y - 16, width: 420, height: 440 } }
     },
   },
+
+  // Página inicial da ajuda: a janela inteira, com o chat do Claude aberto
+  {
+    name: 'hero',
+    settle: 1500,
+    run: async (page, { app }) => {
+      await menu(app, 'width-wide')
+      await openDocument(page, 'Product Overview')
+      // A página "Team": cards com fotos e colunas (mais variado que a capa do documento)
+      await page.getByText('Pilot cafés', { exact: true }).first().click()
+      await page.waitForTimeout(1200)
+      await menu(app, 'toggle-ai-chat')
+      await page.waitForTimeout(1000)
+      // Um pedido escrito no campo do chat (não é enviado)
+      await page.getByPlaceholder(/^Ask about/).fill('Add a table comparing the two pilot cafés: shops, city and start date')
+      // Botões da janela (a captura é só da página, sem a barra de título do macOS)
+      await page.addStyleTag({
+        content: `body::after { content: ""; position: fixed; z-index: 9999; top: 18px; left: 20px; width: 12px; height: 12px;
+          border-radius: 50%; background: #ff5f57; box-shadow: 20px 0 0 #febc2e, 40px 0 0 #28c840; }`,
+      })
+      await page.mouse.move(640, 790)
+      return null
+    },
+  },
 ]

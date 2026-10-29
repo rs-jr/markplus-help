@@ -63,6 +63,7 @@ async function launch(userData, theme) {
     // A barra flutuante de formatação cobriria o conteúdo nos recortes
     localStorage.setItem('markdown-editor-show-toolbar', 'false')
     localStorage.setItem('markplus-page-view', 'false')
+    localStorage.setItem('markplus-show-ai-chat', 'false')
   }, theme)
   await page.reload()
   await page.waitForLoadState('domcontentloaded')

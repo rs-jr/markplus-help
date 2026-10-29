@@ -23,8 +23,8 @@ kbd {
   white-space: nowrap;
 }
 
-/* Print da janela na página inicial: cantos e sombra de janela do macOS */
-img[alt^="MarkPlus window"] {
+/* Página inicial: a janela inteira, com cantos e sombra de janela do macOS */
+.shot-hero {
   display: block;
   width: 100%;
   height: auto;

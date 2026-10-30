@@ -110,6 +110,30 @@ You can also let other AI apps work with your documents: **Claude Desktop**, **C
 
 These apps can work even when MarkPlus is closed. When a document was changed that way, its card shows **Edited by…** until you open it.
 
+<!-- illustration:ai-apps -->
+
+<svg class="illo" viewBox="0 0 520 196" width="520" role="img" aria-label="Claude Desktop, Cursor and VS Code work directly with the documents in the workspace folder, even while MarkPlus is closed">
+<path class="accent" d="M152 46Q192 46 222 89.5"/>
+<rect class="paper" x="114" y="28" width="36" height="36" rx="9"/>
+<path class="fill-accent" d="M132 38C133 44 134 45 140 46C134 47 133 48 132 54C131 48 130 47 124 46C130 45 131 44 132 38Z"/>
+<text x="102" y="50" text-anchor="end" class="sub">Claude Desktop</text>
+<path class="accent" d="M152 104Q192 104 222 104"/>
+<rect class="paper" x="114" y="86" width="36" height="36" rx="9"/>
+<path class="fill-accent" d="M132 96C133 102 134 103 140 104C134 105 133 106 132 112C131 106 130 105 124 104C130 103 131 102 132 96Z"/>
+<text x="102" y="108" text-anchor="end" class="sub">Cursor</text>
+<path class="accent" d="M152 162Q192 162 222 118.5"/>
+<rect class="paper" x="114" y="144" width="36" height="36" rx="9"/>
+<path class="fill-accent" d="M132 154C133 160 134 161 140 162C134 163 133 164 132 170C131 164 130 163 124 162C130 161 131 160 132 154Z"/>
+<text x="102" y="166" text-anchor="end" class="sub">VS Code</text>
+<g transform="translate(224 72)"><path class="paper" d="M4 0H31.3l6 6H88a4 4 0 0 1 4 4V60a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><g transform="translate(16 -20) rotate(-6 15 20)"><path class="paper" d="M0 0H22.5L30 7.5V40H0Z"/><path d="M22.5 0V7.5H30"/><path class="line" d="M4.8 12H23.4"/><path class="line" d="M4.8 18H16"/></g><g transform="translate(48 -24) rotate(5 15 20)"><path class="paper" d="M0 0H22.5L30 7.5V40H0Z"/><path d="M22.5 0V7.5H30"/><path class="line" d="M4.8 12H23.4"/><path class="line" d="M4.8 18H16"/></g><path class="paper" d="M0 18a4 4 0 0 1 4-4H88a4 4 0 0 1 4 4V60a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
+<text x="270" y="176" text-anchor="middle" class="sub">Workspace folder</text>
+<path class="dash" d="M320 104Q340 104 356 104"/>
+<g transform="translate(360 60)"><rect class="paper dash" x="0" y="0" width="130" height="90" rx="8"/><path class="dash" d="M0 18H130"/><circle class="dot" cx="12" cy="9" r="2.5"/><circle class="dot" cx="20" cy="9" r="2.5"/><circle class="dot" cx="28" cy="9" r="2.5"/><path class="line dash" d="M16 36H106"/><path class="line dash" d="M16 48H106"/><path class="line dash" d="M16 60H106"/><path class="line dash" d="M16 72H70"/></g>
+<text x="425" y="176" text-anchor="middle" class="sub">MarkPlus can be closed</text>
+</svg>
+
+<!-- /illustration -->
+
 :::note
 The chat, **Ask Claude** and the suggestions need **Claude Code** to be connected. The other apps work from their own window.
 :::

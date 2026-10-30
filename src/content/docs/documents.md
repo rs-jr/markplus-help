@@ -19,6 +19,23 @@ Press <kbd>⌘N</kbd>, or click **New document** above the document list. MarkPl
 | Images | Inside the document | In a folder next to it |
 | Opens in other apps | No, only in MarkPlus | Yes, in any text editor |
 
+<!-- illustration:mdoc-vs-md -->
+
+<svg class="illo" viewBox="0 0 520 214" width="520" role="img" aria-label="A .mdoc file with text, a picture and an attachment inside; a .md file whose pictures are in an assets folder next to it">
+<g transform="translate(60 18)"><path class="paper accent" d="M0 0H108L120 12V150H0Z"/><path class="accent" d="M108 0V12H120"/><path class="line" d="M14 22H94"/>,<path class="line" d="M14 31H94"/>,<path class="line" d="M14 40H62"/><g transform="translate(14 52)"><rect class="paper" x="0" y="0" width="64" height="42" rx="3"/><circle cx="44.8" cy="12.6" r="4.2"/><path d="M6.4 35.7L24.3 18.9L37.1 29.4L46.1 23.1L57.6 35.7"/></g><rect class="paper" x="14" y="106" width="92" height="24" rx="6"/><path d="M24 123V112a3.5 3.5 0 0 1 7 0v10a2 2 0 0 1-4 0v-9"/><path class="line" d="M40 118H90"/></g>
+<text x="120" y="192" text-anchor="middle" class="label">.mdoc</text>
+<text x="120" y="208" text-anchor="middle" class="sub">Everything in one file</text>
+<g transform="translate(296 28)"><path class="paper" d="M0 0H88L100 12V130H0Z"/><path d="M88 0V12H100"/><path class="line" d="M14 24H76"/>,<path class="line" d="M14 33H76"/>,<path class="line" d="M14 42H51.2"/><g transform="translate(14 56)"><rect class="paper dash" x="0" y="0" width="50" height="34" rx="3"/><circle class="dash" cx="35" cy="10.2" r="3.4"/><path class="dash" d="M5 28.9L19 15.3L29 23.8L36 18.7L45 28.9"/></g><path class="line" d="M14 106H76"/>,<path class="line" d="M14 115H51.2"/></g>
+<path class="dash" d="M364 101Q392 101 420 108"/>
+<path d="M414.2 109.5L420 108L415.6 103.9"/>
+<g transform="translate(424 80)"><path class="paper" d="M4 0H25.8l6 6H72a4 4 0 0 1 4 4V56a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><g transform="translate(10 -4)"><rect class="paper" x="0" y="0" width="30" height="24" rx="3"/><circle cx="21" cy="7.2" r="2.4"/><path d="M3 20.4L11.4 10.8L17.4 16.8L21.6 13.2L27 20.4"/></g><g transform="translate(34 -8)"><rect class="paper" x="0" y="0" width="30" height="24" rx="3"/><circle cx="21" cy="7.2" r="2.4"/><path d="M3 20.4L11.4 10.8L17.4 16.8L21.6 13.2L27 20.4"/></g><path class="paper" d="M0 18a4 4 0 0 1 4-4H72a4 4 0 0 1 4 4V56a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
+<text x="462" y="128" text-anchor="middle" class="sub">assets</text>
+<text x="398" y="192" text-anchor="middle" class="label">.md</text>
+<text x="398" y="208" text-anchor="middle" class="sub">Pictures in a folder next to it</text>
+</svg>
+
+<!-- /illustration -->
+
 **In short:** choose **.mdoc**, unless you need to open the file in another app.
 
 In a `.md` document, the options it can't keep are turned off. Point at one and it says **Only available in .mdoc documents**.

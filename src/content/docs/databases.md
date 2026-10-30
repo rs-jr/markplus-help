@@ -58,6 +58,38 @@ Photos and pictures can be dragged in, pasted or chosen from your Mac. They're s
 
 ## Mention a row with @
 
+A mention always shows the row as it is now: change the row once and every mention follows.
+
+<!-- illustration:database-mention -->
+
+<svg class="illo" viewBox="0 0 520 182" width="520" role="img" aria-label="A row of the People database, Ana, mentioned as @Ana in two documents">
+<path class="accent dash" d="M86 88Q132 88 178 88"/>
+<path class="accent dash" d="M342 88Q370 88 392 108"/>
+<g transform="translate(30 40)"><path class="paper" d="M0 0H98L110 12V104H0Z"/><path d="M98 0V12H110"/><path class="line" d="M12 24H92"/>,<path class="line" d="M12 34H60"/><rect class="soft-accent accent" x="12" y="40" width="44" height="16" rx="8"/><text x="34" y="51.5" text-anchor="middle" class="t accent">@Ana</text><path class="line" d="M12 72H92"/>,<path class="line" d="M12 82H60"/></g>
+<g transform="translate(380 40)"><path class="paper" d="M0 0H98L110 12V104H0Z"/><path d="M98 0V12H110"/><path class="line" d="M12 24H92"/>,<path class="line" d="M12 34H92"/>,<path class="line" d="M12 44H60"/><rect class="soft-accent accent" x="12" y="60" width="44" height="16" rx="8"/><text x="34" y="71.5" text-anchor="middle" class="t accent">@Ana</text><path class="line" d="M12 90H48"/></g>
+<rect class="paper" x="180" y="30" width="160" height="120" rx="6"/>
+<rect class="soft-accent" x="181" y="77" width="158" height="22" rx="0"/>
+<path class="line" d="M180 52H340"/>
+<text x="194" y="45" text-anchor="start" class="t">People</text>
+<circle cx="198" cy="64" r="6"/>
+<path class="line" d="M212 64H262"/>
+<path class="line" d="M282 64H326"/>
+<circle class="accent" cx="198" cy="88" r="6"/>
+<text x="212" y="91.5" text-anchor="start" class="t accent">Ana Ribeiro</text>
+<path class="line" d="M282 88H326"/>
+<circle cx="198" cy="112" r="6"/>
+<path class="line" d="M212 112H262"/>
+<path class="line" d="M282 112H326"/>
+<circle cx="198" cy="136" r="6"/>
+<path class="line" d="M212 136H262"/>
+<path class="line" d="M282 136H326"/>
+<text x="85" y="172" text-anchor="middle" class="sub">Meeting notes</text>
+<text x="260" y="172" text-anchor="middle" class="sub">Database</text>
+<text x="435" y="172" text-anchor="middle" class="sub">Handbook</text>
+</svg>
+
+<!-- /illustration -->
+
 In any document, type **@**. A small menu walks you through three steps:
 
 1. **Database**: pick one, for example *People*.

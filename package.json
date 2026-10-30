@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "prebuild": "node scripts/generate-shortcuts.mjs",
+    "prebuild": "node scripts/generate-shortcuts.mjs && node scripts/illustrations.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

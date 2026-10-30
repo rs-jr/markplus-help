@@ -5,6 +5,19 @@ description: A step-by-step guide to building a set of documents that point to e
 
 Good documentation lets readers jump straight to what they need: "see the *Refunds* section", "this word is explained in the *Glossary*". In MarkPlus, these jumps are **cross-references**, links that go to an exact paragraph or section, even in another document.
 
+<!-- illustration:cross-reference -->
+
+<svg class="illo" viewBox="0 0 520 204" width="520" role="img" aria-label="A link in the Opening and closing document goes straight to the Espresso section of the Coffee recipes document">
+<g transform="translate(30 16)"><path class="paper" d="M0 0H178L190 12V160H0Z"/><path d="M178 0V12H190"/><text x="14" y="28" text-anchor="start" class="h">Opening</text><path class="line" d="M14 46H164"/>,<path class="line" d="M14 58H104"/><text x="14" y="83" text-anchor="start" class="t">Make a test</text><rect class="soft-accent accent" x="72" y="71" width="58" height="16" rx="8"/><text x="101" y="82.5" text-anchor="middle" class="t accent">Espresso</text><path class="line" d="M14 104H164"/>,<path class="line" d="M14 116H164"/>,<path class="line" d="M14 128H104"/></g>
+<g transform="translate(300 16)"><path class="paper" d="M0 0H178L190 12V160H0Z"/><path d="M178 0V12H190"/><rect class="soft-accent" x="8" y="12" width="166" height="56" rx="5"/><path class="accent" d="M8 16L8 64"/><text x="16" y="30" text-anchor="start" class="h">Espresso</text><path class="line" d="M16 46H156"/>,<path class="line" d="M16 58H100"/><path class="line" d="M14 88H164"/>,<path class="line" d="M14 100H104"/><text x="14" y="126" text-anchor="start" class="h">Cappuccino</text><path class="line" d="M14 140H154"/>,<path class="line" d="M14 152H98"/></g>
+<path class="accent" d="M166 95Q262 95 304 52"/>
+<path class="accent" d="M302.4 57.8L304 52L298.3 53.8"/>
+<text x="125" y="198" text-anchor="middle" class="sub">Opening and closing</text>
+<text x="395" y="198" text-anchor="middle" class="sub">Coffee recipes</text>
+</svg>
+
+<!-- /illustration -->
+
 This guide builds a small example from scratch: a **handbook for a coffee shop team**.
 
 ## The plan

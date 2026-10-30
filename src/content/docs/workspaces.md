@@ -7,6 +7,21 @@ A **workspace** is a project. Each one is a folder on your Mac, and MarkPlus sho
 
 **Example:** a *Work* workspace for meeting notes and reports, and a *Personal* one for recipes and trips. When you're in *Work*, your recipes stay out of the way.
 
+<!-- illustration:workspaces -->
+
+<svg class="illo" viewBox="0 0 520 214" width="520" role="img" aria-label="Two windows, each showing the documents of its own workspace folder: Work and Personal">
+<g transform="translate(30 8)"><rect class="paper" x="0" y="0" width="200" height="116" rx="8"/><path d="M0 18H200"/><circle class="dot" cx="12" cy="9" r="2.5"/><circle class="dot" cx="20" cy="9" r="2.5"/><circle class="dot" cx="28" cy="9" r="2.5"/><rect class="paper" x="16" y="30" width="48" height="34" rx="4"/>,<path class="line" d="M23 54H50"/><rect class="paper" x="76" y="30" width="48" height="34" rx="4"/>,<path class="line" d="M83 54H110"/><rect class="paper" x="136" y="30" width="48" height="34" rx="4"/>,<path class="line" d="M143 54H170"/><rect class="paper" x="16" y="72" width="48" height="34" rx="4"/>,<path class="line" d="M23 96H50"/><rect class="paper" x="76" y="72" width="48" height="34" rx="4"/>,<path class="line" d="M83 96H110"/><rect class="paper" x="136" y="72" width="48" height="34" rx="4"/>,<path class="line" d="M143 96H170"/></g>
+<path class="accent dash" d="M130 128L130 146"/>
+<g transform="translate(98 150)"><path class="paper accent" d="M4 0H21.8l6 6H60a4 4 0 0 1 4 4V40a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><path class="paper accent" d="M0 18a4 4 0 0 1 4-4H60a4 4 0 0 1 4 4V40a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
+<g transform="translate(290 8)"><rect class="paper" x="0" y="0" width="200" height="116" rx="8"/><path d="M0 18H200"/><circle class="dot" cx="12" cy="9" r="2.5"/><circle class="dot" cx="20" cy="9" r="2.5"/><circle class="dot" cx="28" cy="9" r="2.5"/><rect class="paper" x="16" y="30" width="48" height="34" rx="4"/>,<path class="line" d="M23 54H50"/><rect class="paper" x="76" y="30" width="48" height="34" rx="4"/>,<path class="line" d="M83 54H110"/><rect class="paper" x="136" y="30" width="48" height="34" rx="4"/>,<path class="line" d="M143 54H170"/><rect class="paper" x="16" y="72" width="48" height="34" rx="4"/>,<path class="line" d="M23 96H50"/><rect class="paper" x="76" y="72" width="48" height="34" rx="4"/>,<path class="line" d="M83 96H110"/><rect class="paper" x="136" y="72" width="48" height="34" rx="4"/>,<path class="line" d="M143 96H170"/></g>
+<path class="accent dash" d="M390 128L390 146"/>
+<g transform="translate(358 150)"><path class="paper accent" d="M4 0H21.8l6 6H60a4 4 0 0 1 4 4V40a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><path class="paper accent" d="M0 18a4 4 0 0 1 4-4H60a4 4 0 0 1 4 4V40a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
+<text x="130" y="210" text-anchor="middle" class="label">Work</text>
+<text x="390" y="210" text-anchor="middle" class="label">Personal</text>
+</svg>
+
+<!-- /illustration -->
+
 <img class="shot shot-light" src="../screenshots/workspace-home-light.webp" width="1280" alt="A workspace home page: cover, icon, name, description and pinned documents" />
 <img class="shot shot-dark" src="../screenshots/workspace-home-dark.webp" width="1280" alt="A workspace home page: cover, icon, name, description and pinned documents" />
 

@@ -17,6 +17,50 @@ Want to send the whole project, every document with its pictures and files, to s
 2. Choose **Workspace › Export as Web Page…** (or **File › Export as Web Page…** while editing).
 3. Pick where to save it. You get one file, for example `Coffee Handbook.html`.
 
+<!-- illustration:share-workspace -->
+
+<svg class="illo" viewBox="0 0 520 224" width="520" role="img" aria-label="The documents of a workspace packed into one .html file, sent to people on a laptop, a tablet and a phone">
+<g transform="translate(24 74)"><path class="paper" d="M4 0H38.1l6 6H108a4 4 0 0 1 4 4V76a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><g transform="translate(14 -22) rotate(-8 19 24)"><path class="paper" d="M0 0H28.5L38 9.5V48H0Z"/><path d="M28.5 0V9.5H38"/><path class="line" d="M6.1 14.4H29.6"/><path class="line" d="M6.1 21.1H29.6"/><path class="line" d="M6.1 27.8H20.2"/></g><g transform="translate(37 -30)"><path class="paper" d="M0 0H28.5L38 9.5V48H0Z"/><path d="M28.5 0V9.5H38"/><path class="line" d="M6.1 14.4H29.6"/><path class="line" d="M6.1 21.1H29.6"/><path class="line" d="M6.1 27.8H20.2"/></g><g transform="translate(60 -22) rotate(8 19 24)"><path class="paper" d="M0 0H28.5L38 9.5V48H0Z"/><path d="M28.5 0V9.5H38"/><path class="line" d="M6.1 14.4H29.6"/><path class="line" d="M6.1 21.1H29.6"/><path class="line" d="M6.1 27.8H20.2"/></g><path class="paper" d="M0 18a4 4 0 0 1 4-4H108a4 4 0 0 1 4 4V76a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
+<path class="dash" d="M128 56Q180 10 240 64"/>
+<g transform="translate(174 24) rotate(-12 8 10)"><path class="paper" d="M0 0H12L16 4V20H0Z"/><path d="M12 0V4H16"/></g>
+<path class="paper accent" d="M232 96L220 78H258L270 96"/>
+<path class="paper accent" d="M308 96L320 78H282L270 96"/>
+<g transform="translate(250 62) rotate(10 15 20)"><path class="paper" d="M0 0H22.5L30 7.5V40H0Z"/><path d="M22.5 0V7.5H30"/><path class="line" d="M4.8 12H23.4"/><path class="line" d="M4.8 18H16"/></g>
+<rect class="paper accent" x="232" y="96" width="76" height="56" rx="3"/>
+<circle class="accent" cx="270" cy="124" r="11"/>
+<ellipse class="accent" cx="270" cy="124" rx="4.5" ry="11"/>
+<path class="accent" d="M259 124H281"/>
+<path class="accent" d="M314 124Q350 44 384 44"/>
+<path class="accent" d="M378.7 46.9L384 44L378.7 41.1"/>
+<path class="accent" d="M314 124Q350 112 384 112"/>
+<path class="accent" d="M378.7 114.9L384 112L378.7 109.1"/>
+<path class="accent" d="M314 124Q350 180 384 180"/>
+<path class="accent" d="M378.7 182.9L384 180L378.7 177.1"/>
+<rect class="paper" x="400" y="28" width="46" height="30" rx="3"/>
+<path class="line" d="M407 38H437"/>
+<path class="line" d="M407 46H425"/>
+<path d="M394 62H452"/>
+<rect class="paper" x="408" y="92" width="30" height="40" rx="4"/>
+<path class="line" d="M414 103H432"/>
+<path class="line" d="M414 111H432"/>
+<path class="line" d="M414 119H424.8"/>
+<rect class="paper" x="413" y="162" width="20" height="36" rx="4"/>
+<path class="line" d="M418 173H428"/>
+<path class="line" d="M418 180H428"/>
+<path class="line" d="M418 187H424"/>
+<circle class="paper" cx="486" cy="35" r="7"/>
+<path d="M474 57a12 12 0 0 1 24 0"/>
+<circle class="paper" cx="486" cy="103" r="7"/>
+<path d="M474 125a12 12 0 0 1 24 0"/>
+<circle class="paper" cx="486" cy="171" r="7"/>
+<path d="M474 193a12 12 0 0 1 24 0"/>
+<text x="80" y="214" text-anchor="middle" class="label">Workspace</text>
+<text x="270" y="214" text-anchor="middle" class="label accent">One .html file</text>
+<text x="442" y="214" text-anchor="middle" class="label">Any browser</text>
+</svg>
+
+<!-- /illustration -->
+
 Send that file by email, AirDrop or a shared folder. The other person double-clicks it and it opens in their web browser, on any computer, tablet or phone. Nothing to install:
 
 - it opens on the workspace's home page, just like in MarkPlus: the cover, the icon, the [description](../workspaces/#add-a-description) and every document as a card. Click the workspace name on the left to come back to it;

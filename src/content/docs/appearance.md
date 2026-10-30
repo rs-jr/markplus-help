@@ -28,6 +28,42 @@ With **Narrow (A4)**, lines break in about the same places as in a printed A4 pa
 
 ## Pages: continuous or one at a time
 
+<!-- illustration:page-view -->
+
+<svg class="illo" viewBox="0 0 520 200" width="520" role="img" aria-label="Continuous shows all the pages one after another; Single Page shows one page at a time with a page control">
+<rect class="paper" x="60" y="14" width="116" height="150" rx="6"/>
+<path class="bar" d="M74 32H130"/>
+<path class="line" d="M74 45H154"/>
+<path class="line" d="M74 54H154"/>
+<path class="line" d="M74 63H122"/>
+<path class="rule" d="M74 78H162"/>
+<path class="bar" d="M74 94H130"/>
+<path class="line" d="M74 107H154"/>
+<path class="line" d="M74 116H154"/>
+<path class="line" d="M74 125H122"/>
+<path class="rule" d="M74 140H162"/>
+<path class="bar" d="M74 154H130"/>
+<path d="M192 30L192 148"/>
+<path d="M194.9 35.3L192 30L189.1 35.3"/>
+<path d="M189.1 142.7L192 148L194.9 142.7"/>
+<text x="118" y="190" text-anchor="middle" class="label">Continuous</text>
+<rect class="paper" x="342" y="10" width="120" height="146" rx="6"/>
+<rect class="paper" x="336" y="16" width="120" height="146" rx="6"/>
+<rect class="paper" x="330" y="22" width="120" height="146" rx="6"/>
+<path class="bar" d="M344 40H400"/>
+<path class="line" d="M344 53H424"/>
+<path class="line" d="M344 62H424"/>
+<path class="line" d="M344 71H392"/>
+<path class="line" d="M344 90H424"/>
+<path class="line" d="M344 99H424"/>
+<path class="line" d="M344 108H392"/>
+<rect class="soft-accent accent" x="384" y="142" width="56" height="17" rx="8.5"/>
+<text x="412" y="153.5" text-anchor="middle" class="t accent">‹ 3 / 12 ›</text>
+<text x="396" y="190" text-anchor="middle" class="label">Single Page</text>
+</svg>
+
+<!-- /illustration -->
+
 Each big title starts a new page. You can read them in two ways. Switch with the button at the top or press <kbd>⌥⌘P</kbd>:
 
 - **Continuous**: all the pages one after another, like a long scroll.

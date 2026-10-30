@@ -46,3 +46,35 @@ kbd {
 :root[data-theme="dark"] .shot-light {
   display: none;
 }
+
+/* Ilustrações conceituais (scripts/illustrations.mjs): SVG inline, sem fundo, nos cinzas do tema
+   com destaque na cor de acento. O .paper tem a cor da página, para cobrir o que fica atrás */
+.illo {
+  display: block;
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
+  margin: 1.75rem auto;
+  fill: none;
+  stroke: var(--sl-color-gray-3);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  & .paper { fill: var(--sl-color-bg); }
+  & .line, & .rule { stroke: var(--sl-color-gray-4); }
+  & .rule { stroke-dasharray: 2 4; }
+  & .bar { stroke-width: 4; }
+  & .dash { stroke-dasharray: 3 4; }
+  & .dot { fill: var(--sl-color-gray-4); stroke: none; }
+  & .accent { stroke: var(--sl-color-accent); }
+  & .soft-accent { fill: var(--sl-color-accent-low); }
+  & rect.soft-accent:not(.accent) { stroke: none; }
+  & .fill-accent { fill: var(--sl-color-accent); stroke: none; }
+  & text { stroke: none; fill: var(--sl-color-gray-2); font-family: var(--sl-font); }
+  & text.label { font-size: 12.5px; font-weight: 600; }
+  & text.sub { font-size: 11px; fill: var(--sl-color-gray-3); }
+  & text.h { font-size: 11.5px; font-weight: 600; }
+  & text.t { font-size: 9.5px; fill: var(--sl-color-gray-3); }
+  & text.accent { fill: var(--sl-color-accent); stroke: none; }
+}

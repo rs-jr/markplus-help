@@ -6,7 +6,7 @@
   --sl-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Fundo e cinzas no tom do app (globals.css: --ui-color sem saturação; no escuro, o fundo é l 17%).
+/* Fundo e cinzas no tom do app (globals.css: --ui-color sem saturação).
    Os cinzas do Starlight são azulados; aqui são neutros, como no app */
 :root {
   --sl-color-white: hsl(0 0% 100%);
@@ -17,10 +17,11 @@
   --sl-color-gray-5: hsl(0 0% 28%);
   --sl-color-gray-6: hsl(0 0% 21%);
   --sl-color-gray-7: hsl(0 0% 19%);
-  --sl-color-black: hsl(0 0% 17%);
+  /* Fundo do conteúdo */
+  --sl-color-black: #222222;
   /* Barra lateral e topo um pouco mais escuros que o conteúdo, como a sidebar do app */
-  --sl-color-bg-nav: #262628;
-  --sl-color-bg-sidebar: #262628;
+  --sl-color-bg-nav: #1e1e1e;
+  --sl-color-bg-sidebar: #1e1e1e;
 }
 
 :root[data-theme="light"] {

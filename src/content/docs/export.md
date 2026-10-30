@@ -64,7 +64,7 @@ Want to send the whole project, every document with its pictures and files, to s
 Send that file by email, AirDrop or a shared folder. The other person double-clicks it and it opens in their web browser, on any computer, tablet or phone. Nothing to install:
 
 - it opens on the workspace's home page, just like in MarkPlus: the cover, the icon, the [description](../workspaces/#add-a-description) and every document as a card. Click the workspace name on the left to come back to it;
-- every document is listed on the left with its [icon](../documents/#document-icon): [pinned documents](../workspaces/#pin-documents) first, then documents and databases apart, with the pages of the one that's open;
+- every document is listed on the left with its [icon](../documents/#document-icon): [pinned documents](../workspaces/#pin-documents) first, then documents, then databases in a group you click to open, with the pages of the one that's open;
 - read a document all at once or [one page at a time](../appearance/#pages-continuous-or-one-at-a-time), with the buttons at the top right (**Continuous** or **Single page**). One page at a time, turn pages with <kbd>←</kbd> and <kbd>→</kbd> or the arrows at the bottom right. The browser remembers your choice;
 - pictures, videos and attached files are all there;
 - links between documents work, so readers can jump from section to section;

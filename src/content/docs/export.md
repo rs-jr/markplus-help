@@ -99,6 +99,37 @@ Then choose where to save it. MarkPlus remembers your choices for next time.
 
 ### What you get
 
+<!-- illustration:pdf-links -->
+
+<svg class="illo" viewBox="0 0 520 214" width="520" role="img" aria-label="In the PDF, a link to the same document still jumps to its page; a link to another document becomes a note like (See: Recipes › Espresso)">
+<g transform="translate(20 20)"><path class="paper" d="M0 0H144L156 12V164H0Z"/><path d="M144 0V12H156"/><path class="line" d="M12 20H132"/>,<path class="line" d="M12 30H84"/><text x="12" y="58" text-anchor="start" class="t">Make a</text><rect class="soft-accent accent" x="50" y="47" width="54" height="16" rx="8"/>,<text x="77" y="58.5" text-anchor="middle" class="t accent">Espresso</text><path class="line" d="M12 82H132"/>,<path class="line" d="M12 92H84"/><text x="12" y="120" text-anchor="start" class="t">Grind as in</text><rect class="paper" x="70" y="108" width="66" height="17" rx="8.5"/><g transform="translate(76 112)"><path class="paper" d="M0 0H5.3L7 1.8V9H0Z"/><path d="M5.3 0V1.8H7"/></g><text x="88" y="120" text-anchor="start" class="t">Recipes</text><path class="line" d="M12 144H84"/></g>
+<path class="accent" d="M184 102Q200 102 214 102"/>
+<path class="accent" d="M208.7 104.9L214 102L208.7 99.1"/>
+<rect class="paper" x="224" y="20" width="146" height="164" rx="4"/>
+<rect class="paper" x="384" y="20" width="116" height="164" rx="4"/>
+<text x="236" y="36" text-anchor="start" class="t">PDF · page 1</text>
+<text x="396" y="36" text-anchor="start" class="t">page 3</text>
+<path class="line" d="M236 52H302"/>
+<text x="236" y="76" text-anchor="start" class="t">Make a</text>
+<text x="274" y="76" text-anchor="start" class="link accent">Espresso</text>
+<path class="accent" d="M274 79H320"/>
+<path class="line" d="M236 98H302"/>
+<text x="236" y="122" text-anchor="start" class="t">Grind as in Recipes</text>
+<text x="236" y="136" text-anchor="start" class="t">(See: Recipes › Espresso)</text>
+<path class="line" d="M236 158H302"/>
+<text x="396" y="62" text-anchor="start" class="h">Espresso</text>
+<path class="line" d="M396 78H486"/>
+<path class="line" d="M396 89H486"/>
+<path class="line" d="M396 100H486"/>
+<path class="line" d="M396 111H450"/>
+<path class="accent" d="M322 70Q352 40 392 56"/>
+<path class="accent" d="M386 56.7L392 56L388.2 51.4"/>
+<text x="98" y="206" text-anchor="middle" class="sub">Document</text>
+<text x="362" y="206" text-anchor="middle" class="sub">PDF</text>
+</svg>
+
+<!-- /illustration -->
+
 - Links to other parts of the same document **still work**: click and the PDF jumps to that page.
 - Links to **other documents** turn into a note, for example "(See: Recipes › Espresso)".
 - Web links open in the browser.

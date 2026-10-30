@@ -7,6 +7,28 @@ description: Titles and pages, lists, code, images, videos and attached files.
 
 Each **big title** (Heading 1) starts a new page. Smaller titles (Heading 2 to 4) are sections inside that page.
 
+<!-- illustration:titles-pages -->
+
+<svg class="illo" viewBox="0 0 520 206" width="520" role="img" aria-label="Each big title (#) in a document becomes a page in the sidebar, with smaller titles inside it">
+<g transform="translate(30 10)"><path class="paper" d="M0 0H178L190 12V172H0Z"/><path d="M178 0V12H190"/><text x="14" y="34" text-anchor="start" class="h"># Pancakes</text>,<path class="line" d="M14 45H104"/><text x="14" y="70" text-anchor="start" class="t">## Ingredients</text>,<path class="line" d="M14 81H104"/><text x="14" y="100" text-anchor="start" class="t">## Steps</text>,<path class="line" d="M14 111H104"/><text x="14" y="136" text-anchor="start" class="h"># Lemon cake</text>,<path class="line" d="M14 147H104"/></g>
+<path class="accent dash flow" d="M186 40Q260 40 318 54"/>
+<path class="accent" d="M312.2 55.6L318 54L313.6 50"/>
+<path class="accent dash flow" d="M186 142Q260 142 318 126"/>
+<path class="accent" d="M313.7 130.2L318 126L312.2 124.6"/>
+<rect class="paper" x="310" y="20" width="180" height="150" rx="10"/>
+<text x="324" y="40" text-anchor="start" class="t">Pages</text>
+<path d="M326 50l4 4l-4 4"/>
+<text x="338" y="58" text-anchor="start" class="h accent">Pancakes</text>
+<text x="352" y="82" text-anchor="start" class="t">Ingredients</text>
+<text x="352" y="106" text-anchor="start" class="t">Steps</text>
+<path d="M326 122l4 4l-4 4"/>
+<text x="338" y="130" text-anchor="start" class="h accent">Lemon cake</text>
+<text x="125" y="200" text-anchor="middle" class="sub">Document</text>
+<text x="400" y="200" text-anchor="middle" class="sub">Sidebar</text>
+</svg>
+
+<!-- /illustration -->
+
 **Example:** a recipe book where each recipe is a page:
 
 ```text

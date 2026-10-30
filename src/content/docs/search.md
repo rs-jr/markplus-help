@@ -54,6 +54,37 @@ Click the **wand** button to find things by their kind, without knowing exactly 
 
 Press <kbd>⇧⌘F</kbd> to search every document in the workspace at once. Results are grouped by document, with a short preview of each match.
 
+<!-- illustration:search-workspace -->
+
+<svg class="illo" viewBox="0 0 520 206" width="520" role="img" aria-label="Search all documents for a word; clicking a result opens the document right at the match">
+<rect class="paper" x="30" y="18" width="210" height="30" rx="15"/>
+<circle cx="50" cy="32" r="6"/>
+<path d="M54 36L59 41"/>
+<text x="68" y="37" text-anchor="start" class="t">espresso</text>
+<rect class="paper accent" x="30" y="64" width="210" height="30" rx="6"/>
+<g transform="translate(40 71)"><path class="paper" d="M0 0H9L12 3V16H0Z"/><path d="M9 0V3H12"/></g>
+<path class="line" d="M62 75H150"/>
+<rect class="soft-accent" x="62" y="81" width="48" height="8" rx="3"/>
+<path class="line" d="M116 85H200"/>
+<rect class="paper" x="30" y="102" width="210" height="30" rx="6"/>
+<g transform="translate(40 109)"><path class="paper" d="M0 0H9L12 3V16H0Z"/><path d="M9 0V3H12"/></g>
+<path class="line" d="M62 113H150"/>
+<rect class="soft-accent" x="62" y="119" width="48" height="8" rx="3"/>
+<path class="line" d="M116 123H200"/>
+<rect class="paper" x="30" y="140" width="210" height="30" rx="6"/>
+<g transform="translate(40 147)"><path class="paper" d="M0 0H9L12 3V16H0Z"/><path d="M9 0V3H12"/></g>
+<path class="line" d="M62 151H150"/>
+<rect class="soft-accent" x="62" y="157" width="48" height="8" rx="3"/>
+<path class="line" d="M116 161H200"/>
+<path class="accent" d="M242 79Q284 79 330 100"/>
+<path class="accent" d="M324 100.4L330 100L326.4 95.2"/>
+<g transform="translate(330 14)"><path class="paper" d="M0 0H148L160 12V176H0Z"/><path d="M148 0V12H160"/><path class="line" d="M14 22H132"/>,<path class="line" d="M14 33H132"/>,<path class="line" d="M14 44H132"/>,<path class="line" d="M14 55H84.8"/><rect class="soft-accent pulse" x="12" y="74" width="136" height="26" rx="4"/><path class="accent" d="M18 82H120"/><path class="accent" d="M18 92H90"/><path class="line" d="M14 120H132"/>,<path class="line" d="M14 131H132"/>,<path class="line" d="M14 142H132"/>,<path class="line" d="M14 153H84.8"/></g>
+<text x="135" y="200" text-anchor="middle" class="sub">Search all documents</text>
+<text x="410" y="200" text-anchor="middle" class="sub">Opens at the match</text>
+</svg>
+
+<!-- /illustration -->
+
 <img class="shot shot-light" src="../screenshots/search-workspace-light.webp" width="672" alt="Results of a search in every document of the workspace" />
 <img class="shot shot-dark" src="../screenshots/search-workspace-dark.webp" width="672" alt="Results of a search in every document of the workspace" />
 

@@ -92,6 +92,21 @@ If the document is already open, MarkPlus brings its window to the front.
 
 Drag a tab out of the window and drop it anywhere: it opens in its own window. You can also right-click a tab and choose **Move to New Window**.
 
+<!-- illustration:side-by-side -->
+
+<svg class="illo" viewBox="0 0 520 206" width="520" role="img" aria-label="Drag a tab out of the window to open the document in a window of its own, side by side with the other one">
+<g transform="translate(20 36)"><rect class="paper" x="0" y="0" width="220" height="150" rx="8"/><path d="M0 18H220"/><circle class="dot" cx="12" cy="9" r="2.5"/><circle class="dot" cx="20" cy="9" r="2.5"/><circle class="dot" cx="28" cy="9" r="2.5"/><rect class="paper" x="64" y="2" width="60" height="15" rx="5"/><rect class="dash" x="128" y="2" width="60" height="15" rx="5"/><path class="line" d="M18 40H188"/>,<path class="line" d="M18 53H188"/>,<path class="line" d="M18 66H188"/>,<path class="line" d="M18 79H188"/>,<path class="line" d="M18 92H188"/>,<path class="line" d="M18 105H188"/>,<path class="line" d="M18 118H120"/></g>
+<g transform="translate(280 36)"><rect class="paper" x="0" y="0" width="220" height="150" rx="8"/><path d="M0 18H220"/><circle class="dot" cx="12" cy="9" r="2.5"/><circle class="dot" cx="20" cy="9" r="2.5"/><circle class="dot" cx="28" cy="9" r="2.5"/><rect class="paper accent" x="64" y="2" width="60" height="15" rx="5"/><path class="line" d="M18 40H188"/>,<path class="line" d="M18 53H188"/>,<path class="line" d="M18 66H188"/>,<path class="line" d="M18 79H188"/>,<path class="line" d="M18 92H188"/>,<path class="line" d="M18 105H188"/>,<path class="line" d="M18 118H120"/></g>
+<path class="dash flow" d="M178 36Q186 18 208 14"/>
+<g class="bob"><rect class="paper accent" x="210" y="6" width="60" height="16" rx="5"/></g>
+<path class="accent" d="M272 14Q340 10 370 34"/>
+<path class="accent" d="M364.1 33L370 34L367.7 28.5"/>
+<text x="130" y="202" text-anchor="middle" class="sub">Research notes</text>
+<text x="390" y="202" text-anchor="middle" class="sub">Report</text>
+</svg>
+
+<!-- /illustration -->
+
 **Example:** keep the research notes on the left and the report you're writing on the right.
 
 A document can only be open in one window at a time. If you try to open it again, MarkPlus takes you to the window where it already is.

@@ -590,6 +590,170 @@ const illustrations = {
       text(298, 224, 'Project page'),
     ]),
 
+  // Primeiros passos: workspace → documento → escrever → linkar → compartilhar
+  'first-steps': () => {
+    const xs = [52, 156, 260, 364, 468]
+    const labels = ['Workspace', 'Document', 'Write', 'Link', 'Share']
+    return svg(520, 156, 'Five steps: create a workspace, create a document, write, link one place to another, share', [
+      xs.slice(0, 4).map((x) => curve(x + 32, 70, x + 52, 70, x + 72, 70)),
+      xs.map((x, i) => [stepNumber(x, 14, i + 1, i * 0.5), text(x, 144, labels[i], 'sub')]),
+      folder(26, 48, 52, 40),
+      sheet(140, 44, 32, 44, { lines: 3 }),
+      sheet(242, 44, 36, 48, { inner: [line(6, 14, 24, 14, 'bar'), textLines(6, 26, 22, 2, 8), line(22, 38, 22, 46, 'accent')] }),
+      sheet(340, 40, 26, 34, { lines: 2 }),
+      sheet(362, 62, 26, 34, { lines: 2 }),
+      curve(360, 54, 384, 40, 386, 64, { arrow: true }),
+      `<path class="accent" d="M446 76L492 56L476 98L466 82Z"/>`,
+      line(466, 82, 492, 56, 'accent'),
+    ])
+  },
+
+  // Títulos grandes viram páginas na barra lateral
+  'titles-pages': () => {
+    const rows = [
+      ['# Pancakes', 'Pancakes', 34, 38, false],
+      ['## Ingredients', 'Ingredients', 70, 62, true],
+      ['## Steps', 'Steps', 100, 86, true],
+      ['# Lemon cake', 'Lemon cake', 136, 110, false],
+    ]
+    return svg(520, 206, 'Each big title (#) in a document becomes a page in the sidebar, with smaller titles inside it', [
+      sheet(30, 10, 190, 172, {
+        inner: rows.map(([md, , y, , sub]) => [text(14, y, md, sub ? 't' : 'h', { anchor: 'start' }), textLines(14, y + 11, 150, sub ? 1 : 1, 9)]),
+      }),
+      rows.map(([, , y, sy, sub]) => (sub ? '' : curve(186, 10 + y - 4, 260, 10 + y - 4, 318, 20 + sy - 4, { dashed: true }))),
+      rect(310, 20, 180, 150, 10, 'paper'),
+      text(324, 40, 'Pages', 't', { anchor: 'start' }),
+      rows.map(([, name, , sy, sub]) => [
+        sub ? '' : `<path d="M${326} ${20 + sy - 8}l4 4l-4 4"/>`,
+        text(sub ? 352 : 338, 20 + sy, name, sub ? 't' : 'h', { anchor: 'start', accent: !sub }),
+      ]),
+      text(125, 200, 'Document', 'sub'),
+      text(400, 200, 'Sidebar', 'sub'),
+    ])
+  },
+
+  // Busca no workspace: um resultado abre o documento já na ocorrência
+  'search-workspace': () =>
+    svg(520, 206, 'Search all documents for a word; clicking a result opens the document right at the match', [
+      rect(30, 18, 210, 30, 15, 'paper'),
+      `<circle cx="50" cy="32" r="6"/>`,
+      line(54, 36, 59, 41, ''),
+      text(68, 37, 'espresso', 't', { anchor: 'start' }),
+      [0, 1, 2].map((i) => {
+        const y = 64 + i * 38
+        return [
+          rect(30, y, 210, 30, 6, i === 0 ? 'paper accent' : 'paper'),
+          sheet(40, y + 7, 12, 16),
+          line(62, y + 11, 150, y + 11),
+          rect(62, y + 17, 48, 8, 3, 'soft-accent'),
+          line(116, y + 21, 200, y + 21),
+        ]
+      }),
+      curve(242, 79, 284, 79, 330, 100),
+      sheet(330, 14, 160, 176, {
+        inner: [
+          textLines(14, 22, 118, 4, 11),
+          rect(12, 74, 136, 26, 4, 'soft-accent pulse'),
+          line(18, 82, 120, 82, 'accent'),
+          line(18, 92, 90, 92, 'accent'),
+          textLines(14, 120, 118, 4, 11),
+        ],
+      }),
+      text(135, 200, 'Search all documents', 'sub'),
+      text(410, 200, 'Opens at the match', 'sub'),
+    ]),
+
+  // PDF: links no mesmo documento continuam clicáveis; para outro documento viram uma nota
+  'pdf-links': () =>
+    svg(520, 214, 'In the PDF, a link to the same document still jumps to its page; a link to another document becomes a note like (See: Recipes › Espresso)', [
+      sheet(20, 20, 156, 164, {
+        inner: [
+          textLines(12, 20, 120, 2, 10),
+          text(12, 58, 'Make a', 't', { anchor: 'start' }),
+          pill(50, 47, 'Espresso', { w: 54 }),
+          textLines(12, 82, 120, 2, 10),
+          text(12, 120, 'Grind as in', 't', { anchor: 'start' }),
+          rect(70, 108, 66, 17, 8.5, 'paper'),
+          sheet(76, 112, 7, 9),
+          text(88, 120, 'Recipes', 't', { anchor: 'start' }),
+          textLines(12, 144, 120, 1),
+        ],
+      }),
+      curve(184, 102, 200, 102, 214, 102),
+      rect(224, 20, 146, 164, 4, 'paper'),
+      rect(384, 20, 116, 164, 4, 'paper'),
+      text(236, 36, 'PDF · page 1', 't', { anchor: 'start' }),
+      text(396, 36, 'page 3', 't', { anchor: 'start' }),
+      textLines(236, 52, 110, 1),
+      text(236, 76, 'Make a', 't', { anchor: 'start' }),
+      text(274, 76, 'Espresso', 'link', { anchor: 'start', accent: true }),
+      line(274, 79, 320, 79, 'accent'),
+      textLines(236, 98, 110, 1),
+      text(236, 122, 'Grind as in Recipes', 't', { anchor: 'start' }),
+      text(236, 136, '(See: Recipes › Espresso)', 't', { anchor: 'start' }),
+      textLines(236, 158, 110, 1),
+      text(396, 62, 'Espresso', 'h', { anchor: 'start' }),
+      textLines(396, 78, 90, 4, 11),
+      curve(322, 70, 352, 40, 392, 56),
+      text(98, 206, 'Document', 'sub'),
+      text(362, 206, 'PDF', 'sub'),
+    ]),
+
+  // Descrição do workspace: vai para a página exportada e para o Claude
+  'workspace-description': () =>
+    svg(520, 206, 'The workspace description appears on the exported web page and gives Claude the context of the project', [
+      rect(20, 30, 196, 136, 10, 'paper'),
+      rect(21, 31, 194, 34, 0, 'soft'),
+      text(34, 84, 'Cafe Handbook', 'h', { anchor: 'start' }),
+      rect(30, 94, 176, 52, 6, 'paper accent'),
+      line(40, 108, 190, 108, 'accent'),
+      line(40, 120, 180, 120, 'accent'),
+      line(40, 132, 140, 132, 'accent'),
+      curve(218, 104, 260, 70, 300, 62),
+      curve(218, 120, 260, 150, 300, 154),
+      appWindow(304, 14, 192, 96, { inner: [line(14, 34, 100, 34, 'bar'), line(14, 48, 170, 48, 'accent'), line(14, 58, 140, 58, 'accent'), miniCards(14, 68, 4, { w: 28, h: 20, gap: 8, accent: false })] }),
+      rect(304, 128, 192, 54, 10, 'paper'),
+      sparkle(326, 155, 9),
+      rect(346, 140, 132, 14, 7, 'soft'),
+      rect(346, 160, 100, 14, 7, 'soft'),
+      text(118, 190, 'Workspace description', 'sub'),
+      text(400, 200, 'Web page and Claude', 'sub'),
+    ]),
+
+  // Claude editando ao vivo: cursor ✦ Claude, o trecho brilha, ⌘Z desfaz tudo
+  'ai-live-edit': () =>
+    svg(520, 200, 'While Claude edits a document you have open, a cursor labeled Claude shows where it writes, the changed part glows, and one Command-Z undoes it', [
+      sheet(40, 12, 290, 176, {
+        inner: [
+          textLines(18, 24, 230, 2, 11),
+          rect(12, 50, 262, 64, 6, 'soft-accent pulse'),
+          textLines(20, 64, 220, 4, 12),
+          line(156, 96, 156, 110, 'accent'),
+          rect(156, 112, 68, 18, 9, 'fill-accent'),
+          text(190, 124.5, '✦ Claude', 't on-accent'),
+          textLines(18, 146, 230, 2, 11),
+        ],
+      }),
+      rect(388, 74, 80, 52, 10, 'paper'),
+      line(392, 120, 464, 120, 'line'),
+      text(428, 106, '⌘Z', 'label'),
+      text(428, 152, 'Undoes it all', 'sub'),
+    ]),
+
+  // Dois documentos lado a lado: a aba arrastada para fora vira uma janela
+  'side-by-side': () =>
+    svg(520, 206, 'Drag a tab out of the window to open the document in a window of its own, side by side with the other one', [
+      appWindow(20, 36, 220, 150, {
+        inner: [rect(64, 2, 60, 15, 5, 'paper'), rect(128, 2, 60, 15, 5, 'dash'), textLines(18, 40, 170, 7, 13)],
+      }),
+      appWindow(280, 36, 220, 150, { inner: [rect(64, 2, 60, 15, 5, 'paper accent'), textLines(18, 40, 170, 7, 13)] }),
+      curve(178, 36, 186, 18, 208, 14, { kind: '', dashed: true, arrow: false }),
+      `<g class="bob">${rect(210, 6, 60, 16, 5, 'paper accent')}</g>`,
+      curve(272, 14, 340, 10, 370, 34),
+      text(130, 202, 'Research notes', 'sub'),
+      text(390, 202, 'Report', 'sub'),
+    ]),
+
   // Exemplo: transcrição → database de tarefas → cards no documento → links para o Figma
   'meeting-workflow': () => {
     const xs = [66, 196, 326, 456]

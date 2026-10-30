@@ -219,6 +219,18 @@ When Claude edits a document you have open:
 
 Don't like the result? <kbd>⌘Z</kbd> undoes the whole change in one go.
 
+<!-- illustration:ai-live-edit -->
+
+<svg class="illo" viewBox="0 0 520 200" width="520" role="img" aria-label="While Claude edits a document you have open, a cursor labeled Claude shows where it writes, the changed part glows, and one Command-Z undoes it">
+<g transform="translate(40 12)"><path class="paper" d="M0 0H278L290 12V176H0Z"/><path d="M278 0V12H290"/><path class="line" d="M18 24H248"/>,<path class="line" d="M18 35H156"/><rect class="soft-accent pulse" x="12" y="50" width="262" height="64" rx="6"/><path class="line" d="M20 64H240"/>,<path class="line" d="M20 76H240"/>,<path class="line" d="M20 88H240"/>,<path class="line" d="M20 100H152"/><path class="accent" d="M156 96L156 110"/><rect class="fill-accent" x="156" y="112" width="68" height="18" rx="9"/><text x="190" y="124.5" text-anchor="middle" class="t on-accent">✦ Claude</text><path class="line" d="M18 146H248"/>,<path class="line" d="M18 157H156"/></g>
+<rect class="paper" x="388" y="74" width="80" height="52" rx="10"/>
+<path class="line" d="M392 120H464"/>
+<text x="428" y="106" text-anchor="middle" class="label">⌘Z</text>
+<text x="428" y="152" text-anchor="middle" class="sub">Undoes it all</text>
+</svg>
+
+<!-- /illustration -->
+
 ## Use other AI apps
 
 You can also let other AI apps work with your documents: **Claude Desktop**, **Cursor** and **VS Code**. In **MarkPlus › Connect to AI…**, choose for each app:

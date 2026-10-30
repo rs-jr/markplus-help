@@ -151,7 +151,10 @@ function miniCards(x, y, count = 3, { w = 24, h = 28, gap = 6, accent = true } =
 
 /** Onda de áudio (transcrição de reunião) */
 function waveform(x, y, w, h) {
-  const bars = [0.35, 0.7, 0.5, 1, 0.6, 0.85, 0.4, 0.75, 0.3]
+  const pattern = [0.35, 0.7, 0.5, 1, 0.6, 0.85, 0.4, 0.75, 0.3]
+  // Uma barra a cada ~5 px: ondas largas ficam densas como as curtas
+  const count = Math.max(pattern.length, Math.round(w / 5))
+  const bars = Array.from({ length: count }, (_, i) => pattern[i % pattern.length])
   const step = w / (bars.length - 1)
   return bars.map((b, i) => line(x + i * step, y - (h * b) / 2, x + i * step, y + (h * b) / 2, ''))
 }
@@ -477,6 +480,115 @@ const illustrations = {
       text(440, 196, 'writes in MarkPlus', 'sub'),
     ])
   },
+
+  // Receita: manual da equipe (People → menção com cartão, cards por função → página web no celular)
+  'recipe-handbook': () =>
+    svg(520, 216, 'A People database feeds the handbook: a mention shows the person card, a cards view groups the team by role, and the handbook is sent as a web page to a phone', [
+      dataTable(20, 54, 120, 104, { title: 'People', rows: 4, highlight: 1 }),
+      curve(142, 106, 172, 106, 198, 100),
+      sheet(200, 14, 172, 180, {
+        inner: [
+          textLines(14, 20, 120, 1),
+          text(14, 42, 'Ask', 't', { anchor: 'start' }),
+          pill(36, 31, '@Ana', { w: 42 }),
+          rect(30, 52, 112, 40, 6, 'paper'),
+          `<circle cx="48" cy="72" r="9"/>`,
+          line(64, 66, 120, 66),
+          line(64, 78, 104, 78),
+          text(14, 116, 'Baristas', 't', { anchor: 'start' }),
+          line(60, 112, 156, 112),
+          [0, 1, 2].map((i) => [rect(14 + i * 48, 124, 40, 42, 4, 'paper accent'), `<circle class="accent" cx="${34 + i * 48}" cy="140" r="7"/>`, line(22 + i * 48, 156, 46 + i * 48, 156, 'accent')]),
+        ],
+      }),
+      curve(374, 104, 398, 104, 420, 104, { dashed: true }),
+      rect(424, 40, 64, 124, 11, 'paper'),
+      line(446, 48, 466, 48),
+      miniCards(432, 62, 2, { w: 22, h: 26, gap: 4, accent: false }),
+      textLines(432, 104, 40, 4, 10),
+      text(80, 206, 'People'),
+      text(286, 206, 'Handbook'),
+      text(456, 206, 'Web page'),
+    ]),
+
+  // Receita: plano de produto (Features → lista agrupada, gráfico e o frame do Figma embutido)
+  'recipe-product-plan': () =>
+    svg(520, 232, 'A Features database shown in the product plan as a list grouped by status and a chart, next to an embedded Figma frame', [
+      dataTable(20, 54, 120, 104, { title: 'Features', rows: 4, highlight: 0 }),
+      curve(142, 106, 172, 106, 194, 100),
+      sheet(196, 10, 204, 192, {
+        inner: [
+          pill(14, 14, 'Shipped', { w: 54 }),
+          line(76, 22, 186, 22),
+          [38, 52, 66].map((y) => [`<circle cx="20" cy="${y}" r="3"/>`, line(30, y, 120, y), line(134, y, 184, y)]),
+          [30, 46, 22, 38].map((h, i) => rect(14 + i * 20, 136 - h, 13, h, 2, 'soft-accent accent')),
+          line(10, 138, 96, 138),
+          rect(106, 86, 84, 54, 5, 'paper accent'),
+          rect(114, 94, 30, 18, 2, 'accent'), rect(150, 94, 32, 18, 2, 'accent'), rect(114, 118, 68, 14, 2, 'accent'),
+          textLines(14, 160, 170, 2, 11),
+        ],
+      }),
+      curve(428, 108, 410, 108, 392, 118, { kind: '', dashed: true }),
+      rect(430, 86, 48, 44, 9, 'paper'),
+      rect(441, 96, 10, 10, 2), `<circle cx="464" cy="101" r="5"/>`, `<path d="M443 120L448 112L453 120Z"/>`, rect(459, 114, 8, 8, 4),
+      text(454, 148, 'Figma', 'sub'),
+      text(80, 224, 'Features'),
+      text(298, 224, 'Product plan'),
+    ]),
+
+  // Receita: pesquisa (web + Claude → resumo com cards de link e links pequenos; lista de leitura)
+  'recipe-research': () =>
+    svg(520, 232, 'Claude searches the web and writes a summary with the sources as link cards and small links; the papers go to a Reading list database', [
+      `<circle cx="64" cy="64" r="22"/>`,
+      `<ellipse cx="64" cy="64" rx="9" ry="22"/>`,
+      line(42, 64, 86, 64),
+      rect(46, 118, 36, 36, 9, 'paper'),
+      sparkle(64, 136, 9),
+      curve(90, 68, 120, 70, 146, 82),
+      curve(86, 134, 120, 130, 146, 112),
+      sheet(150, 10, 214, 192, {
+        inner: [
+          textLines(14, 22, 170, 3, 10),
+          rect(14, 56, 184, 52, 6, 'paper accent'),
+          picture(20, 62, 54, 40),
+          line(84, 70, 180, 70, 'accent'),
+          textLines(84, 84, 96, 2, 9),
+          [120, 146].map((y) => [rect(14, y, 130, 20, 6, 'paper'), `<circle cx="26" cy="${y + 10}" r="4"/>`, line(36, y + 10, 128, y + 10)]),
+          textLines(14, 178, 170, 1),
+        ],
+      }),
+      curve(366, 106, 380, 106, 392, 106, { kind: '', dashed: true, arrow: false }),
+      dataTable(394, 62, 112, 90, { title: 'Reading list', rows: 3 }),
+      text(64, 224, 'Web + Claude'),
+      text(257, 224, 'Summary'),
+      text(450, 224, 'Reading list'),
+    ]),
+
+  // Receita: atas (Minutes → Detail no documento, com a gravação tocando ali)
+  'recipe-minutes': () =>
+    svg(520, 232, 'A Meeting minutes database shown in the project page as a Detail view, with the meeting recording playing in the document', [
+      dataTable(20, 54, 120, 104, { title: 'Minutes', rows: 4, highlight: 1 }),
+      curve(142, 106, 166, 106, 186, 96),
+      sheet(188, 10, 220, 192, {
+        inner: [
+          rect(12, 16, 196, 112, 6, 'paper'),
+          line(72, 16, 72, 128),
+          rect(13, 40, 58, 20, 0, 'soft-accent pulse'),
+          [28, 50, 72, 94].map((y, i) => line(20, y, 62, y, i === 1 ? 'accent' : 'line')),
+          line(84, 32, 150, 32, 'bar'),
+          textLines(84, 50, 110, 5, 12),
+          rect(12, 144, 196, 32, 16, 'paper accent'),
+          `<circle class="accent" cx="30" cy="160" r="9"/>`,
+          `<path class="fill-accent" d="M27 155L35 160L27 165Z"/>`,
+          waveform(48, 160, 140, 16),
+        ],
+      }),
+      curve(436, 112, 422, 112, 410, 160, { kind: '', dashed: true }),
+      rect(438, 90, 48, 44, 9, 'paper'),
+      waveform(448, 112, 28, 18),
+      text(462, 152, 'Recording', 'sub'),
+      text(80, 224, 'Minutes'),
+      text(298, 224, 'Project page'),
+    ]),
 
   // Exemplo: transcrição → database de tarefas → cards no documento → links para o Figma
   'meeting-workflow': () => {

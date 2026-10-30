@@ -36,9 +36,9 @@ Click a column title to rename it, change its type, move it or delete it. Click 
 | **Link** | A web address |
 | **Image** | A picture |
 
-The first column is the **name** of each row. It's what `@` searches and what a mention shows.
+One column is the **label** of each row, marked with a tag next to its name. It's what `@` searches, what a mention shows and the title of each card. A database always has one. To pick another, point at a column's title and click its tag, **Use as label** (or click the title and choose **Use as Label**). Picture columns can't be the label.
 
-To reorder the columns, drag a column's title left or right. The name column can move too.
+To reorder the columns, drag a column's title left or right. The label column can move too.
 
 :::tip
 Changing a column to **Select** turns the text already in it into options.
@@ -137,7 +137,21 @@ Type **/** and choose **Data view**, then pick the database and a view. A view s
 | **Chart** | Bars, pie, line or a single bar (one horizontal bar split by each group's share, like the pie). Count the rows, or add up / average a Number column, grouped by a column (e.g. hours by role). **Show** picks one value of that column: *All* counts every role, *Designer* counts only the designers. Turn on **Show legend** to list each group with its color and value under the chart. **Colors** › *Shades of one color* uses light to dark tones of a single color (the biggest value is the darkest), easier to tell apart if you are color-blind. To change its width, click the chart and drag the handle on either side |
 | **Detail** | Names on the left, every field of the selected row on the right. **Menu title** picks what each row shows in that list (the name, another text or a date) and **Description** adds a smaller line under it, up to 2 lines. To make it taller or shorter, point at it and drag the handle at the bottom. Double-click the handle to go back to the original height |
 
-You can choose which fields appear, the order, and show only the rows with one option (e.g. only *Baristas*). Click the gear on the view to change it later.
+Click the gear on the view to change it later. In **Fields**:
+
+- tick the fields to show. At least one stays ticked;
+- drag the handle on the left to change the order. You can also focus the handle and press <kbd>↑</kbd> or <kbd>↓</kbd>.
+
+In a **List**, the [label column](#columns) is a column like any other: put it anywhere (for example, *Command* first and the label after it) or untick it to hide it. In **Cards** and **Detail**, it's always the title of each row, so it isn't in the list.
+
+**Group by** (List and Cards): pick a column, such as *Status* or *Owner*, and the rows are split into groups, each with a heading and how many rows it has. Groups follow the order of the options (for a Select column), the dates or the numbers, or go A to Z; rows without a value go last, under *No …*. The grouped column isn't repeated in the rows: its value is the heading. The label, Rich text and Image columns can't group. Click a group's heading to collapse it, and click again to open it. Collapsed groups open again the next time you open the document.
+
+**Example:** a **List** of *Features* grouped by *Status* shows *Shipped*, *In progress* and *Planned*, each with its features below.
+
+You can also sort the rows (inside each group) and show only the rows with one option (e.g. only *Baristas*).
+
+<img class="shot shot-light" src="../screenshots/database-view-settings-light.webp" width="672" alt="The Data view settings, with the fields in a list to drag into order" />
+<img class="shot shot-dark" src="../screenshots/database-view-settings-dark.webp" width="672" alt="The Data view settings, with the fields in a list to drag into order" />
 
 **Cover** (Cards and Detail): turn on **Show an image on top** to use a picture column as the cover of each row, and pick which one if the database has more than one (e.g. *Photo* or *Logo*). The chosen column isn't repeated in the fields. Turn it off for cards and details without a picture on top.
 
@@ -157,4 +171,11 @@ Data views only exist in `.mdoc` documents. In a `.md` document, mentions are ke
 
 ## With AI
 
-AI apps connected to MarkPlus can read databases, add and update rows, and write mentions in your documents. For example: *"Add Bia, bia@cafe.com, Barista, to the Team database and mention her in the Opening checklist."* See [Writing with AI](../ai/).
+AI apps connected to MarkPlus can read databases, add and update rows, write mentions and add [data views](#show-a-database-in-a-document) to your documents. For example:
+
+- *"Add Bia, bia@cafe.com, Barista, to the Team database and mention her in the Opening checklist."*
+- *"Create a Suppliers database with name, phone and city, and show it as a list at the end of this document, sorted by city."*
+- *"Add a pie chart of the Team database by role below the Staff title."*
+- *"Show the Features database as cards grouped by status."*
+
+Data views only fit in `.mdoc` documents: in a `.md` document, the AI adds a link to the database instead. See [Writing with AI](../ai/).

@@ -167,6 +167,20 @@ export const scenes = [
     },
   },
   {
+    name: 'database-view-settings',
+    run: async (page) => {
+      await openDocument(page, 'Release Notes')
+      const view = page.locator('.node-databaseView').nth(1)
+      await view.scrollIntoViewIfNeeded()
+      await view.hover()
+      await view.locator('button:has(svg.lucide-settings-2)').click()
+      const dialog = page.getByRole('dialog')
+      await dialog.waitFor()
+      await page.waitForTimeout(800)
+      return dialog
+    },
+  },
+  {
     name: 'mention-hover',
     run: async (page) => {
       await openDocument(page, 'Kickoff Meeting')

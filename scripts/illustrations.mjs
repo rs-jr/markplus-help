@@ -754,6 +754,170 @@ const illustrations = {
       text(390, 202, 'Report', 'sub'),
     ]),
 
+  // Guia de referências cruzadas: os quatro documentos do manual, todos ligados ao Start here
+  'xref-plan': () => {
+    const docs = [
+      [20, 'Start here', 2],
+      [148, 'Opening and closing', 3],
+      [276, 'Coffee recipes', 3],
+      [404, 'Glossary', 1],
+    ]
+    return svg(520, 226, 'Four documents of a coffee shop handbook, each split into pages, with Start here linking to the others', [
+      // Um arco por documento, cada um mais alto, saindo de pontos diferentes do Start here
+      [148, 276, 404].map((x, i) => curve(110 - i * 28, 62, (110 - i * 28 + x + 50) / 2, 40 - i * 16, x + 50, 60, { dashed: true })),
+      docs.map(([x, name, pages]) =>
+        sheet(x, 64, 100, 130, {
+          inner: Array.from({ length: pages }, (_, i) => [line(10, 20 + i * 36, 52, 20 + i * 36, 'bar'), textLines(10, 31 + i * 36, 74, 2, 8)]),
+        }),
+      ),
+      docs.map(([x, name]) => text(x + 50, 214, name, 'sub')),
+    ])
+  },
+
+  // Passo 2: ⋮ › Copy link no título, colar em outro documento
+  'xref-copy-link': () =>
+    svg(520, 200, 'Click the handle next to a title, choose Copy link, then paste it in another document: the link appears with the title as its text', [
+      sheet(20, 14, 160, 160, {
+        inner: [
+          [0, 1, 2].map((i) => `<circle class="fill-accent" cx="10" cy="${22 + i * 5}" r="1.6"/>`),
+          text(20, 32, 'Espresso', 'h', { anchor: 'start' }),
+          textLines(20, 46, 110, 1),
+          rect(26, 56, 112, 54, 8, 'paper'),
+          rect(30, 60, 104, 20, 5, 'soft-accent'),
+          text(40, 74, 'Copy link', 't', { anchor: 'start', accent: true }),
+          line(40, 94, 110, 94),
+          textLines(20, 128, 110, 2, 10),
+        ],
+      }),
+      curve(186, 94, 210, 94, 232, 94),
+      rect(240, 66, 44, 56, 6, 'paper'),
+      rect(252, 60, 20, 12, 3, 'paper'),
+      textLines(250, 86, 24, 3, 9),
+      curve(292, 94, 316, 94, 338, 94),
+      sheet(344, 14, 160, 160, {
+        inner: [textLines(14, 24, 120, 2, 10), text(14, 70, 'Make a test', 't', { anchor: 'start' }), pill(72, 59, 'Espresso', { w: 56 }), textLines(14, 100, 120, 3, 10)],
+      }),
+      text(100, 194, '⋮ › Copy link', 'sub'),
+      text(262, 146, 'Copied', 'sub'),
+      text(424, 194, 'Paste anywhere', 'sub'),
+    ]),
+
+  // Passo 4: a página inicial lista os documentos como selos
+  'xref-home': () => {
+    const items = [
+      ['Opening and closing', 78],
+      ['Coffee recipes', 110],
+      ['Glossary', 142],
+    ]
+    return svg(520, 210, 'A Start here page lists the other documents as link badges, each opening its document', [
+      sheet(30, 12, 220, 186, {
+        inner: [
+          text(16, 30, 'Welcome', 'h', { anchor: 'start' }),
+          text(16, 50, 'New here? Read these in order:', 't', { anchor: 'start' }),
+          items.map(([name, y], i) => [
+            text(16, y - 14 + 11.5, `${i + 1}.`, 't', { anchor: 'start' }),
+            rect(30, y - 14, 140, 19, 9.5, 'paper accent'),
+            sheet(38, y - 10, 8, 11),
+            text(52, y - 14 + 13, name, 't', { anchor: 'start', accent: true }),
+          ]),
+          textLines(16, 168, 170, 1),
+        ],
+      }),
+      items.map(([, y], i) => curve(204, 12 + y - 4, 300, 12 + y - 4, 380, 42 + i * 58)),
+      [0, 1, 2].map((i) => sheet(384, 18 + i * 58, 56, 48, { lines: 2 })),
+    ])
+  },
+
+  // Passo 5: termo ligado ao glossário e uma linha de "See also"
+  'xref-glossary': () =>
+    svg(520, 214, 'A word in a recipe links to its entry in the Glossary, and a See also line links to related recipes', [
+      sheet(24, 12, 214, 180, {
+        inner: [
+          text(14, 30, 'Espresso', 'h', { anchor: 'start' }),
+          textLines(14, 46, 170, 1),
+          text(14, 66, 'Level the grounds by', 't', { anchor: 'start' }),
+          text(117, 66, 'tamping', 't', { anchor: 'start', accent: true }),
+          line(117, 69, 155, 69, 'accent'),
+          textLines(14, 86, 170, 3, 11),
+          text(14, 140, 'See also:', 't', { anchor: 'start' }),
+          text(62, 140, 'Cappuccino', 't', { anchor: 'start', accent: true }),
+          line(62, 143, 114, 143, 'accent'),
+          text(122, 140, 'Cleaning', 't', { anchor: 'start', accent: true }),
+          line(122, 143, 162, 143, 'accent'),
+        ],
+      }),
+      curve(181, 78, 250, 40, 300, 92),
+      sheet(300, 12, 196, 180, {
+        inner: [
+          text(14, 30, 'Glossary', 'h', { anchor: 'start' }),
+          text(14, 56, 'Bloom', 't', { anchor: 'start' }),
+          textLines(14, 68, 150, 1),
+          rect(8, 76, 170, 42, 5, 'soft-accent pulse'),
+          text(14, 94, 'Tamping', 't', { anchor: 'start', accent: true }),
+          textLines(14, 108, 150, 1),
+          text(14, 140, 'Crema', 't', { anchor: 'start' }),
+          textLines(14, 152, 150, 1),
+        ],
+      }),
+      text(131, 208, 'Coffee recipes', 'sub'),
+      text(398, 208, 'Glossary', 'sub'),
+    ]),
+
+  // Passo 6: o Claude cria os links (nomes que viram links no texto)
+  'xref-claude': () => {
+    const rows = [
+      [18, 60, 54, 40],
+      [30, 40, 96, 52],
+      [42, 76, 40, 64],
+      [54, 30, 70, 46],
+      [66, 64, 50, 70],
+    ]
+    return svg(520, 208, 'Ask Claude to link every drink name to its recipe, and the names in your document become links', [
+      rect(20, 46, 150, 96, 12, 'paper'),
+      sparkle(42, 70, 9),
+      rect(58, 62, 98, 14, 7, 'soft'),
+      rect(36, 88, 120, 14, 7, 'soft'),
+      rect(36, 110, 90, 14, 7, 'soft'),
+      curve(174, 94, 196, 94, 216, 94),
+      sheet(220, 12, 280, 170, {
+        inner: [
+          text(14, 30, 'Opening checklist', 'h', { anchor: 'start' }),
+          rows.map(([dy, a, b, c], i) => {
+            const y = 54 + i * 22
+            return [
+              line(14, y, 14 + a, y),
+              `<path class="accent twinkle"${i ? ` style="animation-delay:${i * 0.4}s"` : ''} d="M${22 + a} ${y}H${22 + a + b}"/>`,
+              line(30 + a + b, y, 30 + a + b + c, y),
+            ]
+          }),
+        ],
+      }),
+      text(95, 162, 'Ask Claude', 'sub'),
+      text(360, 202, 'The names become links', 'sub'),
+    ])
+  },
+
+  // Links saudáveis: renomear o documento ou o título não quebra o link
+  'xref-rename': () =>
+    svg(520, 190, 'Renaming a document or a title does not break the links that point to it', [
+      sheet(24, 16, 180, 150, {
+        inner: [textLines(14, 24, 140, 2, 10), text(14, 70, 'See the', 't', { anchor: 'start' }), pill(56, 59, 'Espresso', { w: 56 }), textLines(14, 100, 140, 3, 10)],
+      }),
+      curve(140, 83, 230, 40, 312, 70),
+      `<circle class="paper accent" cx="232" cy="56" r="10"/>`,
+      `<path class="accent" d="M227 56l3.5 3.5L237 52.5"/>`,
+      sheet(316, 16, 180, 150, {
+        inner: [
+          text(14, 30, 'Espresso', 't', { anchor: 'start' }),
+          line(12, 26.5, 60, 26.5, ''),
+          text(14, 54, 'Espresso, step by step', 'h', { anchor: 'start', accent: true }),
+          textLines(14, 74, 140, 5, 12),
+        ],
+      }),
+      text(114, 184, 'The link', 'sub'),
+      text(406, 184, 'Title renamed', 'sub'),
+    ]),
+
   // Exemplo: transcrição → database de tarefas → cards no documento → links para o Figma
   'meeting-workflow': () => {
     const xs = [66, 196, 326, 456]

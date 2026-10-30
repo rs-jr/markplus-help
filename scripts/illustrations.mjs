@@ -164,6 +164,16 @@ function stepNumber(cx, cy, value, delay = 0) {
   return [`<circle class="fill-accent step"${delayStyle(delay)} cx="${n(cx)}" cy="${n(cy)}" r="9"/>`, `<text x="${n(cx)}" y="${n(cy + 3.5)}" text-anchor="middle" class="t on-accent">${value}</text>`]
 }
 
+/** Tecla do teclado com o texto */
+function keycap(cx, y, label, w = 60) {
+  return [rect(cx - w / 2, y, w, 24, 6, 'paper'), line(cx - w / 2 + 4, y + 21, cx + w / 2 - 4, y + 21), text(cx, y + 15.5, label, 't')]
+}
+
+/** Globo (a web) */
+function globe(cx, cy, r) {
+  return [`<circle cx="${n(cx)}" cy="${n(cy)}" r="${n(r)}"/>`, `<ellipse cx="${n(cx)}" cy="${n(cy)}" rx="${n(r * 0.42)}" ry="${n(r)}"/>`, line(cx - r, cy, cx + r, cy, '')]
+}
+
 // ---------- Ilustrações ----------
 
 const illustrations = {
@@ -917,6 +927,191 @@ const illustrations = {
       text(114, 184, 'The link', 'sub'),
       text(406, 184, 'Title renamed', 'sub'),
     ]),
+
+  // IA: três jeitos de pedir (seleção, continuar a frase, chat)
+  'ai-ways': () =>
+    svg(520, 214, 'Three ways to work with Claude: ask about a selection with Command-J, let it continue your sentence with Shift-Space, or chat with Control-Command-I', [
+      [
+        [20, 'A selection', '⌘J'],
+        [190, 'Continue', '⇧Space'],
+        [360, 'Chat', '⌃⌘I'],
+      ].map(([x, name, key]) => [rect(x, 14, 140, 150, 12, 'paper'), text(x + 14, 34, name, 't', { anchor: 'start' }), keycap(x + 70, 178, key, 70)]),
+      // Seleção com o campo de pedido
+      textLines(34, 52, 100, 1),
+      rect(30, 60, 118, 22, 4, 'soft-accent'),
+      line(34, 66, 140, 66, 'accent'),
+      line(34, 76, 110, 76, 'accent'),
+      rect(36, 92, 110, 22, 11, 'paper accent'),
+      sparkle(48, 103, 5),
+      line(58, 103, 120, 103),
+      textLines(34, 130, 100, 2, 10),
+      // Continuar: o texto, o cursor e a sugestão em cinza
+      textLines(204, 56, 104, 2, 12),
+      line(204, 82, 248, 82),
+      line(252, 76, 252, 88, 'accent'),
+      line(258, 82, 304, 82, 'dash'),
+      line(204, 96, 300, 96, 'dash'),
+      textLines(204, 122, 104, 2, 12),
+      // Chat: pedido, resposta do Claude e o campo
+      rect(420, 48, 66, 18, 9, 'soft'),
+      sparkle(382, 84, 5),
+      line(392, 82, 470, 82),
+      line(392, 92, 450, 92),
+      line(392, 102, 462, 102),
+      rect(372, 132, 116, 22, 11, 'paper accent'),
+    ]),
+
+  // IA: ligar o Claude em Connect to AI
+  'ai-connect': () =>
+    svg(520, 186, 'In MarkPlus › Connect to AI, connect Claude Code with Read & write; the AI dot at the bottom right lights up', [
+      appWindow(20, 14, 270, 140, {
+        inner: [
+          text(16, 40, 'Connect to AI', 'h', { anchor: 'start' }),
+          rect(12, 54, 246, 36, 8, 'paper'),
+          sparkle(30, 72, 6),
+          text(44, 76, 'Claude Code', 't', { anchor: 'start' }),
+          rect(112, 62, 78, 20, 10, 'soft-accent accent'),
+          text(151, 75.5, 'Read & write', 't', { accent: true }),
+          rect(196, 62, 56, 20, 6, 'fill-accent'),
+          text(224, 75.5, 'Connect', 't on-accent'),
+          `<circle class="fill-accent pulse" cx="214" cy="124" r="4"/>`,
+          text(222, 128, 'AI', 't', { anchor: 'start', accent: true }),
+        ],
+      }),
+      curve(294, 84, 330, 84, 364, 84),
+      rect(370, 44, 120, 80, 14, 'paper'),
+      sparkle(430, 70, 10),
+      text(430, 104, 'Claude', 'label'),
+      text(155, 178, 'MarkPlus › Connect to AI…', 'sub'),
+      text(430, 146, 'Your Claude account', 'sub'),
+    ]),
+
+  // IA: selecionar, pedir, e o texto novo entra no lugar
+  'ai-selection': () =>
+    svg(520, 196, 'Select text, press Command-J and type what you want: Claude rewrites the selection in place', [
+      rect(20, 16, 216, 150, 10, 'paper'),
+      textLines(34, 36, 170, 2, 11),
+      rect(30, 54, 196, 30, 4, 'soft-accent'),
+      line(36, 62, 210, 62, 'accent'),
+      line(36, 75, 170, 75, 'accent'),
+      rect(40, 94, 178, 26, 13, 'paper accent'),
+      sparkle(54, 107, 6),
+      text(66, 111, 'Make it friendlier', 't', { anchor: 'start' }),
+      textLines(34, 138, 170, 2, 11),
+      curve(242, 92, 262, 92, 282, 92),
+      rect(286, 16, 216, 150, 10, 'paper'),
+      textLines(300, 36, 170, 2, 11),
+      rect(296, 54, 196, 42, 4, 'soft-accent pulse'),
+      textLines(302, 64, 176, 3, 12),
+      textLines(300, 120, 170, 3, 11),
+      text(128, 188, 'Select, ⌘J, ask', 'sub'),
+      text(394, 188, 'The new text takes its place', 'sub'),
+    ]),
+
+  // IA: continuar a frase (sugestão em cinza, Tab aceita)
+  'ai-continue': () =>
+    svg(520, 166, 'Press Shift-Space and Claude suggests how to continue your sentence in gray; Tab accepts it, Escape dismisses it', [
+      rect(20, 20, 480, 64, 10, 'paper'),
+      text(40, 56, 'The grinder needs cleaning every', 'link', { anchor: 'start' }),
+      line(222, 44, 222, 62, 'accent'),
+      text(228, 56, 'Friday, before the evening rush.', 'link ghost', { anchor: 'start' }),
+      keycap(200, 104, '⇥ Tab', 70),
+      text(200, 150, 'Accept', 'sub'),
+      keycap(320, 104, 'Esc', 70),
+      text(320, 150, 'Dismiss', 'sub'),
+    ]),
+
+  // IA: o que o Claude já sabe no chat
+  'ai-chat-context': () => {
+    const left = [
+      [40, 'Open document'],
+      [104, 'Your selection'],
+      [168, 'Workspace description'],
+    ]
+    const right = [
+      [62, 'Files you attach'],
+      [146, 'The web'],
+    ]
+    return svg(520, 224, 'In the chat, Claude already knows the open document, your selection and the workspace description, and can read files you attach and search the web', [
+      left.map(([y]) => curve(110, y, 160, y, 206, 110 + (y - 104) * 0.4, { kind: '', dashed: true })),
+      right.map(([y]) => curve(414, y, 360, y, 316, 110 + (y - 104) * 0.4, { kind: '', dashed: true })),
+      sheet(70, left[0][0] - 20, 30, 36, { lines: 2 }),
+      [rect(66, 90, 40, 26, 4, 'paper'), rect(70, 96, 32, 8, 2, 'soft-accent'), line(72, 110, 98, 110)],
+      [rect(64, 152, 44, 30, 6, 'paper'), rect(65, 153, 42, 8, 0, 'soft'), line(70, 170, 100, 170, 'accent'), line(70, 176, 90, 176, 'accent')],
+      left.map(([y, name]) => text(86, y + 32, name, 't')),
+      picture(420, 42, 34, 26),
+      sheet(458, 40, 22, 30, { lines: 2 }),
+      globe(448, 146, 16),
+      right.map(([y, name]) => text(448, y + 34, name, 't')),
+      rect(210, 24, 102, 176, 12, 'paper'),
+      sparkle(261, 52, 9),
+      text(261, 80, 'Claude', 'label'),
+      rect(226, 96, 70, 14, 7, 'soft'),
+      rect(226, 118, 56, 14, 7, 'soft'),
+      rect(220, 168, 82, 20, 10, 'paper accent'),
+    ])
+  },
+
+  // IA: tipos de pedido
+  'ai-requests': () => {
+    const icons = [
+      ['Rewrite', (cx, cy) => [`<path d="M${cx - 12} ${cy + 10}L${cx + 8} ${cy - 10}L${cx + 12} ${cy - 6}L${cx - 8} ${cy + 14}Z"/>`, line(cx - 14, cy + 16, cx + 14, cy + 16, 'accent')]],
+      ['Shorten', (cx, cy) => [line(cx - 18, cy - 8, cx + 18, cy - 8), line(cx - 18, cy, cx + 8, cy), line(cx - 18, cy + 8, cx - 4, cy + 8, 'accent')]],
+      ['Translate', (cx, cy) => [text(cx, cy + 5, 'EN → PT', 'link', { accent: true })]],
+      ['Make a table', (cx, cy) => [rect(cx - 18, cy - 12, 36, 24, 3, 'accent'), line(cx - 18, cy, cx + 18, cy, 'accent'), line(cx - 6, cy - 12, cx - 6, cy + 12, 'accent'), line(cx + 6, cy - 12, cx + 6, cy + 12, 'accent')]],
+      ['New document', (cx, cy) => [sheet(cx - 13, cy - 16, 26, 32), line(cx + 4, cy + 8, cx + 14, cy + 8, 'accent'), line(cx + 9, cy + 3, cx + 9, cy + 13, 'accent')]],
+      ['Add links', (cx, cy) => [rect(cx - 18, cy - 7, 22, 14, 7, 'accent'), rect(cx - 4, cy - 7, 22, 14, 7)]],
+      ['Search the web', (cx, cy) => globe(cx, cy, 14)],
+      ['Read other apps', (cx, cy) => [rect(cx - 10, cy - 6, 20, 16, 4), line(cx - 4, cy - 12, cx - 4, cy - 6, ''), line(cx + 4, cy - 12, cx + 4, cy - 6, ''), line(cx, cy + 10, cx, cy + 16, 'accent')]],
+    ]
+    return svg(520, 196, 'Things to ask Claude: rewrite, shorten, translate, make a table, create a document, add links, search the web, read your other apps', [
+      icons.map(([name, draw], i) => {
+        const x = 20 + (i % 4) * 123
+        const y = 12 + Math.floor(i / 4) * 92
+        return [rect(x, y, 110, 80, 10, 'paper'), draw(x + 55, y + 32), text(x + 55, y + 68, name, 't')]
+      }),
+    ])
+  },
+
+  // IA: uma pergunta; o Claude procura nos documentos e databases, responde e diz onde achou
+  'ai-question': () => {
+    const apps = [
+      [318, 'Meetings'],
+      [384, 'Drive'],
+      [450, 'Figma'],
+    ]
+    return svg(520, 300, 'Ask a question in the chat; Claude looks through your documents and databases, and through your other apps with connectors, then answers, explains and tells you where it found it', [
+      rect(20, 20, 210, 200, 12, 'paper'),
+      rect(54, 32, 164, 38, 10, 'soft'),
+      text(64, 48, 'When did we decide to', 't', { anchor: 'start' }),
+      text(64, 61, 'change the coffee supplier?', 't', { anchor: 'start' }),
+      sparkle(66, 98, 7),
+      line(80, 98, 210, 98),
+      line(54, 112, 204, 112),
+      line(54, 126, 196, 126),
+      line(54, 140, 170, 140),
+      rect(54, 158, 156, 20, 10, 'paper accent'),
+      sheet(62, 162, 8, 11),
+      text(76, 172, 'Meeting minutes · Mar 12', 't', { anchor: 'start', accent: true }),
+      stepNumber(38, 51, 1),
+      stepNumber(38, 118, 3, 1.2),
+      curve(296, 110, 262, 116, 234, 128, { dashed: true }),
+      curve(300, 246, 262, 230, 234, 176, { kind: '', dashed: true }),
+      stepNumber(400, 14, 2, 0.6),
+      dataTable(300, 40, 128, 96, { title: 'Meeting minutes', rows: 3, highlight: 1 }),
+      sheet(440, 34, 60, 76, { lines: 3 }),
+      sheet(440, 120, 60, 76, { lines: 3 }),
+      `<g class="bob"><circle class="paper accent" cx="420" cy="150" r="18"/><path class="accent" d="M433 163L446 176"/></g>`,
+      text(400, 214, 'Your documents and databases', 'sub'),
+      // Conectores: os outros apps, só leitura
+      apps.map(([cx, name]) => [rect(cx - 22, 230, 44, 36, 9, 'paper'), text(cx, 282, name, 't')]),
+      waveform(306, 248, 24, 16),
+      sheet(376, 238, 16, 20, { lines: 2 }),
+      rect(438, 239, 9, 9, 2), `<circle cx="458" cy="243.5" r="4.5"/>`, `<path d="M440 260L444.5 252L449 260Z"/>`, rect(453, 252, 8, 8, 4),
+      text(400, 298, 'Your other apps, with connectors (read only)', 'sub'),
+      text(125, 240, 'Ask, get the answer and the source', 'sub'),
+    ])
+  },
 
   // Exemplo: transcrição → database de tarefas → cards no documento → links para o Figma
   'meeting-workflow': () => {

@@ -44,6 +44,35 @@ Press <kbd>↩</kbd> to save or <kbd>⎋</kbd> to cancel.
 
 The same link can look different depending on what it's for:
 
+<!-- illustration:link-views -->
+
+<svg class="illo" viewBox="0 0 520 256" width="520" role="img" aria-label="The same link shown as Title, Label, URL, Card and Small">
+<text x="108" y="28" text-anchor="end" class="sub">Title</text>
+<text x="124" y="28" text-anchor="start" class="link accent">Espresso guide</text>
+<path class="accent" d="M124 31H204"/>
+<text x="108" y="62" text-anchor="end" class="sub">Label</text>
+<rect class="paper" x="124" y="49" width="104" height="19" rx="9.5"/>
+<g transform="translate(132 53)"><path class="paper" d="M0 0H6.8L9 2.3V11H0Z"/><path d="M6.8 0V2.3H9"/></g>
+<text x="148" y="62" text-anchor="start" class="t">Espresso guide</text>
+<text x="108" y="96" text-anchor="end" class="sub">URL</text>
+<text x="124" y="96" text-anchor="start" class="link accent">https://cafehandbook.example/espresso</text>
+<path class="accent" d="M124 99H330"/>
+<text x="108" y="144" text-anchor="end" class="sub">Card</text>
+<rect class="paper" x="124" y="116" width="300" height="66" rx="8"/>
+<g transform="translate(130 122)"><rect class="paper" x="0" y="0" width="84" height="54" rx="3"/><circle cx="58.8" cy="16.2" r="5.4"/><path d="M8.4 45.9L31.9 24.3L48.7 37.8L60.5 29.7L75.6 45.9"/></g>
+<text x="226" y="136" text-anchor="start" class="h">Pulling the perfect espresso</text>
+<path class="line" d="M226 150H396"/>
+<path class="line" d="M226 159H328"/>
+<text x="226" y="177" text-anchor="start" class="t">cafehandbook.example</text>
+<text x="108" y="222" text-anchor="end" class="sub">Small</text>
+<rect class="paper" x="124" y="200" width="220" height="36" rx="8"/>
+<circle cx="142" cy="218" r="7"/>
+<text x="156" y="215" text-anchor="start" class="t">Pulling the perfect espresso</text>
+<text x="156" y="228" text-anchor="start" class="t">cafehandbook.example</text>
+</svg>
+
+<!-- /illustration -->
+
 | View | What it looks like | Good for |
 | --- | --- | --- |
 | **Title** | Just the text, underlined | Links in the middle of a sentence |
@@ -58,7 +87,15 @@ The same link can look different depending on what it's for:
 <img class="shot shot-light" src="../screenshots/link-card-light.webp" width="788" alt="A web link shown as a card with picture, title and site" />
 <img class="shot shot-dark" src="../screenshots/link-card-dark.webp" width="788" alt="A web link shown as a card with picture, title and site" />
 
-**Example:** in a reading list, use **Card** for each article. Readers see the cover picture and a short description before clicking.
+**Examples:**
+
+- **Title** in the middle of a sentence: "follow the *espresso guide* before opening".
+- **Label** for a list of related documents on a home page, each with its icon.
+- **URL** when people need to type or check the address, such as the Wi-Fi setup page.
+- **Card** in a reading list: readers see the cover picture and a short description before clicking.
+- **Small** for a tidy list of tools: each site with its icon and name, one per line.
+
+To change the view, right-click the link, choose **Edit Link…** and pick one.
 
 - Cards are saved inside the document, so they still look right without internet and don't change if the site changes.
 - **Card** and **Small** are for web links.

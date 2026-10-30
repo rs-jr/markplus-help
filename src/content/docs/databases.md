@@ -9,6 +9,8 @@ The best part: you can **mention any row in your text with `@`**, and **show the
 
 **Example:** a coffee shop keeps a *Team* database with each barista's name, photo, email and role. In the handbook, "Ask @Rodrigo before changing the grinder" shows Rodrigo's photo and email when you point at his name.
 
+Not sure whether you need a database or a simple table? See [Table or database?](../concepts/#table-or-database)
+
 ## Create a database
 
 - Click **New database** above the document list.
@@ -63,12 +65,12 @@ A mention always shows the row as it is now: change the row once and every menti
 <!-- illustration:database-mention -->
 
 <svg class="illo" viewBox="0 0 520 182" width="520" role="img" aria-label="A row of the People database, Ana, mentioned as @Ana in two documents">
-<path class="accent dash" d="M86 88Q132 88 178 88"/>
-<path class="accent dash" d="M342 88Q370 88 392 108"/>
+<path class="accent dash flow" d="M86 88Q132 88 178 88"/>
+<path class="accent dash flow" d="M342 88Q370 88 392 108"/>
 <g transform="translate(30 40)"><path class="paper" d="M0 0H98L110 12V104H0Z"/><path d="M98 0V12H110"/><path class="line" d="M12 24H92"/>,<path class="line" d="M12 34H60"/><rect class="soft-accent accent" x="12" y="40" width="44" height="16" rx="8"/><text x="34" y="51.5" text-anchor="middle" class="t accent">@Ana</text><path class="line" d="M12 72H92"/>,<path class="line" d="M12 82H60"/></g>
 <g transform="translate(380 40)"><path class="paper" d="M0 0H98L110 12V104H0Z"/><path d="M98 0V12H110"/><path class="line" d="M12 24H92"/>,<path class="line" d="M12 34H92"/>,<path class="line" d="M12 44H60"/><rect class="soft-accent accent" x="12" y="60" width="44" height="16" rx="8"/><text x="34" y="71.5" text-anchor="middle" class="t accent">@Ana</text><path class="line" d="M12 90H48"/></g>
 <rect class="paper" x="180" y="30" width="160" height="120" rx="6"/>
-<rect class="soft-accent" x="181" y="77" width="158" height="22" rx="0"/>
+<rect class="soft-accent pulse" x="181" y="77" width="158" height="22" rx="0"/>
 <path class="line" d="M180 52H340"/>
 <text x="194" y="45" text-anchor="start" class="t">People</text>
 <circle cx="198" cy="64" r="6"/>
@@ -161,6 +163,27 @@ Views are **read only**: to change the data, click **Open**.
 
 :::note
 Data views only exist in `.mdoc` documents. In a `.md` document, mentions are kept as links.
+:::
+
+## Ideas for databases
+
+Each idea has its columns and a good way to show it in a document.
+
+| Database | Columns | How to use it |
+| --- | --- | --- |
+| **People** | Name, Photo, Role (select), Email, Phone | Mention people with **@** in any document. **Cards** grouped by *Role* on the team page |
+| **Tasks** | Task, Owner (person), Status (select), Due (date), Link | **Cards** or **List** grouped by *Status*, like a board. A **Chart** of tasks by owner |
+| **Meeting minutes** | Meeting, Date, Type (select), Attendees (rich text with @ mentions), Summary, Recording (link) | **Detail** view in the project document: the meetings on the left, the minutes on the right |
+| **Suppliers** | Name, Contact (person), Email, Phone, City, Category (select) | Mention the supplier in recipes and orders. **List** grouped by *Category* |
+| **Products** | Name, Picture, Price (number), Category (select), Stock (number) | **Cards** with the picture on top. A **Chart** with the sum of *Stock* by category |
+| **Releases** | Version, Date, Status (select), Screenshot, What's new (rich text) | **Detail** view in the release notes, one version at a time |
+| **Reading list** | Title, Author, Link, Status (select), Rating (number) | **List** of the ones still *To read*, sorted by rating |
+| **Glossary** | Term, Meaning (rich text), Example | Mention the term (**@tamping**) where it first appears: pointing at it shows the meaning |
+
+**Example:** a café keeps *Suppliers* and *Products*. The *Orders* page shows a **List** of products with low stock, sorted by stock, and each one mentions its supplier: "Ask @Fazenda Boa Vista". Pointing at the name shows the phone number.
+
+:::tip
+Ask Claude to set one up for you: *"Create a Tasks database with task, owner, status and due date, add the tasks from this page, and show it as cards grouped by status at the end."* See [With AI](#with-ai).
 :::
 
 ## Sharing

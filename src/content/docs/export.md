@@ -21,11 +21,11 @@ Want to send the whole project, every document with its pictures and files, to s
 
 <svg class="illo" viewBox="0 0 520 224" width="520" role="img" aria-label="The documents of a workspace packed into one .html file, sent to people on a laptop, a tablet and a phone">
 <g transform="translate(24 74)"><path class="paper" d="M4 0H38.1l6 6H108a4 4 0 0 1 4 4V76a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><g transform="translate(14 -22) rotate(-8 19 24)"><path class="paper" d="M0 0H28.5L38 9.5V48H0Z"/><path d="M28.5 0V9.5H38"/><path class="line" d="M6.1 14.4H29.6"/><path class="line" d="M6.1 21.1H29.6"/><path class="line" d="M6.1 27.8H20.2"/></g><g transform="translate(37 -30)"><path class="paper" d="M0 0H28.5L38 9.5V48H0Z"/><path d="M28.5 0V9.5H38"/><path class="line" d="M6.1 14.4H29.6"/><path class="line" d="M6.1 21.1H29.6"/><path class="line" d="M6.1 27.8H20.2"/></g><g transform="translate(60 -22) rotate(8 19 24)"><path class="paper" d="M0 0H28.5L38 9.5V48H0Z"/><path d="M28.5 0V9.5H38"/><path class="line" d="M6.1 14.4H29.6"/><path class="line" d="M6.1 21.1H29.6"/><path class="line" d="M6.1 27.8H20.2"/></g><path class="paper" d="M0 18a4 4 0 0 1 4-4H108a4 4 0 0 1 4 4V76a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
-<path class="dash" d="M128 56Q180 10 240 64"/>
-<g transform="translate(174 24) rotate(-12 8 10)"><path class="paper" d="M0 0H12L16 4V20H0Z"/><path d="M12 0V4H16"/></g>
+<path class="dash flow" d="M128 56Q180 10 240 64"/>
+<g class="bob" style="animation-delay:-1s"><g transform="translate(174 24) rotate(-12 8 10)"><path class="paper" d="M0 0H12L16 4V20H0Z"/><path d="M12 0V4H16"/></g></g>
 <path class="paper accent" d="M232 96L220 78H258L270 96"/>
 <path class="paper accent" d="M308 96L320 78H282L270 96"/>
-<g transform="translate(250 62) rotate(10 15 20)"><path class="paper" d="M0 0H22.5L30 7.5V40H0Z"/><path d="M22.5 0V7.5H30"/><path class="line" d="M4.8 12H23.4"/><path class="line" d="M4.8 18H16"/></g>
+<g class="bob"><g transform="translate(250 62) rotate(10 15 20)"><path class="paper" d="M0 0H22.5L30 7.5V40H0Z"/><path d="M22.5 0V7.5H30"/><path class="line" d="M4.8 12H23.4"/><path class="line" d="M4.8 18H16"/></g></g>
 <rect class="paper accent" x="232" y="96" width="76" height="56" rx="3"/>
 <circle class="accent" cx="270" cy="124" r="11"/>
 <ellipse class="accent" cx="270" cy="124" rx="4.5" ry="11"/>

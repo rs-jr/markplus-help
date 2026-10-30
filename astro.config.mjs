@@ -23,6 +23,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Welcome', slug: 'index' },
 						{ label: 'Start here', slug: 'getting-started' },
+						{ label: 'How it fits together', slug: 'concepts' },
 					],
 				},
 				{

@@ -76,5 +76,33 @@ kbd {
   & text.sub { font-size: 11px; fill: var(--sl-color-gray-3); }
   & text.h { font-size: 11.5px; font-weight: 600; }
   & text.t { font-size: 9.5px; fill: var(--sl-color-gray-3); }
+  & text.link { font-size: 11px; }
+  & .soft { fill: var(--sl-color-gray-6); stroke: none; }
+  & text.on-accent { fill: var(--sl-color-text-invert); font-weight: 600; }
   & text.accent { fill: var(--sl-color-accent); stroke: none; }
+}
+
+/* Animações das ilustrações: sutis, em loop. Paradas para quem pede menos movimento */
+.illo {
+  & .flow { animation: illo-flow 1.4s linear infinite; }
+  & .twinkle, & .step, & .bob { transform-box: fill-box; transform-origin: center; }
+  & .twinkle { animation: illo-twinkle 2.4s ease-in-out infinite; }
+  & .step { animation: illo-step 2.4s ease-in-out infinite; }
+  & .bob { animation: illo-bob 2.8s ease-in-out infinite; }
+  & .pulse { animation: illo-pulse 2.8s ease-in-out infinite; }
+}
+@keyframes illo-flow { to { stroke-dashoffset: -14; } }
+@keyframes illo-twinkle { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(0.75); opacity: 0.6; } }
+@keyframes illo-step { 0%, 60%, 100% { transform: scale(1); } 20% { transform: scale(1.25); } }
+@keyframes illo-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+@keyframes illo-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+@media (prefers-reduced-motion: reduce) {
+  .illo * { animation: none !important; }
+}
+
+/* Página inicial: o ícone do app menor (512 px, nítido em Retina) */
+.hero > img,
+.hero picture img {
+  width: min(11rem, 40vw);
+  height: auto;
 }

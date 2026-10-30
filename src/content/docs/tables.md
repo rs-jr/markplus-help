@@ -7,6 +7,10 @@ Type `/table` or use the toolbar to add a table. It starts with 3 rows, 3 column
 
 **Example:** a weekly plan with *Day*, *Task* and *Done?* columns.
 
+:::tip[Table or database?]
+A table lives inside one document. When the same rows are used in several documents, or you want to sort, group, count or mention them with **@**, use a [database](../databases/) instead. See [Table or database?](../concepts/#table-or-database)
+:::
+
 ## Add and remove rows and columns
 
 Click inside the table. A small menu appears above it:

@@ -26,7 +26,7 @@ Press <kbd>⌘N</kbd>, or click **New document** above the document list. MarkPl
 <text x="120" y="192" text-anchor="middle" class="label">.mdoc</text>
 <text x="120" y="208" text-anchor="middle" class="sub">Everything in one file</text>
 <g transform="translate(296 28)"><path class="paper" d="M0 0H88L100 12V130H0Z"/><path d="M88 0V12H100"/><path class="line" d="M14 24H76"/>,<path class="line" d="M14 33H76"/>,<path class="line" d="M14 42H51.2"/><g transform="translate(14 56)"><rect class="paper dash" x="0" y="0" width="50" height="34" rx="3"/><circle class="dash" cx="35" cy="10.2" r="3.4"/><path class="dash" d="M5 28.9L19 15.3L29 23.8L36 18.7L45 28.9"/></g><path class="line" d="M14 106H76"/>,<path class="line" d="M14 115H51.2"/></g>
-<path class="dash" d="M364 101Q392 101 420 108"/>
+<path class="dash flow" d="M364 101Q392 101 420 108"/>
 <path d="M414.2 109.5L420 108L415.6 103.9"/>
 <g transform="translate(424 80)"><path class="paper" d="M4 0H25.8l6 6H72a4 4 0 0 1 4 4V56a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z"/><g transform="translate(10 -4)"><rect class="paper" x="0" y="0" width="30" height="24" rx="3"/><circle cx="21" cy="7.2" r="2.4"/><path d="M3 20.4L11.4 10.8L17.4 16.8L21.6 13.2L27 20.4"/></g><g transform="translate(34 -8)"><rect class="paper" x="0" y="0" width="30" height="24" rx="3"/><circle cx="21" cy="7.2" r="2.4"/><path d="M3 20.4L11.4 10.8L17.4 16.8L21.6 13.2L27 20.4"/></g><path class="paper" d="M0 18a4 4 0 0 1 4-4H72a4 4 0 0 1 4 4V56a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4Z"/></g>
 <text x="462" y="128" text-anchor="middle" class="sub">assets</text>

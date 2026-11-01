@@ -1,8 +1,8 @@
 /* Cores próximas às do app: destaque azul do macOS (o app usa a cor de destaque do sistema) */
 :root {
-  --sl-color-accent-low: #0b2a52;
-  --sl-color-accent: #0a84ff;
-  --sl-color-accent-high: #b8dbff;
+  --sl-color-accent-low: hsl(213.8 76.3% 18.2%);
+  --sl-color-accent: hsl(210.1 100% 52%);
+  --sl-color-accent-high: hsl(210.4 100% 86.1%);
   --sl-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -18,10 +18,10 @@
   --sl-color-gray-6: hsl(0 0% 21%);
   --sl-color-gray-7: hsl(0 0% 19%);
   /* Fundo do conteúdo */
-  --sl-color-black: #252528;
+  --sl-color-black: hsl(240 3.9% 15.1%);
   /* Barra lateral e topo um pouco mais escuros que o conteúdo, como a sidebar do app */
-  --sl-color-bg-nav: #1e1e1e;
-  --sl-color-bg-sidebar: #1e1e1e;
+  --sl-color-bg-nav: hsl(0 0% 11.8%);
+  --sl-color-bg-sidebar: hsl(0 0% 11.8%);
 }
 
 :root[data-theme="light"] {
@@ -34,14 +34,14 @@
   --sl-color-gray-6: hsl(0 0% 93%);
   --sl-color-gray-7: hsl(0 0% 96%);
   --sl-color-black: hsl(0 0% 100%);
-  --sl-color-bg-nav: #f3f3f4;
-  --sl-color-bg-sidebar: #f3f3f4;
+  --sl-color-bg-nav: hsl(240 4.3% 95.5%);
+  --sl-color-bg-sidebar: hsl(240 4.3% 95.5%);
 }
 
 :root[data-theme="light"] {
-  --sl-color-accent-low: #d6e9ff;
-  --sl-color-accent: #0066cc;
-  --sl-color-accent-high: #00315f;
+  --sl-color-accent-low: hsl(212.2 100% 92%);
+  --sl-color-accent: hsl(210 100% 40%);
+  --sl-color-accent-high: hsl(209.1 100% 18.6%);
 }
 
 /* Atalhos de teclado com cara de tecla */

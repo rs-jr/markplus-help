@@ -118,10 +118,12 @@ Give a document an icon to spot it at a glance. Point at the top of the document
 <img class="shot shot-light" src="../screenshots/add-icon-light.webp" width="812" alt="Add icon above the first line of a document" />
 <img class="shot shot-dark" src="../screenshots/add-icon-dark.webp" width="812" alt="Add icon above the first line of a document" />
 
-<img class="shot shot-light" src="../screenshots/document-icon-light.webp" width="354" alt="A document icon with the icon picker open" />
-<img class="shot shot-dark" src="../screenshots/document-icon-dark.webp" width="354" alt="A document icon with the icon picker open" />
+<img class="shot shot-light" src="../screenshots/document-icon-light.webp" width="386" alt="A document icon with the icon picker open" />
+<img class="shot shot-dark" src="../screenshots/document-icon-dark.webp" width="386" alt="A document icon with the icon picker open" />
 
 To change it, click the icon. **Remove** puts back the file icon.
+
+An icon from **with icons** can also move above the title, on hover or all the time. See [Icons that move](../text-boxes/#icons-that-move).
 
 The icon replaces the file icon everywhere the document appears: the document list, the pinned documents, the tabs, links to the document, and the [exported web page](../export/).
 
@@ -134,7 +136,8 @@ Databases always show the database icon.
 ## Rename and delete
 
 - The **file name is the title**. Rename it in MarkPlus or in Finder, whichever you prefer.
-- Right-click a document in the list for **Rename…**, **Open in New Window** and **Delete**.
+- Right-click a document in the list for **Rename…**, **Duplicate**, **Open in New Window** and **Delete**.
+- **Duplicate** makes a copy next to the original, named *Recipes (copy)*: text, pictures, attachments and icon included. It works for databases too, with all their rows. Handy for a template: keep *Weekly Report* as it is and duplicate it each week.
 - **Delete** moves the document to the Trash, so you can still get it back.
 
 ## Saving

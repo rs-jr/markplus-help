@@ -136,6 +136,7 @@ Talk to Claude the way you'd ask a colleague: say what you want and, if it helps
 | **Translate** | *"Translate this page to Spanish, keeping the formatting."* |
 | **Organize** | *"Turn these notes into a table with date, task and owner."* · *"Split this into pages by topic."* |
 | **Create** | *"Create a document with a packing list for a beach trip."* · *"Create a Suppliers database from this list."* |
+| **Fix in bulk** | *"In the Commands database, replace “photo” with “image” in every description."* · *"Set the Status of every bug reported by Sofia to Open."* Claude changes all the rows at once, not one by one |
 | **Connect** | *"Link every recipe name to its recipe."* · *"Mention the owner of each task with @."* |
 | **Research** | *"Find the opening hours of the Louvre and add them with the source."* |
 | **Bring in other apps** | *"Read the transcript of today's meeting and write the decisions here."* |
@@ -325,6 +326,8 @@ Pressed <kbd>⇧Space</kbd> by accident while typing a capital letter? Just keep
 
 For bigger jobs, open the chat: click the **Claude** button at the top (next to the magnifying glass) or press <kbd>⌃⌘I</kbd>.
 
+The chat belongs to the whole workspace, not to one document. It's there on the document list too, and it stays open while you switch tabs or go back to the list. Claude keeps working while you move around: start a long job, open another document, and come back to the answer. Drag the chat's left edge to make it wider or narrower; it keeps that width when you resize the window or show the sidebar.
+
 Claude already knows which document you have open, what text you selected and the [workspace description](../workspaces/#add-a-description), so you can just ask:
 
 <!-- illustration:ai-chat-context -->
@@ -377,6 +380,10 @@ Claude already knows which document you have open, what text you selected and th
 
 **Example:** attach the PDF of a contract and ask *"Create a document with the main dates and obligations from this contract."*
 
+While Claude works, the chat lists each step: *Read “Recipes”*, *Edited “Menu” · Prices*. When it repeats the same step, for example updating forty rows of a database, the chat shows it once with a count, like *Updated a row of “Commands”* **+39**.
+
+At the end of each answer, a small card shows what it took: the tokens Claude read and wrote, how long it ran and how many steps it used. Point at a number to see what it means. The cost shown is only an estimate: the chat uses your Claude plan, so you aren't charged per token.
+
 **Search the web:** Claude can look things up online and read web pages, then cite the sources as links. The chat shows what it is searching for.
 
 **Example:** *"Find the opening hours of the Louvre and add them to my Paris trip."*
@@ -386,6 +393,29 @@ Claude already knows which document you have open, what text you selected and th
 - Below the message box you can choose which Claude **model** to use.
 - Before deleting a document, Claude always asks you first.
 - Drag the edge of the panel to make it wider or narrower.
+
+### Skills: ready-made jobs
+
+Some jobs take several steps across documents and databases. Skills do them in one go: pick one, add a detail if you want, and send.
+
+| Skill | What you get |
+| --- | --- |
+| **/minutes** | Meeting minutes from a transcript: summary, decisions and action items, with people mentioned and a row in your meetings database. Works with your meeting notes app through a [connector](#connectors-read-your-other-apps), or with the transcript attached |
+| **/tasks** | Every task in the document, in a *Tasks* database with owner, due date and status, plus cards by status at the end of the document |
+| **/to-database** | A database from a list, a table or a file (a CSV, a PDF), with the right kind of column for each value: dates, options, people |
+| **/link-up** | The document linked to the rest of the workspace: other documents, sections and database rows become links and mentions |
+| **/status-report** | A status report from your databases: what is done, in progress and blocked, with a chart and a list |
+| **/glossary** | A glossary database with the terms your documents use, each linked where it first appears |
+| **/clean-up** | A tidier database: duplicates, the same value written in different ways, empty fields. Claude shows what it will change first |
+| **/structure** | A long document reorganized into pages and sections, with tables and text boxes where they help, and every link kept |
+| **/welcome** | A welcome page for the workspace: what is here, what each document is for and where to start |
+
+**Example:** after a meeting, type */minutes* and *"yesterday's kickoff"*. Claude reads the transcript from your meeting notes app, writes the minutes, adds the meeting to *Meetings* and mentions everyone who was there. Then run */tasks* on the minutes, and the action items land in *Tasks* with their owners.
+
+To pick a skill, click the **/** button next to 📎, or type **/** at the start of the message box. Keep typing to filter the list. The skill appears above your message; you can send it alone or add details, like who a welcome page is for. When a skill needs a connector, the list shows its logo, faded when it's turned off.
+
+<img class="shot shot-light" src="../screenshots/chat-skills-light.webp" width="384" alt="The list of skills in the chat" />
+<img class="shot shot-dark" src="../screenshots/chat-skills-dark.webp" width="384" alt="The list of skills in the chat" />
 
 ## Connectors: read your other apps
 

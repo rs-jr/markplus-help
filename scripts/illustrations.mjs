@@ -380,6 +380,38 @@ const illustrations = {
     ]),
 
   // Tabela (dentro de um documento) x database (uma fonte, vários lugares)
+  // Coluna Relation: cada contato aponta para uma linha de Empresas; Empresas só sabe que está relacionado
+  relation: () => {
+    const rows = [0, 1, 2]
+    const chips = ['Acme', 'Beta', 'Acme']
+    return svg(520, 206, 'The Company column of Contacts points to rows of the Companies database; Companies shows that it is related from Contacts', [
+      group(30, 30, [
+        rect(0, 0, 210, 120, 6, 'paper'),
+        text(12, 15.5, 'Contacts', 't', { anchor: 'start' }),
+        text(112, 15.5, 'Company', 't', { anchor: 'start', accent: true }),
+        line(0, 24, 210, 24),
+        ...rows.flatMap((i) => {
+          const cy = 24 + 32 * (i + 0.5)
+          const on = i === 0
+          return [
+            on ? rect(1, 24 + 32 * i, 208, 32, 0, 'soft-accent pulse') : '',
+            line(12, cy, 76, cy),
+            rect(110, cy - 8, 50, 16, 8, on ? 'soft-accent accent' : 'paper'),
+            text(135, cy + 3.5, chips[i], 't', { accent: on }),
+          ]
+        }),
+        // Divisória das colunas por cima do destaque da linha
+        line(100, 24, 100, 120),
+      ]),
+      curve(192, 70, 252, 28, 308, 70, { dashed: true }),
+      dataTable(310, 30, 180, 120, { title: 'Companies', rows: 3, highlight: 0 }),
+      text(135, 176, 'Contacts', 'label'),
+      text(135, 192, 'Company picks a row of Companies', 'sub'),
+      text(400, 176, 'Companies', 'label'),
+      text(400, 192, 'Related from Contacts', 'sub'),
+    ])
+  },
+
   'table-vs-database': () =>
     svg(520, 214, 'A table lives inside one document; a database is one source shown in many documents', [
       sheet(30, 14, 180, 150, {

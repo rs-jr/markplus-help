@@ -50,6 +50,17 @@ Click the **wand** button to find things by their kind, without knowing exactly 
 
 **Example:** before sending a report, pick **Repeated word** and **Double spaces** to catch small typos.
 
+## Find in a database
+
+In a database, <kbd>⌘F</kbd> (or the magnifying glass next to **New row**) opens the same find bar, with the same options and ready-made searches. Cells with a match are highlighted, and <kbd>↩</kbd> selects the next one.
+
+<img class="shot shot-light" src="../screenshots/database-find-light.webp" width="1260" alt="The find bar above a database, with the matching cells highlighted" />
+<img class="shot shot-dark" src="../screenshots/database-find-dark.webp" width="1260" alt="The find bar above a database, with the matching cells highlighted" />
+
+**Replace** and **Replace All** work in text, rich text, email and link cells, in every row at once, and one <kbd>⌘Z</kbd> undoes it. Options, dates and people are found but not replaced: change those by [copying and pasting cells](../databases/#edit-like-a-spreadsheet).
+
+**Example:** the supplier changed its name from *Bean Co.* to *Bean & Co.*: find *Bean Co.*, type the new name and click **Replace All** in *Orders*. Every row changes at once.
+
 ## Search all documents
 
 Press <kbd>⇧⌘F</kbd> to search every document in the workspace at once. Results are grouped by document, with a short preview of each match.

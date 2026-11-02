@@ -28,7 +28,7 @@ Click a column title to rename it, change its type, move it or delete it. Click 
 
 | Type | What it holds |
 | --- | --- |
-| **Text** | A short line of text |
+| **Text** | A short line of text. Type `**bold**`, `*italic*`, `` `code` ``, `~~strikethrough~~` or `<u>underline</u>` and the cell shows the formatting |
 | **Rich text** | Longer notes with bold, lists and links |
 | **Number** | A number (for totals and charts) |
 | **Date** | A day, picked on a calendar or typed (*3 Nov 2026*, *2026-11-03*). Sorts by date |
@@ -37,26 +37,72 @@ Click a column title to rename it, change its type, move it or delete it. Click 
 | **Email** | An email address (click to write) |
 | **Link** | A web address |
 | **Image** | A picture |
+| **Relation** | Rows of another database, e.g. the *Company* of each contact. See [Relate two databases](#relate-two-databases) |
 
-One column is the **label** of each row, marked with a tag next to its name. It's what `@` searches, what a mention shows and the title of each card. A database always has one. To pick another, point at a column's title and click its tag, **Use as label** (or click the title and choose **Use as Label**). Picture columns can't be the label.
+One column is the **label** of each row, marked with a tag next to its name. It's what `@` searches, what a mention shows and the title of each card. A database always has one. To pick another, point at a column's title and click its tag, **Use as label** (or click the title and choose **Use as Label**). Picture and Relation columns can't be the label.
 
 To reorder the columns, drag a column's title left or right. The label column can move too.
+
+To make a column wider or narrower, drag the edge on the right of its title. Double-click that edge to fit the column to its longest value, and <kbd>⌘</kbd><kbd>Z</kbd> brings back the width it had before.
 
 :::tip
 Changing a column to **Select** turns the text already in it into options.
 :::
 
+## Relate two databases
+
+A **Relation** column links each row to rows of another database. Keep *Companies* in one database (name, tax ID, address) and pick the company of each contact in *Contacts*: the details are written once, and every contact points to them.
+
+<!-- illustration:relation -->
+
+<svg class="illo" viewBox="0 0 520 206" width="520" role="img" aria-label="The Company column of Contacts points to rows of the Companies database; Companies shows that it is related from Contacts">
+<g transform="translate(30 30)"><rect class="paper" x="0" y="0" width="210" height="120" rx="6"/><text x="12" y="15.5" text-anchor="start" class="t">Contacts</text><text x="112" y="15.5" text-anchor="start" class="t accent">Company</text><path class="line" d="M0 24H210"/><rect class="soft-accent pulse" x="1" y="24" width="208" height="32" rx="0"/><path class="line" d="M12 40H76"/><rect class="soft-accent accent" x="110" y="32" width="50" height="16" rx="8"/><text x="135" y="43.5" text-anchor="middle" class="t accent">Acme</text><path class="line" d="M12 72H76"/><rect class="paper" x="110" y="64" width="50" height="16" rx="8"/><text x="135" y="75.5" text-anchor="middle" class="t">Beta</text><path class="line" d="M12 104H76"/><rect class="paper" x="110" y="96" width="50" height="16" rx="8"/><text x="135" y="107.5" text-anchor="middle" class="t">Acme</text><path class="line" d="M100 24L100 120"/></g>
+<path class="accent dash flow" d="M192 70Q252 28 308 70"/>
+<path class="accent" d="M302.1 69.1L308 70L305.5 64.5"/>
+<g transform="translate(310 30)"><rect class="paper" x="0" y="0" width="180" height="120" rx="6"/><text x="12" y="15.5" text-anchor="start" class="t">Companies</text><path class="line" d="M0 24H180"/><rect class="soft-accent pulse" x="1" y="24" width="178" height="32" rx="0"/>,<circle class="accent" cx="14" cy="40" r="4.5"/>,<path class="accent" d="M26 40H100.8"/>,<path class="line" d="M118.8 40H168"/>,<circle cx="14" cy="72" r="4.5"/>,<path class="line" d="M26 72H100.8"/>,<path class="line" d="M118.8 72H168"/>,<circle cx="14" cy="104" r="4.5"/>,<path class="line" d="M26 104H100.8"/>,<path class="line" d="M118.8 104H168"/></g>
+<text x="135" y="176" text-anchor="middle" class="label">Contacts</text>
+<text x="135" y="192" text-anchor="middle" class="sub">Company picks a row of Companies</text>
+<text x="400" y="176" text-anchor="middle" class="label">Companies</text>
+<text x="400" y="192" text-anchor="middle" class="sub">Related from Contacts</text>
+</svg>
+
+<!-- /illustration -->
+
+1. In *Contacts*, click **+** at the end of the titles and choose **Relation**.
+2. Pick the database (*Companies*). Turn on **Allow multiple rows** if a row can link to more than one, like a project with several clients.
+3. Click a cell of the new column, then click it again to open it. Type to search the companies and pick one. If it isn't there yet, **Create “…”** adds it to *Companies*.
+
+The cell shows the company like a mention: point at it to see its fields, click it to open the row. The name stays up to date when you rename the company.
+
+- ***Companies*** **shows where it's used**: under its title, *Related from Contacts*. Click the name to open it.
+- **Deleted rows** aren't removed from the cells: they show as *Missing*. If the row comes back (with <kbd>⌘Z</kbd>, for example), the link works again.
+- **Change it later**: click the column title › **Edit Relation…** to pick another database or switch between one and several rows. Changing a Text column to **Relation** links the names already in it to the rows with the same name.
+- A database can relate to itself, like a *Manager* column in *People*.
+
 ## Rows
 
-- **New row** adds one at the end. Type the name, then click the other cells to fill them in.
+- **New row** adds one at the end. Type the name, then fill in the other cells (see [Edit like a spreadsheet](#edit-like-a-spreadsheet)).
 - A **Date** cell opens a calendar. Type a date in the field on top or click a day; **Today** fills in today and **Clear** empties the cell.
 - A **Rich text** cell opens a bigger editor with a formatting toolbar: titles, bold, italic, lists, to-dos, quotes, code and links. Click **Done** (or press <kbd>⌘↩</kbd>) when you're finished.
 - Point at a row and click **Open** to see and edit all its fields in a bigger window.
 - Drag the handle on the left to reorder rows.
 - The **⋯** button (or a right-click) copies the row's link, duplicates it or deletes it.
-- **Search database** (or <kbd>⌘F</kbd>) shows only the rows that contain what you type, in any field. Nothing is deleted: clear the search to see every row again. <kbd>⌘Z</kbd> undoes the last change.
+- **Find and replace**: <kbd>⌘F</kbd> (or the magnifying glass) opens the same find bar as in documents. Cells with a match are highlighted; replace text in every row at once, with the same options and regular expressions. See [Find in a database](../search/#find-in-a-database). <kbd>⌘Z</kbd> undoes the last change.
 
 Photos and pictures can be dragged in, pasted or chosen from your Mac. They're saved inside the database.
+
+## Edit like a spreadsheet
+
+The table works like Excel or Google Sheets: click a cell to select it, then edit, copy or paste.
+
+- **Select**: click a cell. Drag across cells, or <kbd>⇧</kbd>-click, to select a block. The arrow keys move the selection; with <kbd>⇧</kbd> they make it bigger. <kbd>⇥</kbd> moves to the next column.
+- **Edit**: double-click the cell, or press <kbd>↩</kbd>. In text, number, email and link cells you can also just start typing: what you type replaces the value. A **Select**, **Date**, **Person**, **Image** or **Relation** cell also opens with a second click, once it's selected.
+- **Copy and paste**: <kbd>⌘C</kbd> copies the selected cells and <kbd>⌘V</kbd> pastes them. Copy one cell and select several to fill them all at once. <kbd>⌘X</kbd> cuts.
+- **Clear**: <kbd>⌫</kbd> empties the selected cells. <kbd>⌘Z</kbd> undoes a paste or a clear in one step.
+
+**Example:** five new bugs came in from the same test session. Set **Status** to *Open* in the first one, copy it, select the other four Status cells and paste: done in one go.
+
+Copying between MarkPlus databases keeps everything: options, dates, people, pictures and related rows. You can also paste from a spreadsheet, or copy cells into one. Pasted text fills each column the way you'd type it: a **Select** finds the option with the same name, or adds it if it's new; dates and numbers are read from the text.
 
 ## Mention a row with @
 
@@ -146,7 +192,7 @@ Click the gear on the view to change it later. In **Fields**:
 
 In a **List**, the [label column](#columns) is a column like any other: put it anywhere (for example, *Command* first and the label after it) or untick it to hide it. In **Cards** and **Detail**, it's always the title of each row, so it isn't in the list.
 
-**Group by** (List and Cards): pick a column, such as *Status* or *Owner*, and the rows are split into groups, each with a heading and how many rows it has. Groups follow the order of the options (for a Select column), the dates or the numbers, or go A to Z; rows without a value go last, under *No …*. The grouped column isn't repeated in the rows: its value is the heading. The label, Rich text and Image columns can't group. Click a group's heading to collapse it, and click again to open it. Collapsed groups open again the next time you open the document.
+**Group by** (List and Cards): pick a column, such as *Status* or *Owner*, and the rows are split into groups, each with a heading and how many rows it has. Groups follow the order of the options (for a Select column), the dates or the numbers, or go A to Z; rows without a value go last, under *No …*. The grouped column isn't repeated in the rows: its value is the heading. The label, Rich text, Image and Relation columns with several rows can't group. A Relation with one row groups by the related row, like contacts by company. Click a group's heading to collapse it, and click again to open it. Collapsed groups open again the next time you open the document.
 
 **Example:** a **List** of *Features* grouped by *Status* shows *Shipped*, *In progress* and *Planned*, each with its features below.
 
@@ -175,7 +221,7 @@ Each idea has its columns and a good way to show it in a document.
 | **Tasks** | Task, Owner (person), Status (select), Due (date), Link | **Cards** or **List** grouped by *Status*, like a board. A **Chart** of tasks by owner |
 | **Meeting minutes** | Meeting, Date, Type (select), Attendees (rich text with @ mentions), Summary, Recording (link) | **Detail** view in the project document: the meetings on the left, the minutes on the right |
 | **Suppliers** | Name, Contact (person), Email, Phone, City, Category (select) | Mention the supplier in recipes and orders. **List** grouped by *Category* |
-| **Products** | Name, Picture, Price (number), Category (select), Stock (number) | **Cards** with the picture on top. A **Chart** with the sum of *Stock* by category |
+| **Products** | Name, Picture, Price (number), Category (select), Stock (number), Supplier (relation to *Suppliers*) | **Cards** with the picture on top. A **Chart** with the sum of *Stock* by category. A **List** grouped by *Supplier* to place orders |
 | **Releases** | Version, Date, Status (select), Screenshot, What's new (rich text) | **Detail** view in the release notes, one version at a time |
 | **Reading list** | Title, Author, Link, Status (select), Rating (number) | **List** of the ones still *To read*, sorted by rating |
 | **Glossary** | Term, Meaning (rich text), Example | Mention the term (**@tamping**) where it first appears: pointing at it shows the meaning |
@@ -200,5 +246,6 @@ AI apps connected to MarkPlus can read databases, add and update rows, write men
 - *"Create a Suppliers database with name, phone and city, and show it as a list at the end of this document, sorted by city."*
 - *"Add a pie chart of the Team database by role below the Staff title."*
 - *"Show the Features database as cards grouped by status."*
+- *"Create a Companies database with name and tax ID, then a Contacts database whose Company column relates to it, and add these people with their companies."*
 
 Data views only fit in `.mdoc` documents: in a `.md` document, the AI adds a link to the database instead. See [Writing with AI](../ai/).

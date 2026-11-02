@@ -307,6 +307,19 @@ export const scenes = [
     },
   },
   {
+    name: 'database-find',
+    run: async (page, { app }) => {
+      await page.locator('h3, span').filter({ hasText: /^Bugs$/ }).first().click()
+      await page.waitForSelector('[data-row-id]', { timeout: 10000 })
+      await menu(app, 'find-replace')
+      await page.keyboard.type('the')
+      await page.waitForTimeout(800)
+      // A barra (acima dos botões), o título e as primeiras linhas, com as células destacadas
+      const bar = page.locator('div.rounded-lg.border.bg-popover.shadow-lg').first()
+      return around([bar, page.locator('h1').filter({ hasText: 'Bugs' }).first(), page.locator('[data-row-id]').nth(3)], 20)
+    },
+  },
+  {
     name: 'search-workspace',
     settle: 1500,
     run: async (page, { app }) => {
@@ -379,6 +392,23 @@ export const scenes = [
   },
 
   // Página inicial da ajuda: a janela inteira, com o chat do Claude aberto
+  {
+    name: 'chat-skills',
+    run: async (page, { app }) => {
+      await openDocument(page, 'Kickoff Meeting')
+      await menu(app, 'toggle-ai-chat')
+      await page.waitForTimeout(1200)
+      await page.getByRole('button', { name: 'Skills' }).click()
+      const list = page.getByRole('listbox', { name: 'Skills' })
+      await list.waitFor()
+      // O logo do conector do /minutes chega com a lista de conectores da conta (alguns segundos)
+      await list.locator('[role="option"]').first().locator('img').waitFor({ timeout: 20000 }).catch(() => {})
+      await page.waitForTimeout(600)
+      // O menu inteiro (com o título) e o campo do chat com a barra de baixo
+      const menuBox = page.locator('[data-radix-popper-content-wrapper]').last()
+      return around([menuBox, page.getByRole('textbox', { name: 'Message' }), page.getByRole('button', { name: 'Skills' })], 16)
+    },
+  },
   {
     name: 'hero',
     settle: 1500,
